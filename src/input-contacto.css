@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/runegame/kiire-contact-form@v1.0.6/dist/assets/style.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body .layout-container main {
+    max-width: 100% !important;
+}
+
+.main-background {
+    background-image: url('https://kiire.com/sites/default/files/2025-03/vector-telefono-fijo.png');
+}

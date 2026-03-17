@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/runegame/kiire-contact-form@master/dist/kiire-contact-form.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.tw-form-bg {
+    background-image: url('https://kiire.com/sites/default/files/2025-12/fondo-verde-tarjetas.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#block-simplenewssubscription {
+    margin-top: 0 !important;
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.horizontal-scroll {
+    @apply md:tw-pb-10;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .horizontal-scroll {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE 10+ */
+    }
+
+    .horizontal-scroll::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
+}
+
+.info-wrapper {
+    @apply tw-flex tw-gap-10;
+}
+
+.info-item {
+    @apply tw-flex tw-flex-col tw-gap-10 tw-items-center tw-text-start tw-bg-[#F1F1F1] tw-min-w-[250px] tw-max-w-[250px] tw-py-16 tw-px-4 tw-rounded-3xl;
+}
+
+.info-item p {
+    @apply tw-w-full;
+}
+
+.info-item img {
+    @apply tw-w-[80px] md:tw-w-auto
+}
+
+.tw-button {
+    @apply tw-text-xs md:tw-text-base tw-py-4 tw-transition-all tw-cursor-pointer tw-flex tw-items-center tw-justify-center tw-whitespace-nowrap tw-rounded-lg tw-px-8 tw-uppercase tw-font-semibold tw-gap-4;
+}
+
+.tw-circle-button {
+    @apply tw-hidden md:tw-block tw-h-2 tw-w-2 tw-bg-kiire-text tw-rounded-full;
+}
+
+@media (min-width: 768px) {
+    .tw-acu {
+        background-image: url('https://kiire.com/sites/default/files/2025-05/vector-nube-verde.png'); background-position: bottom center; background-size: 50%
+    }
+
+    .tw-main-bg {
+        background-image: url('https://kiire.com/sites/default/files/2025-05/puntos-fondo-verde.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#block-simplenewssubscription {
+    margin: 0 !important;
+}
+
+article[about="/puntos-colombia"] {
+    max-width: 100% !important;
+    padding: 0 !important;
+}

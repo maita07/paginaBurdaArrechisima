@@ -1,0 +1,2177 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+
+    *, ::before, ::after{
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x:  ;
+        --tw-pan-y:  ;
+        --tw-pinch-zoom:  ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position:  ;
+        --tw-gradient-via-position:  ;
+        --tw-gradient-to-position:  ;
+        --tw-ordinal:  ;
+        --tw-slashed-zero:  ;
+        --tw-numeric-figure:  ;
+        --tw-numeric-spacing:  ;
+        --tw-numeric-fraction:  ;
+        --tw-ring-inset:  ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur:  ;
+        --tw-brightness:  ;
+        --tw-contrast:  ;
+        --tw-grayscale:  ;
+        --tw-hue-rotate:  ;
+        --tw-invert:  ;
+        --tw-saturate:  ;
+        --tw-sepia:  ;
+        --tw-drop-shadow:  ;
+        --tw-backdrop-blur:  ;
+        --tw-backdrop-brightness:  ;
+        --tw-backdrop-contrast:  ;
+        --tw-backdrop-grayscale:  ;
+        --tw-backdrop-hue-rotate:  ;
+        --tw-backdrop-invert:  ;
+        --tw-backdrop-opacity:  ;
+        --tw-backdrop-saturate:  ;
+        --tw-backdrop-sepia:  ;
+        --tw-contain-size:  ;
+        --tw-contain-layout:  ;
+        --tw-contain-paint:  ;
+        --tw-contain-style:  ;
+    }
+
+    ::backdrop{
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x:  ;
+        --tw-pan-y:  ;
+        --tw-pinch-zoom:  ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position:  ;
+        --tw-gradient-via-position:  ;
+        --tw-gradient-to-position:  ;
+        --tw-ordinal:  ;
+        --tw-slashed-zero:  ;
+        --tw-numeric-figure:  ;
+        --tw-numeric-spacing:  ;
+        --tw-numeric-fraction:  ;
+        --tw-ring-inset:  ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur:  ;
+        --tw-brightness:  ;
+        --tw-contrast:  ;
+        --tw-grayscale:  ;
+        --tw-hue-rotate:  ;
+        --tw-invert:  ;
+        --tw-saturate:  ;
+        --tw-sepia:  ;
+        --tw-drop-shadow:  ;
+        --tw-backdrop-blur:  ;
+        --tw-backdrop-brightness:  ;
+        --tw-backdrop-contrast:  ;
+        --tw-backdrop-grayscale:  ;
+        --tw-backdrop-hue-rotate:  ;
+        --tw-backdrop-invert:  ;
+        --tw-backdrop-opacity:  ;
+        --tw-backdrop-saturate:  ;
+        --tw-backdrop-sepia:  ;
+        --tw-contain-size:  ;
+        --tw-contain-layout:  ;
+        --tw-contain-paint:  ;
+        --tw-contain-style:  ;
+    }
+
+    /*
+    ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+    */
+
+    /*
+    1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+    2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+    */
+
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+        /* 1 */
+        border-width: 0;
+        /* 2 */
+        border-style: solid;
+        /* 2 */
+        border-color: #e5e7eb;
+        /* 2 */
+    }
+
+    ::before,
+    ::after {
+        --tw-content: '';
+    }
+
+    /*
+    1. Use a consistent sensible line-height in all browsers.
+    2. Prevent adjustments of font size after orientation changes in iOS.
+    3. Use a more readable tab size.
+    4. Use the user's configured `sans` font-family by default.
+    5. Use the user's configured `sans` font-feature-settings by default.
+    6. Use the user's configured `sans` font-variation-settings by default.
+    7. Disable tap highlights on iOS
+    */
+
+    html,
+    :host {
+        line-height: 1.5;
+        /* 1 */
+        -webkit-text-size-adjust: 100%;
+        /* 2 */
+        -moz-tab-size: 4;
+        /* 3 */
+        -o-tab-size: 4;
+        tab-size: 4;
+        /* 3 */
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        /* 4 */
+        font-feature-settings: normal;
+        /* 5 */
+        font-variation-settings: normal;
+        /* 6 */
+        -webkit-tap-highlight-color: transparent;
+        /* 7 */
+    }
+
+    /*
+    1. Remove the margin in all browsers.
+    2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+    */
+
+    body {
+        margin: 0;
+        /* 1 */
+        line-height: inherit;
+        /* 2 */
+    }
+
+    /*
+    1. Add the correct height in Firefox.
+    2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+    3. Ensure horizontal rules are visible by default.
+    */
+
+    hr {
+        height: 0;
+        /* 1 */
+        color: inherit;
+        /* 2 */
+        border-top-width: 1px;
+        /* 3 */
+    }
+
+    /*
+    Add the correct text decoration in Chrome, Edge, and Safari.
+    */
+
+    abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+    }
+
+    /*
+    Remove the default font size and weight for headings.
+    */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    /*
+    Reset links to optimize for opt-in styling instead of opt-out.
+    */
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    /*
+    Add the correct font weight in Edge and Safari.
+    */
+
+    b,
+    strong {
+        font-weight: bolder;
+    }
+
+    /*
+    1. Use the user's configured `mono` font-family by default.
+    2. Use the user's configured `mono` font-feature-settings by default.
+    3. Use the user's configured `mono` font-variation-settings by default.
+    4. Correct the odd `em` font sizing in all browsers.
+    */
+
+    code,
+    kbd,
+    samp,
+    pre {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        /* 1 */
+        font-feature-settings: normal;
+        /* 2 */
+        font-variation-settings: normal;
+        /* 3 */
+        font-size: 1em;
+        /* 4 */
+    }
+
+    /*
+    Add the correct font size in all browsers.
+    */
+
+    small {
+        font-size: 80%;
+    }
+
+    /*
+    Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+    */
+
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    /*
+    1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+    2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+    3. Remove gaps between table borders by default.
+    */
+
+    table {
+        text-indent: 0;
+        /* 1 */
+        border-color: inherit;
+        /* 2 */
+        border-collapse: collapse;
+        /* 3 */
+    }
+
+    /*
+    1. Change the font styles in all browsers.
+    2. Remove the margin in Firefox and Safari.
+    3. Remove default padding in all browsers.
+    */
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-family: inherit;
+        /* 1 */
+        font-feature-settings: inherit;
+        /* 1 */
+        font-variation-settings: inherit;
+        /* 1 */
+        font-size: 100%;
+        /* 1 */
+        font-weight: inherit;
+        /* 1 */
+        line-height: inherit;
+        /* 1 */
+        letter-spacing: inherit;
+        /* 1 */
+        color: inherit;
+        /* 1 */
+        margin: 0;
+        /* 2 */
+        padding: 0;
+        /* 3 */
+    }
+
+    /*
+    Remove the inheritance of text transform in Edge and Firefox.
+    */
+
+    button,
+    select {
+        text-transform: none;
+    }
+
+    /*
+    1. Correct the inability to style clickable types in iOS and Safari.
+    2. Remove default button styles.
+    */
+
+    button,
+    input:where([type='button']),
+    input:where([type='reset']),
+    input:where([type='submit']) {
+        -webkit-appearance: button;
+        /* 1 */
+        background-color: transparent;
+        /* 2 */
+        background-image: none;
+        /* 2 */
+    }
+
+    /*
+    Use the modern Firefox focus style for all focusable elements.
+    */
+
+    :-moz-focusring {
+        outline: auto;
+    }
+
+    /*
+    Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+    */
+
+    :-moz-ui-invalid {
+        box-shadow: none;
+    }
+
+    /*
+    Add the correct vertical alignment in Chrome and Firefox.
+    */
+
+    progress {
+        vertical-align: baseline;
+    }
+
+    /*
+    Correct the cursor style of increment and decrement buttons in Safari.
+    */
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+        height: auto;
+    }
+
+    /*
+    1. Correct the odd appearance in Chrome and Safari.
+    2. Correct the outline style in Safari.
+    */
+
+    [type='search'] {
+        -webkit-appearance: textfield;
+        /* 1 */
+        outline-offset: -2px;
+        /* 2 */
+    }
+
+    /*
+    Remove the inner padding in Chrome and Safari on macOS.
+    */
+
+    ::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    /*
+    1. Correct the inability to style clickable types in iOS and Safari.
+    2. Change font properties to `inherit` in Safari.
+    */
+
+    ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        /* 1 */
+        font: inherit;
+        /* 2 */
+    }
+
+    /*
+    Add the correct display in Chrome and Safari.
+    */
+
+    summary {
+        display: list-item;
+    }
+
+    /*
+    Removes the default spacing and border for appropriate elements.
+    */
+
+    blockquote,
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+        margin: 0;
+    }
+
+    fieldset {
+        margin: 0;
+        padding: 0;
+    }
+
+    legend {
+        padding: 0;
+    }
+
+    ol,
+    ul,
+    menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*
+    Reset default styling for dialogs.
+    */
+
+    dialog {
+        padding: 0;
+    }
+
+    /*
+    Prevent resizing textareas horizontally by default.
+    */
+
+    textarea {
+        resize: vertical;
+    }
+
+    /*
+    1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+    2. Set the default placeholder color to the user's configured gray 400 color.
+    */
+
+    input::-moz-placeholder, textarea::-moz-placeholder {
+        opacity: 1;
+        /* 1 */
+        color: #9ca3af;
+        /* 2 */
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        opacity: 1;
+        /* 1 */
+        color: #9ca3af;
+        /* 2 */
+    }
+
+    /*
+    Set the default cursor for buttons.
+    */
+
+    button,
+    [role="button"] {
+        cursor: pointer;
+    }
+
+    /*
+    Make sure disabled buttons don't get the pointer cursor.
+    */
+
+    :disabled {
+        cursor: default;
+    }
+
+    /*
+    1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+    2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+       This can trigger a poorly considered lint error in some tools but is included by design.
+    */
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+        display: block;
+        /* 1 */
+        vertical-align: middle;
+        /* 2 */
+    }
+
+    /*
+    Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+    */
+
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Make elements with the HTML hidden attribute stay hidden by default */
+
+    [hidden]:where(:not([hidden="until-found"])) {
+        display: none;
+    }
+
+    .tw-container{
+        width: 100%;
+    }
+
+    @media (min-width: 640px){
+        .tw-container{
+            max-width: 640px;
+        }
+    }
+
+    @media (min-width: 768px){
+        .tw-container{
+            max-width: 768px;
+        }
+    }
+
+    @media (min-width: 1024px){
+        .tw-container{
+            max-width: 1024px;
+        }
+    }
+
+    @media (min-width: 1280px){
+        .tw-container{
+            max-width: 1280px;
+        }
+    }
+
+    @media (min-width: 1536px){
+        .tw-container{
+            max-width: 1536px;
+        }
+    }
+
+    .tw-absolute{
+        position: absolute;
+    }
+
+    .tw-relative{
+        position: relative;
+    }
+
+    .tw-mx-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tw-my-10{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .tw-my-20{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .tw-my-4{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .tw-mb-0{
+        margin-bottom: 0px;
+    }
+
+    .tw-mb-10{
+        margin-bottom: 2.5rem;
+    }
+
+    .tw-mb-12{
+        margin-bottom: 3rem;
+    }
+
+    .tw-mb-20{
+        margin-bottom: 5rem;
+    }
+
+    .tw-mb-4{
+        margin-bottom: 1rem;
+    }
+
+    .tw-mb-5{
+        margin-bottom: 1.25rem;
+    }
+
+    .tw-mb-6{
+        margin-bottom: 1.5rem;
+    }
+
+    .tw-ml-20{
+        margin-left: 5rem;
+    }
+
+    .tw-ml-4{
+        margin-left: 1rem;
+    }
+
+    .tw-mr-4{
+        margin-right: 1rem;
+    }
+
+    .tw-mt-0{
+        margin-top: 0px;
+    }
+
+    .tw-mt-10{
+        margin-top: 2.5rem;
+    }
+
+    .tw-mt-11{
+        margin-top: 2.75rem;
+    }
+
+    .tw-mt-16{
+        margin-top: 4rem;
+    }
+
+    .tw-mt-20{
+        margin-top: 5rem;
+    }
+
+    .tw-mt-24{
+        margin-top: 6rem;
+    }
+
+    .tw-mt-32{
+        margin-top: 8rem;
+    }
+
+    .tw-mt-4{
+        margin-top: 1rem;
+    }
+
+    .tw-mt-9{
+        margin-top: 2.25rem;
+    }
+
+    .tw-block{
+        display: block;
+    }
+
+    .tw-flex{
+        display: flex;
+    }
+
+    .tw-hidden{
+        display: none;
+    }
+
+    .tw-aspect-\[1\/1\]{
+        aspect-ratio: 1/1;
+    }
+
+    .tw-aspect-square{
+        aspect-ratio: 1 / 1;
+    }
+
+    .tw-h-0{
+        height: 0px;
+    }
+
+    .tw-h-\[50vh\]{
+        height: 50vh;
+    }
+
+    .tw-h-screen{
+        height: 100vh;
+    }
+
+    .tw-max-h-\[450px\]{
+        max-height: 450px;
+    }
+
+    .tw-min-h-4{
+        min-height: 1rem;
+    }
+
+    .tw-min-h-\[96px\]{
+        min-height: 96px;
+    }
+
+    .tw-min-h-screen{
+        min-height: 100vh;
+    }
+
+    .tw-min-h-\[32px\]{
+        min-height: 32px;
+    }
+
+    .tw-w-1{
+        width: 0.25rem;
+    }
+
+    .tw-w-1\/3{
+        width: 33.333333%;
+    }
+
+    .tw-w-2{
+        width: 0.5rem;
+    }
+
+    .tw-w-2\/3{
+        width: 66.666667%;
+    }
+
+    .tw-w-full{
+        width: 100%;
+    }
+
+    .tw-w-auto{
+        width: auto;
+    }
+
+    .tw-min-w-4{
+        min-width: 1rem;
+    }
+
+    .tw-min-w-\[176px\]{
+        min-width: 176px;
+    }
+
+    .tw-min-w-\[333px\]{
+        min-width: 333px;
+    }
+
+    .tw-max-w-\[100px\]{
+        max-width: 100px;
+    }
+
+    .tw-max-w-\[155px\]{
+        max-width: 155px;
+    }
+
+    .tw-max-w-\[18px\]{
+        max-width: 18px;
+    }
+
+    .tw-max-w-\[293px\]{
+        max-width: 293px;
+    }
+
+    .tw-max-w-\[333px\]{
+        max-width: 333px;
+    }
+
+    .tw-max-w-\[400px\]{
+        max-width: 400px;
+    }
+
+    .tw-max-w-\[436px\]{
+        max-width: 436px;
+    }
+
+    .tw-max-w-\[450px\]{
+        max-width: 450px;
+    }
+
+    .tw-max-w-\[480px\]{
+        max-width: 480px;
+    }
+
+    .tw-max-w-\[500px\]{
+        max-width: 500px;
+    }
+
+    .tw-max-w-\[522px\]{
+        max-width: 522px;
+    }
+
+    .tw-max-w-\[556px\]{
+        max-width: 556px;
+    }
+
+    .tw-max-w-\[560px\]{
+        max-width: 560px;
+    }
+
+    .tw-max-w-\[580px\]{
+        max-width: 580px;
+    }
+
+    .tw-max-w-\[594px\]{
+        max-width: 594px;
+    }
+
+    .tw-max-w-\[600px\]{
+        max-width: 600px;
+    }
+
+    .tw-max-w-\[64px\]{
+        max-width: 64px;
+    }
+
+    .tw-max-w-\[669px\]{
+        max-width: 669px;
+    }
+
+    .tw-max-w-\[80px\]{
+        max-width: 80px;
+    }
+
+    .tw-max-w-\[875px\]{
+        max-width: 875px;
+    }
+
+    .tw-max-w-\[880px\]{
+        max-width: 880px;
+    }
+
+    .tw-max-w-\[946px\]{
+        max-width: 946px;
+    }
+
+    .tw-max-w-full{
+        max-width: 100%;
+    }
+
+    .tw-flex-grow{
+        flex-grow: 1;
+    }
+
+    @keyframes tw-bounce{
+        0%, 100%{
+            transform: translateY(-25%);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+        }
+
+        50%{
+            transform: none;
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+        }
+    }
+
+    .tw-animate-bounce{
+        animation: tw-bounce 1s infinite;
+    }
+
+    .tw-cursor-grab{
+        cursor: grab;
+    }
+
+    .tw-select-none{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    .tw-flex-row{
+        flex-direction: row;
+    }
+
+    .tw-flex-col{
+        flex-direction: column;
+    }
+
+    .tw-flex-col-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .tw-flex-wrap{
+        flex-wrap: wrap;
+    }
+
+    .tw-flex-wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+
+    .tw-flex-nowrap{
+        flex-wrap: nowrap;
+    }
+
+    .tw-items-start{
+        align-items: flex-start;
+    }
+
+    .tw-items-end{
+        align-items: flex-end;
+    }
+
+    .tw-items-center{
+        align-items: center;
+    }
+
+    .tw-justify-start{
+        justify-content: flex-start;
+    }
+
+    .tw-justify-end{
+        justify-content: flex-end;
+    }
+
+    .tw-justify-center{
+        justify-content: center;
+    }
+
+    .tw-justify-between{
+        justify-content: space-between;
+    }
+
+    .tw-justify-around{
+        justify-content: space-around;
+    }
+
+    .tw-gap-10{
+        gap: 2.5rem;
+    }
+
+    .tw-gap-16{
+        gap: 4rem;
+    }
+
+    .tw-gap-20{
+        gap: 5rem;
+    }
+
+    .tw-gap-4{
+        gap: 1rem;
+    }
+
+    .tw-gap-6{
+        gap: 1.5rem;
+    }
+
+    .tw-gap-8{
+        gap: 2rem;
+    }
+
+    .tw-gap-y-10{
+        row-gap: 2.5rem;
+    }
+
+    .tw-overflow-hidden{
+        overflow: hidden;
+    }
+
+    .tw-text-ellipsis{
+        text-overflow: ellipsis;
+    }
+
+    .tw-whitespace-normal{
+        white-space: normal;
+    }
+
+    .tw-whitespace-nowrap{
+        white-space: nowrap;
+    }
+
+    .tw-rounded{
+        border-radius: 0.25rem;
+    }
+
+    .tw-rounded-2xl{
+        border-radius: 1rem;
+    }
+
+    .tw-rounded-3xl{
+        border-radius: 1.5rem;
+    }
+
+    .tw-rounded-full{
+        border-radius: 9999px;
+    }
+
+    .tw-rounded-xl{
+        border-radius: 0.75rem;
+    }
+
+    .tw-border{
+        border-width: 1px;
+    }
+
+    .tw-border-y-2{
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+    }
+
+    .tw-border-b{
+        border-bottom-width: 1px;
+    }
+
+    .tw-border-b-0{
+        border-bottom-width: 0px;
+    }
+
+    .tw-border-b-2{
+        border-bottom-width: 2px;
+    }
+
+    .tw-border-r-2{
+        border-right-width: 2px;
+    }
+
+    .tw-border-kiire-international-orange{
+        --tw-border-opacity: 1;
+        border-color: rgb(255 89 0 / var(--tw-border-opacity, 1));
+    }
+
+    .tw-border-kiire-text{
+        --tw-border-opacity: 1;
+        border-color: rgb(23 27 91 / var(--tw-border-opacity, 1));
+    }
+
+    .tw-bg-\[\#D8D7FC\]{
+        --tw-bg-opacity: 1;
+        background-color: rgb(216 215 252 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-\[\#ECE4FF\]{
+        --tw-bg-opacity: 1;
+        background-color: rgb(236 228 255 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-\[\#EDFFBD\]{
+        --tw-bg-opacity: 1;
+        background-color: rgb(237 255 189 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-\[\#F8F8F8\]{
+        --tw-bg-opacity: 1;
+        background-color: rgb(248 248 248 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-contacto{
+        --tw-bg-opacity: 1;
+        background-color: rgb(253 255 248 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-green{
+        --tw-bg-opacity: 1;
+        background-color: rgb(244 255 215 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-green-body{
+        --tw-bg-opacity: 1;
+        background-color: rgb(229 252 166 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-green-buttons{
+        --tw-bg-opacity: 1;
+        background-color: rgb(188 234 61 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-green-light{
+        --tw-bg-opacity: 1;
+        background-color: rgb(251 254 233 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-item-selected{
+        --tw-bg-opacity: 1;
+        background-color: rgb(250 255 237 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-lime{
+        --tw-bg-opacity: 1;
+        background-color: rgb(250 255 228 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-lime-100{
+        --tw-bg-opacity: 1;
+        background-color: rgb(242 255 197 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-lime-200{
+        --tw-bg-opacity: 1;
+        background-color: rgb(228 255 146 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-orange{
+        --tw-bg-opacity: 1;
+        background-color: rgb(254 248 237 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-purple{
+        --tw-bg-opacity: 1;
+        background-color: rgb(188 185 245 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-purple2{
+        --tw-bg-opacity: 1;
+        background-color: rgb(236 228 255 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-text{
+        --tw-bg-opacity: 1;
+        background-color: rgb(23 27 91 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-kiire-white{
+        --tw-bg-opacity: 1;
+        background-color: rgb(250 250 250 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-white{
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+    }
+
+    .tw-bg-green-section-bg{
+        background-image: url(https://kiire.com/sites/default/files/2025-08/green-section-bg%201.png);
+    }
+
+    .tw-bg-contain{
+        background-size: contain;
+    }
+
+    .tw-bg-cover{
+        background-size: cover;
+    }
+
+    .tw-bg-center{
+        background-position: center;
+    }
+
+    .tw-bg-repeat{
+        background-repeat: repeat;
+    }
+
+    .tw-bg-no-repeat{
+        background-repeat: no-repeat;
+    }
+
+    .tw-object-cover{
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .tw-p-12{
+        padding: 3rem;
+    }
+
+    .tw-p-6{
+        padding: 1.5rem;
+    }
+
+    .tw-px-10{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .tw-px-16{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .tw-px-4{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .tw-px-6{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .tw-py-0{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .tw-py-10{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .tw-py-12{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .tw-py-16{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .tw-py-20{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .tw-py-40{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .tw-py-8{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .tw-pb-10{
+        padding-bottom: 2.5rem;
+    }
+
+    .tw-pt-10{
+        padding-top: 2.5rem;
+    }
+
+    .tw-pt-9{
+        padding-top: 2.25rem;
+    }
+
+    .tw-text-center{
+        text-align: center;
+    }
+
+    .tw-text-right{
+        text-align: right;
+    }
+
+    .tw-text-start{
+        text-align: start;
+    }
+
+    .tw-font-bricolage-grotesque{
+        font-family: Bricolage Grotesque, serif;
+    }
+
+    .tw-font-mono{
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .tw-font-sora{
+        font-family: Sora, sans-serif;
+    }
+
+    .tw-text-2xl{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .tw-text-3xl{
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .tw-text-4xl{
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .tw-text-5xl{
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .tw-text-6xl{
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+
+    .tw-text-7xl{
+        font-size: 4.5rem;
+        line-height: 1;
+    }
+
+    .tw-text-base{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .tw-text-xl{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .tw-text-xs{
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+
+    .tw-font-bold{
+        font-weight: 700;
+    }
+
+    .tw-font-extrabold{
+        font-weight: 800;
+    }
+
+    .tw-font-medium{
+        font-weight: 500;
+    }
+
+    .tw-font-semibold{
+        font-weight: 600;
+    }
+
+    .tw-uppercase{
+        text-transform: uppercase;
+    }
+
+    .tw-ordinal{
+        --tw-ordinal: ordinal;
+        font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+    }
+
+    .tw-text-kiire-text{
+        --tw-text-opacity: 1;
+        color: rgb(23 27 91 / var(--tw-text-opacity, 1));
+    }
+
+    .tw-text-white{
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+    }
+
+    .tw-underline{
+        text-decoration-line: underline;
+    }
+
+    .tw-no-underline{
+        text-decoration-line: none;
+    }
+
+    .formkit-form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .formkit-form .alert{
+        border-radius: 0.25rem;
+        padding: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        line-height: 1.25;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+    }
+
+    .formkit-form .alert.success{
+        --tw-bg-opacity: 1;
+        background-color: rgb(22 101 52 / var(--tw-bg-opacity, 1));
+    }
+
+    .formkit-form .alert.error{
+        --tw-bg-opacity: 1;
+        background-color: rgb(153 27 27 / var(--tw-bg-opacity, 1));
+    }
+
+    .formkit-message{
+        --tw-text-opacity: 1;
+        color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+    }
+
+    .formkit-form > .formkit-messages{
+        display: none;
+    }
+
+    .tw-button,
+    .formkit-input[type="submit"]{
+        display: flex;
+        cursor: pointer;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        white-space: nowrap;
+        border-radius: 0.5rem;
+        border-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgb(23 27 91 / var(--tw-border-opacity, 1));
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+        font-family: Bricolage Grotesque, serif;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        --tw-text-opacity: 1;
+        color: rgb(23 27 91 / var(--tw-text-opacity, 1));
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    @media (min-width: 768px){
+        .tw-button,
+        .formkit-input[type="submit"]{
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .formkit-input[type="submit"]{
+        margin-top: 2.5rem;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .formkit-help{
+        margin-top: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+
+    .tw-button:hover, .formkit-input[type="submit"]:hover{
+        --tw-bg-opacity: 1;
+        background-color: rgb(145 213 0 / var(--tw-bg-opacity, 1));
+    }
+
+    .formkit-input[type="submit"]:disabled{
+        cursor: not-allowed;
+        --tw-border-opacity: 1;
+        border-color: rgb(75 85 99 / var(--tw-border-opacity, 1));
+        --tw-bg-opacity: 1;
+        background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+    }
+
+    .circle-button{
+        margin-left: 0.5rem;
+        height: 0px;
+        min-height: 0.5rem;
+        min-width: 0.5rem;
+        border-radius: 9999px;
+        border-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgb(23 27 91 / var(--tw-border-opacity, 1));
+        --tw-bg-opacity: 1;
+        background-color: rgb(254 248 237 / var(--tw-bg-opacity, 1));
+    }
+
+    .kiire-form-register{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .kiire-form-register input{
+        width: 100%;
+        border-bottom-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgb(23 27 91 / var(--tw-border-opacity, 1));
+        background-color: transparent;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        outline-width: 0px;
+    }
+
+    .tw-item-business{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-bottom-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgb(188 185 245 / var(--tw-border-opacity, 1));
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: Sora, sans-serif;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    .tw-item-business:hover{
+        --tw-bg-opacity: 1;
+        background-color: rgb(188 185 245 / var(--tw-bg-opacity, 1));
+    }
+
+    @media (min-width: 768px){
+        .tw-item-business{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .tw-item-business .tw-name{
+        margin-left: 2.5rem;
+        flex-grow: 1;
+        white-space: nowrap;
+    }
+
+    .tw-bg-hero-section {
+        background-image: url(https://kiire.com/sites/default/files/2025-08/Vector.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 40%;
+    }
+
+    @keyframes numberBackground1 {
+        0% {
+            background-color: #bcb9f5;
+        }
+
+        25% {
+            background-color: transparent;
+        }
+
+        50% {
+            background-color: transparent;
+        }
+
+        75% {
+            background-color: #bcb9f5;
+        }
+
+        100% {
+            background-color: #bcb9f5;
+        }
+    }
+
+    @keyframes numberBackground2 {
+        0% {
+            background-color: transparent;
+        }
+
+        25% {
+            background-color: #bcb9f5;
+        }
+
+        50% {
+            background-color: #bcb9f5;
+        }
+
+        75% {
+            background-color: transparent;
+        }
+
+        100% {
+            background-color: transparent;
+        }
+    }
+
+    .tw-number{
+        margin-right: 2.5rem;
+        display: flex;
+        min-height: 2rem;
+        min-width: 2rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.25rem;
+        border-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgb(23 27 91 / var(--tw-border-opacity, 1));
+    }
+
+    .tw-number-1 {
+        animation: numberBackground1 4s ease-in-out infinite;
+    }
+
+    .tw-number-2 {
+        animation: numberBackground2 4s ease-in-out infinite;
+    }
+
+    @keyframes moveImageY {
+        0% {
+            transform: translateY(0);
+            /* Posición inicial */
+        }
+
+        25% {
+            transform: translateY(-50%);
+            /* Mover 100px hacia abajo */
+        }
+
+        50% {
+            transform: translateY(-50%);
+        }
+
+        75% {
+            transform: translateY(0);
+            /* Posición inicial */
+        }
+
+        100% {
+            transform: translateY(0);
+            /* Posición inicial */
+        }
+    }
+
+    .tw-image-animation {
+        animation: moveImageY 4s ease-in-out infinite;
+        /* Duración de 3 segundos, de forma infinita */
+    }
+
+    @keyframes textChangeColor1 {
+        0% {
+            color: #171B5B;
+        }
+
+        25% {
+            color: #DEFA90;
+        }
+
+        50% {
+            color: #DEFA90;
+        }
+
+        75% {
+            color: #171B5B;
+        }
+
+        100% {
+            color: #171B5B;
+        }
+    }
+
+    .tw-text-animation-1 {
+        animation: textChangeColor1 4s ease-in-out infinite;
+        /* Duración de 3 segundos, de forma infinita */
+    }
+
+    @keyframes textChangeColor2 {
+        0% {
+            color: #DEFA90;
+        }
+
+        25% {
+            color: #171B5B;
+        }
+
+        50% {
+            color: #171B5B;
+        }
+
+        75% {
+            color: #DEFA90;
+        }
+
+        100% {
+            color: #DEFA90;
+        }
+    }
+
+    .tw-text-animation-2 {
+        animation: textChangeColor2 4s ease-in-out infinite;
+        /* Duración de 3 segundos, de forma infinita */
+    }
+
+    /* Drupal */
+
+    .layout-container main{
+        max-width: 100% !important;
+    }
+
+    #block-simplenewssubscription {
+        padding: 4% 0;
+        margin: 0;
+    }
+
+    .dragging img.drag-image {
+        pointer-events: none !important;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px){
+        .md\:tw-my-20{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        .md\:tw-mb-20{
+            margin-bottom: 5rem;
+        }
+
+        .md\:tw-ml-20{
+            margin-left: 5rem;
+        }
+
+        .md\:tw-mt-0{
+            margin-top: 0px;
+        }
+
+        .md\:tw-mt-20{
+            margin-top: 5rem;
+        }
+
+        .md\:tw-mt-24{
+            margin-top: 6rem;
+        }
+
+        .md\:tw-mt-32{
+            margin-top: 8rem;
+        }
+
+        .md\:tw-hidden{
+            display: none;
+        }
+
+        .md\:tw-h-\[70vh\]{
+            height: 70vh;
+        }
+
+        .md\:tw-h-screen{
+            height: 100vh;
+        }
+
+        .md\:tw-min-h-screen{
+            min-height: 100vh;
+        }
+
+        .md\:tw-w-1\/2{
+            width: 50%;
+        }
+
+        .md\:tw-w-1\/3{
+            width: 33.333333%;
+        }
+
+        .md\:tw-w-2\/3{
+            width: 66.666667%;
+        }
+
+        .md\:tw-max-w-\[162px\]{
+            max-width: 162px;
+        }
+
+        .md\:tw-max-w-\[300px\]{
+            max-width: 300px;
+        }
+
+        .md\:tw-max-w-\[359px\]{
+            max-width: 359px;
+        }
+
+        .md\:tw-max-w-full{
+            max-width: 100%;
+        }
+
+        .md\:tw-flex-row{
+            flex-direction: row;
+        }
+
+        .md\:tw-flex-nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .md\:tw-items-center{
+            align-items: center;
+        }
+
+        .md\:tw-justify-end{
+            justify-content: flex-end;
+        }
+
+        .md\:tw-justify-between{
+            justify-content: space-between;
+        }
+
+        .md\:tw-gap-10{
+            gap: 2.5rem;
+        }
+
+        .md\:tw-gap-20{
+            gap: 5rem;
+        }
+
+        .md\:tw-border-b-0{
+            border-bottom-width: 0px;
+        }
+
+        .md\:tw-border-r-2{
+            border-right-width: 2px;
+        }
+
+        .md\:tw-px-10{
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+
+        .md\:tw-px-16{
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+        .md\:tw-py-20{
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .md\:tw-py-40{
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+
+        .md\:tw-text-start{
+            text-align: start;
+        }
+
+        .md\:tw-text-2xl{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .md\:tw-text-3xl{
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+
+        .md\:tw-text-5xl{
+            font-size: 3rem;
+            line-height: 1;
+        }
+
+        .md\:tw-text-6xl{
+            font-size: 3.75rem;
+            line-height: 1;
+        }
+
+        .md\:tw-text-7xl{
+            font-size: 4.5rem;
+            line-height: 1;
+        }
+
+        .md\:tw-text-xl{
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+    }
+
+    @media (min-width: 1024px){
+        .lg\:tw-mb-0{
+            margin-bottom: 0px;
+        }
+
+        .lg\:tw-block{
+            display: block;
+        }
+
+        .lg\:tw-w-auto{
+            width: auto;
+        }
+
+        .lg\:tw-flex-row{
+            flex-direction: row;
+        }
+
+        .lg\:tw-gap-\[100px\]{
+            gap: 100px;
+        }
+
+        .lg\:tw-py-0{
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .lg\:tw-py-20{
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+</style>
+
+<div>
+    <div class="tw-font-sora tw-text-kiire-text tw-bg-kiire-purple2 tw-bg-hero-section">
+        <div class="tw-mx-auto tw-flex tw-flex-col-reverse md:tw-flex-row tw-items-center tw-py-10 lg:tw-py-20">
+            <div class="tw-flex tw-flex-col lg:tw-flex-row tw-w-full tw-gap-8 lg:tw-gap-[100px] tw-items-center tw-justify-center">
+                <h2 class="tw-font-bricolage-grotesque tw-font-extrabold tw-text-5xl md:tw-text-6xl md:tw-text-start tw-mt-10 md:tw-mt-0 tw-uppercase tw-ml-4 tw-max-w-[560px]">
+                    Remodelar tu negocio con Kiire no cuesta o que lo diga nuestra ganadora
+                </h2>
+
+                <div id="scroll-container" class="tw-flex tw-items-end tw-gap-10 tw-w-full lg:tw-w-auto tw-px-4 tw-overflow-hidden tw-cursor-grab tw-active:cursor-grabbing tw-select-none tw-whitespace-nowrap">
+                    <a href="https://www.instagram.com/p/DKhpvJNI8yp/" target="_blank">
+                        <div class="tw-flex tw-flex-col tw-uppercase tw-text-xs tw-text-center tw-gap-4 tw-max-w-[333px]">
+                            <img class="tw-min-w-[333px] tw-object-cover drag-image" src="https://kiire.com/sites/default/files/2025-08/historia1.png" alt="Historia 1">
+
+                            <div class="tw-whitespace-normal tw-min-h-[32px]">Miren cómo fue su linda reacción</div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/p/DK2j8jXxjuD/" target="_blank">
+                        <div class="tw-flex tw-flex-col tw-uppercase tw-text-xs tw-text-center tw-gap-4 tw-max-w-[333px]">
+                            <img class="tw-min-w-[333px] tw-object-cover drag-image" src="https://kiire.com/sites/default/files/2025-08/historia2.png" alt="Historia 2">
+
+                            <div class="tw-whitespace-normal tw-min-h-[32px]">
+                                Y ahora que Claudia nos cuente su historia
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/p/DKmycRLpc78/" target="_blank">
+                        <div class="tw-flex tw-flex-col tw-uppercase tw-text-xs tw-text-center tw-gap-4 tw-max-w-[333px]">
+                            <img class="tw-min-w-[333px] tw-object-cover drag-image" src="https://kiire.com/sites/default/files/2025-08/historia3.png" alt="Historia 2">
+
+                            <div class="tw-whitespace-normal tw-min-h-[32px]">Miren cómo quedó esta belleza, así fue cómo quedó el negocio de Claudia</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tw-bg-kiire-green tw-text-kiire-text tw-bg-green-section-bg tw-min-h-screen tw-bg-contain tw-bg-repeat tw-flex tw-items-center tw-tw-px-4 tw-py-8 tw-px-4">
+        <div class="tw-container tw-flex tw-flex-col md:tw-flex-row tw-gap-4 tw-mx-auto">
+            <div class="tw-flex tw-items-center tw-justify-center tw-w-full md:tw-w-1/2">
+                <div class="tw-flex tw-flex-col tw-gap-10 tw-w-full md:tw-max-w-[359px]">
+                    <div class="tw-flex tw-gap-10 tw-items-center tw-bg-kiire-green-light tw-border tw-border-kiire-text tw-rounded-xl tw-p-6">
+                        Afíliate, recibe tus pagos electrónicos con nuestros datáfonos y participa.
+
+                        <svg class="tw-w-full" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" stroke="#171B5B"/>
+                            <path d="M36 22.897V24.001C35.9985 26.5887 35.1606 29.1066 33.6112 31.1792C32.0618 33.2518 29.8839 34.768 27.4024 35.5017C24.9209 36.2354 22.2687 36.1473 19.8414 35.2505C17.414 34.3537 15.3416 32.6963 13.9332 30.5255C12.5247 28.3547 11.8557 25.7867 12.026 23.2046C12.1963 20.6225 13.1966 18.1646 14.8779 16.1975C16.5592 14.2304 18.8313 12.8595 21.3554 12.2892C23.8795 11.7189 26.5203 11.9798 28.884 13.033" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M36.0004 14.4004L24.0004 26.4124L20.4004 22.8124" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <div class="tw-bg-kiire-green-light tw-border tw-rounded-xl tw-border-kiire-text tw-flex tw-flex-col tw-items-center">
+                        <div class="tw-overflow-hidden tw-max-h-[450px]">
+                            <img class="tw-image-animation" src="https://kiire.com/sites/default/files/2025-01/kiire-datafonos.png" alt="Kiire Datafonos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-flex-col tw-gap-10 tw-items-start tw-justify-center tw-w-full md:tw-w-1/2">
+                <div class="tw-flex tw-items-start tw-w-full">
+                    <div class="tw-number tw-number-1">
+                        01
+                    </div>
+
+                    <div class="tw-w-full">
+                        <!-- Kiire pro text                        -->
+                        <svg class="tw-w-full tw-text-animation-1" width="464" height="63" viewBox="0 0 464 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36.72 13.72L24.048 37.12L37.728 61.816H24.84L14.184 42.232H11.376V61.816H0V13.72H11.376V32.728H14.256L24.336 13.72H36.72Z" fill="currentColor"/>
+                            <path d="M53.0713 61.816H41.6953V13.72H53.0713V61.816Z" fill="currentColor"/>
+                            <path d="M72.0557 61.816H60.6797V13.72H72.0557V61.816Z" fill="currentColor"/>
+                            <path d="M103.136 29.128C103.136 24.808 101.192 22.864 97.0881 22.864H90.8961V35.536H97.0881C101.192 35.536 103.136 33.52 103.136 29.128ZM116.744 61.816H104.792C103.856 60.448 103.208 58.936 102.848 56.632L101.624 49.144C100.976 45.616 99.3921 44.248 96.0081 44.248H90.8961V61.816H79.6641V13.72H98.3841C109.112 13.72 114.8 18.616 114.8 27.832C114.8 34.168 110.984 38.848 105.44 39.712V39.856C109.472 40.648 111.776 43.096 112.64 47.416L114.296 56.2C114.872 58.576 115.592 60.376 116.744 61.816Z" fill="currentColor"/>
+                            <path d="M132.586 41.8V52.456H151.018V61.816H121.57V13.72H150.946V23.08H132.586V33.16H148.57V41.8H132.586Z" fill="currentColor"/>
+                            <path d="M205.967 29.92C205.967 40.072 199.703 46.048 189.047 46.048H183.359V61.816H172.055V13.72H189.047C199.991 13.72 205.967 19.48 205.967 29.92ZM194.447 29.92C194.447 25.024 192.359 22.792 187.967 22.792H183.359V37.12H187.967C192.359 37.12 194.447 34.816 194.447 29.92Z" fill="currentColor"/>
+                            <path d="M234.55 29.128C234.55 24.808 232.606 22.864 228.502 22.864H222.31V35.536H228.502C232.606 35.536 234.55 33.52 234.55 29.128ZM248.158 61.816H236.206C235.27 60.448 234.622 58.936 234.262 56.632L233.038 49.144C232.39 45.616 230.806 44.248 227.422 44.248H222.31V61.816H211.078V13.72H229.798C240.526 13.72 246.214 18.616 246.214 27.832C246.214 34.168 242.398 38.848 236.854 39.712V39.856C240.886 40.648 243.19 43.096 244.054 47.416L245.71 56.2C246.286 58.576 247.006 60.376 248.158 61.816Z" fill="currentColor"/>
+                            <path d="M251.04 37.768C251.04 22.216 258.456 13 270.912 13C283.296 13 290.712 22.216 290.712 37.768C290.712 53.32 283.296 62.536 270.912 62.536C258.456 62.536 251.04 53.32 251.04 37.768ZM278.976 37.768C278.976 27.688 276.168 22.432 270.912 22.432C265.512 22.432 262.776 27.688 262.776 37.768C262.776 47.848 265.512 53.104 270.912 53.104C276.168 53.104 278.976 47.848 278.976 37.768Z" fill="currentColor"/>
+                            <mask id="mask0_2033_501" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="13" width="291" height="50">
+                                <path d="M36.72 13.72L24.048 37.12L37.728 61.816H24.84L14.184 42.232H11.376V61.816H0V13.72H11.376V32.728H14.256L24.336 13.72H36.72Z" fill="currentColor"/>
+                                <path d="M53.0713 61.816H41.6953V13.72H53.0713V61.816Z" fill="currentColor"/>
+                                <path d="M72.0557 61.816H60.6797V13.72H72.0557V61.816Z" fill="currentColor"/>
+                                <path d="M103.136 29.128C103.136 24.808 101.192 22.864 97.0881 22.864H90.8961V35.536H97.0881C101.192 35.536 103.136 33.52 103.136 29.128ZM116.744 61.816H104.792C103.856 60.448 103.208 58.936 102.848 56.632L101.624 49.144C100.976 45.616 99.3921 44.248 96.0081 44.248H90.8961V61.816H79.6641V13.72H98.3841C109.112 13.72 114.8 18.616 114.8 27.832C114.8 34.168 110.984 38.848 105.44 39.712V39.856C109.472 40.648 111.776 43.096 112.64 47.416L114.296 56.2C114.872 58.576 115.592 60.376 116.744 61.816Z" fill="currentColor"/>
+                                <path d="M132.586 41.8V52.456H151.018V61.816H121.57V13.72H150.946V23.08H132.586V33.16H148.57V41.8H132.586Z" fill="currentColor"/>
+                                <path d="M205.967 29.92C205.967 40.072 199.703 46.048 189.047 46.048H183.359V61.816H172.055V13.72H189.047C199.991 13.72 205.967 19.48 205.967 29.92ZM194.447 29.92C194.447 25.024 192.359 22.792 187.967 22.792H183.359V37.12H187.967C192.359 37.12 194.447 34.816 194.447 29.92Z" fill="currentColor"/>
+                                <path d="M234.55 29.128C234.55 24.808 232.606 22.864 228.502 22.864H222.31V35.536H228.502C232.606 35.536 234.55 33.52 234.55 29.128ZM248.158 61.816H236.206C235.27 60.448 234.622 58.936 234.262 56.632L233.038 49.144C232.39 45.616 230.806 44.248 227.422 44.248H222.31V61.816H211.078V13.72H229.798C240.526 13.72 246.214 18.616 246.214 27.832C246.214 34.168 242.398 38.848 236.854 39.712V39.856C240.886 40.648 243.19 43.096 244.054 47.416L245.71 56.2C246.286 58.576 247.006 60.376 248.158 61.816Z" fill="currentColor"/>
+                                <path d="M251.04 37.768C251.04 22.216 258.456 13 270.912 13C283.296 13 290.712 22.216 290.712 37.768C290.712 53.32 283.296 62.536 270.912 62.536C258.456 62.536 251.04 53.32 251.04 37.768ZM278.976 37.768C278.976 27.688 276.168 22.432 270.912 22.432C265.512 22.432 262.776 27.688 262.776 37.768C262.776 47.848 265.512 53.104 270.912 53.104C276.168 53.104 278.976 47.848 278.976 37.768Z" fill="currentColor"/>
+                            </mask>
+                            <g mask="url(#mask0_2033_501)">
+                                <rect x="-7.81592" y="3.81641" width="305" height="63" fill="currentColor"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="tw-flex tw-items-start tw-w-full">
+                    <div class="tw-number tw-number-2">
+                        02
+                    </div>
+
+                    <div class="tw-w-full">
+                        <svg class="tw-w-full tw-text-animation-2" width="465" height="64" viewBox="0 0 465 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32.4244 42.4084L32.4964 32.7604H32.3524L25.0804 51.5524H18.8884L11.6164 32.7604H11.4724L11.5444 42.4084V63.0004H0.816406V14.9044H13.0564L21.9844 37.0084H22.2004L31.1284 14.9044H43.1524V63.0004H32.4244V42.4084Z" fill="currentColor"/>
+                            <path d="M62.1846 63.0004H50.8086V14.9044H62.1846V63.0004Z" fill="currentColor"/>
+                            <path d="M80.521 14.9044L95.569 42.9124H95.713V14.9044H106.369V63.0004H96.433L80.665 34.4164H80.449V63.0004H69.793V14.9044H80.521Z" fill="currentColor"/>
+                            <path d="M125.396 63.0004H114.02V14.9044H125.396V63.0004Z" fill="currentColor"/>
+                            <path d="M163.112 63.0004H147.488V14.9044H163.112C176.936 14.9044 184.64 23.4004 184.64 38.9524C184.64 54.4324 176.936 63.0004 163.112 63.0004ZM162.752 24.3364H158.792V53.6404H162.752C169.448 53.6404 172.904 48.6724 172.904 38.9524C172.904 29.2324 169.448 24.3364 162.752 24.3364Z" fill="currentColor"/>
+                            <path d="M210.305 44.2084L205.697 26.9284H205.481L200.873 44.2084H210.305ZM212.537 14.9044L226.649 63.0004H215.345L212.537 52.6324H198.641L195.905 63.0004H185.033L199.145 14.9044H212.537Z" fill="currentColor"/>
+                            <path d="M260.785 24.3364H248.257V63.0004H236.953V24.3364H224.497V14.9044H260.785V24.3364Z" fill="currentColor"/>
+                            <path d="M283.922 44.2084L279.314 26.9284H279.098L274.49 44.2084H283.922ZM286.154 14.9044L300.266 63.0004H288.962L286.154 52.6324H272.258L269.522 63.0004H258.65L272.762 14.9044H286.154ZM278.594 0.648438H291.914L282.986 11.8804H274.778L278.594 0.648438Z" fill="currentColor"/>
+                            <path d="M331.275 44.8564H316.011V63.0004H304.707V14.9044H333.363V24.3364H316.011V35.8564H331.275V44.8564Z" fill="currentColor"/>
+                            <path d="M337.216 38.9524C337.216 23.4004 344.632 14.1844 357.088 14.1844C369.472 14.1844 376.888 23.4004 376.888 38.9524C376.888 54.5044 369.472 63.7204 357.088 63.7204C344.632 63.7204 337.216 54.5044 337.216 38.9524ZM365.152 38.9524C365.152 28.8724 362.344 23.6164 357.088 23.6164C351.688 23.6164 348.952 28.8724 348.952 38.9524C348.952 49.0324 351.688 54.2884 357.088 54.2884C362.344 54.2884 365.152 49.0324 365.152 38.9524Z" fill="currentColor"/>
+                            <path d="M393.271 14.9044L408.319 42.9124H408.463V14.9044H419.119V63.0004H409.183L393.415 34.4164H393.199V63.0004H382.543V14.9044H393.271Z" fill="currentColor"/>
+                            <path d="M424.826 38.9524C424.826 23.4004 432.242 14.1844 444.698 14.1844C457.082 14.1844 464.498 23.4004 464.498 38.9524C464.498 54.5044 457.082 63.7204 444.698 63.7204C432.242 63.7204 424.826 54.5044 424.826 38.9524ZM452.762 38.9524C452.762 28.8724 449.954 23.6164 444.698 23.6164C439.298 23.6164 436.562 28.8724 436.562 38.9524C436.562 49.0324 439.298 54.2884 444.698 54.2884C449.954 54.2884 452.762 49.0324 452.762 38.9524Z" fill="currentColor"/>
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div class="tw-flex tw-gap-4 tw-flex-wrap">
+                    <a href="https://bit.ly/40oITgJ" target="_blank">
+                        <div class="tw-button tw-px-10">
+                            <div class="circle-button"></div>
+                            Contacta a un asesor
+                        </div>
+                    </a>
+
+                    <a href="https://vinculate.kiire.com/?utm_source=home&utm_medium=internal&utm_campaign=Remodelamos+tu+negocio" target="_blank">
+                        <div class="tw-button tw-bg-kiire-green-buttons">
+                            <div class="tw-circle-button"></div>
+                            Los quiero
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tw-bg-[#D8D7FC] tw-text-kiire-text tw-py-10 lg:tw-py-0 tw-px-4">
+        <div class="tw-container tw-flex tw-flex-col lg:tw-flex-row tw-justify-between tw-items-center tw-mx-auto tw-tw-px-4 tw-gap-10">
+            <svg class="tw-mb-10 lg:tw-mb-0 tw-w-full tw-max-w-[522px]" width="522" height="331" viewBox="0 0 522 331" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2049_242)">
+                    <path d="M74.7857 35.082L30.9621 181.911L312.707 35.082L-0.345947 426.079L399.321 192.746L5.91457 673.291L373.235 460.134L255.318 684.645" stroke="#FEF8ED" stroke-width="90" stroke-linejoin="bevel"/>
+                    <path d="M331.207 233.668C332.998 291.152 351.065 316.121 371.838 316.761C398.956 317.602 454.392 261.605 460.107 257.218C465.816 252.832 473.215 258.017 484.248 259.566C495.394 261.123 502.8 260.992 506.466 257.934C509.841 255.118 507.62 252.646 507.62 252.646C507.62 252.646 513.872 250.449 515.609 247.778C517.718 244.527 514.953 242.999 514.953 242.999C514.953 242.999 520.032 240.692 520.834 237.586C521.782 233.902 518.354 233.289 518.354 233.289C518.354 233.289 522.279 230.081 519.839 226.913C517.3 223.621 507.03 225.24 502.647 224.276C492.344 222.017 483.844 218.402 483.844 218.402C483.844 218.402 497.621 214.69 492.973 209.905C489.035 205.862 479.163 208.7 473.673 207.467C468.176 206.241 460.399 206.544 453.145 210.228C417.355 228.449 390.37 243.074 390.37 243.074C390.37 243.074 345.562 262.734 342.625 237.634C340.099 216.04 341.723 179.613 331.565 175.908C317.721 170.861 329.51 179.152 331.214 233.668H331.207Z" fill="white" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M463.389 231.532C467.659 231.745 471.982 229.817 474.767 226.45C476.006 224.949 476.948 223.2 478.161 221.678C479.375 220.149 480.972 218.806 482.869 218.559" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M490.076 231.305C494.147 233.99 499.286 234.155 504.086 233.708C508.886 233.26 513.726 232.283 518.494 233.006" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M487.537 240.508C491.422 242.725 495.904 243.792 500.333 243.538C502.952 243.386 505.525 242.794 508.13 242.477C510.736 242.167 513.448 242.154 515.894 243.131" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M507.838 252.859C506.831 251.84 505.392 251.392 503.993 251.282C502.587 251.172 501.182 251.365 499.783 251.44C495.281 251.688 490.726 250.759 486.655 248.762" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M197.793 233.668C196.002 291.152 177.935 316.121 157.162 316.761C130.044 317.602 74.6081 261.605 68.8927 257.218C63.1841 252.832 55.7846 258.017 44.7518 259.566C33.6063 261.123 26.2002 260.992 22.5337 257.934C19.1588 255.118 21.38 252.646 21.38 252.646C21.38 252.646 15.1276 250.449 13.3905 247.778C11.282 244.527 14.0469 242.999 14.0469 242.999C14.0469 242.999 8.96806 240.692 8.16579 237.586C7.21766 233.902 10.6455 233.289 10.6455 233.289C10.6455 233.289 6.72039 230.081 9.16034 226.913C11.6997 223.621 21.9701 225.24 26.3527 224.276C36.6562 222.017 45.1563 218.402 45.1563 218.402C45.1563 218.402 31.3785 214.69 36.0263 209.905C39.9647 205.862 49.8373 208.7 55.3271 207.467C60.8237 206.241 68.601 206.544 75.8546 210.228C111.645 228.449 138.63 243.074 138.63 243.074C138.63 243.074 183.438 262.734 186.375 237.634C188.901 216.04 187.277 179.613 197.434 175.908C211.279 170.861 199.49 179.152 197.786 233.668H197.793Z" fill="white" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M65.6041 231.532C61.3342 231.745 57.0112 229.817 54.2265 226.45C52.9866 224.949 52.0451 223.2 50.8318 221.678C49.6184 220.149 48.0205 218.806 46.1243 218.559" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M38.917 231.305C34.846 233.99 29.7075 234.155 24.9072 233.708C20.1068 233.26 15.2667 232.283 10.4995 233.006" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M41.4564 240.508C37.5711 242.725 33.089 243.792 28.66 243.538C26.041 243.386 23.4684 242.794 20.8627 242.477C18.257 242.167 15.5452 242.154 13.0986 243.131" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M21.1545 252.859C22.1623 251.84 23.6011 251.392 25.0001 251.282C26.4057 251.172 27.8114 251.365 29.2104 251.44C33.7123 251.688 38.2674 250.759 42.3384 248.762" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M288.177 247.21C293.289 280.504 397.139 307.214 387.134 263.282C387.134 263.282 384.33 216.009 367.469 183.108C350.866 150.716 324.392 142.887 302.903 142.267C289.37 141.888 283.058 213.916 288.177 247.21Z" fill="#EAFFAE"/>
+                    <path d="M435.827 285.885C421.061 298.569 402.921 313.856 376.386 321.362C328.449 334.927 313.186 296.117 320.592 256.385C327.773 217.865 302.246 142.215 304.149 142.277C375.253 144.681 359.963 251.655 359.963 251.655C371.334 249.933 398.134 236.932 402.616 233.531C408.868 253.273 422.136 269.937 435.82 285.885H435.827Z" fill="#EAFFAE"/>
+                    <path d="M164.681 267.579C165.278 267.338 165.563 266.622 165.324 266.009C162.964 259.929 157.819 254.027 150.035 248.477C144.299 244.38 139.307 242.059 139.101 241.97C138.511 241.701 137.828 241.977 137.57 242.59C137.304 243.209 137.576 243.919 138.166 244.187C138.365 244.284 157.925 253.421 163.169 266.925C163.348 267.4 163.786 267.682 164.25 267.682C164.396 267.682 164.548 267.655 164.688 267.579H164.681Z" fill="#171B5B"/>
+                    <path d="M226.091 142.267C204.602 142.887 178.127 150.716 161.525 183.108C144.664 216.009 141.859 263.282 141.859 263.282C131.854 307.214 235.705 280.51 240.817 247.21C245.929 213.916 239.623 141.888 226.091 142.267Z" fill="#EAFFAE"/>
+                    <path d="M126.377 233.531C130.86 236.932 157.666 249.933 169.03 251.655C169.03 251.655 153.741 144.681 224.844 142.277C226.754 142.215 201.22 217.865 208.401 256.385C215.807 296.117 200.544 334.927 152.607 321.362C126.066 313.856 107.932 298.569 93.1663 285.885C106.858 269.937 120.118 253.28 126.371 233.531H126.377Z" fill="#EAFFAE"/>
+                    <path d="M240.339 336.316C249.781 322.854 340.139 319.253 350.846 332.068C350.846 332.068 367.833 441.087 370.346 554.775C372.05 631.939 375.829 699.484 377.295 723.716C377.653 729.652 374.185 735.092 368.788 737.082C362.635 739.347 353.817 742.053 343.798 743.479C326.964 745.868 304.143 746.075 286.977 745.779C273.57 745.545 262.942 733.962 263.353 720.046C265.316 653.465 269.95 474.119 264.162 440.901C257.014 399.936 230.898 349.786 240.339 336.323V336.316Z" fill="#171B5B"/>
+                    <path d="M286.957 747.195C280.108 747.071 273.729 744.172 268.995 739.021C264.261 733.87 261.775 727.108 261.981 719.988C264.129 647.038 268.511 473.821 262.809 441.14C259.932 424.655 253.839 406.283 248.461 390.087C239.935 364.375 233.185 344.075 239.225 335.46C244.616 327.782 271.833 323.926 293.501 322.962C316.442 321.943 345.483 323.465 351.887 331.115C352.053 331.315 352.166 331.563 352.206 331.824C352.371 332.912 369.232 442.241 371.725 554.731C373.416 631.414 377.149 698.38 378.674 723.617C379.065 730.138 375.2 736.225 369.252 738.415C363.451 740.557 354.367 743.407 343.984 744.881C330.631 746.782 313.518 747.298 298.785 747.298C294.602 747.298 290.61 747.264 286.957 747.188V747.195ZM293.627 325.813C266.748 327.011 245.299 331.673 241.46 337.14C236.268 344.55 243.455 366.206 251.074 389.15C256.477 405.45 262.61 423.925 265.528 440.63C271.27 473.58 266.887 647.031 264.739 720.078C264.553 726.427 266.768 732.459 270.991 737.052C275.208 741.645 280.897 744.227 287.003 744.337C303.453 744.626 326.639 744.468 343.613 742.058C353.764 740.612 362.662 737.816 368.331 735.73C373.111 733.967 376.234 729.064 375.916 723.81C374.391 698.559 370.658 631.551 368.96 554.807C366.554 446.098 350.701 340.336 349.54 332.726C344.415 327.417 321.62 324.587 293.614 325.82L293.627 325.813Z" fill="#171B5B"/>
+                    <path d="M180.905 327.83C197.03 306.298 307.922 334.262 307.922 334.262C307.922 334.262 307.637 347.903 304.149 386.485C300.662 425.067 280.685 430.032 280.685 430.032C281.149 459.828 275.288 531.773 268.995 599.262C264.308 649.558 259.375 697.367 256.637 723.396C255.324 735.874 245.763 745.645 233.742 746.871C223.366 747.931 210.384 748.496 197.885 746.926C174.341 743.978 157.54 738.07 147.515 733.574C140.871 730.599 137.019 723.341 138.047 715.904C143.53 676.468 161.001 551.239 163.421 539.182C165.152 530.616 165.907 480.878 165.291 419.641C164.648 355.415 180.892 327.823 180.892 327.823L180.905 327.83Z" fill="#171B5B"/>
+                    <path d="M186.024 289.908C185.752 281.397 185.42 272.115 185.778 261.889C189.16 218.838 159.808 185.867 178.996 163.316C178.624 161.567 178.896 160.403 180.129 159.838C181.853 159.04 183.518 158.234 185.135 157.421C207.254 139.063 239.239 136.364 246.041 136.102C252.778 135.627 260.396 135.558 269.155 135.992C286.937 136.867 321.255 140.138 342.492 156.884C353.366 165.457 354.997 188.539 353.684 212.682C353.154 222.467 352.139 232.417 351.059 241.658C349.978 250.892 348.838 259.417 348.055 266.33C347.359 272.459 347.558 294.542 347.763 297.524C349.646 324.138 353.989 343.295 353.989 343.295C353.989 343.295 359.214 358.747 286.572 362.7C213.937 366.646 175.581 336.512 179.546 327.905C181.582 320.413 183.942 303.804 186.017 289.915L186.024 289.908Z" fill="#EAFFAE"/>
+                    <path d="M284.928 202.641C286.44 202.124 287.255 200.431 286.758 198.861C286.261 197.291 284.63 196.444 283.118 196.96C281.606 197.476 280.791 199.17 281.288 200.734C281.785 202.304 283.416 203.157 284.928 202.641Z" fill="#171B5B"/>
+                    <path d="M296.02 138.731C297.797 145.658 297.539 161.723 292.931 167.067C289.503 171.047 284.059 174.442 275.427 174.882C263.048 175.523 255.33 170.964 250.636 166.027C246.114 161.262 242.898 145.961 243.8 139.337C245.08 129.972 247.089 112.591 246.87 97.2564C246.558 74.9595 290.836 96.7055 292.732 109.816C292.732 109.816 288.396 107 290.292 115.525C291.538 121.151 294.29 132.003 296.02 138.724V138.731Z" fill="white"/>
+                    <path d="M295.795 137.549C295.941 137.515 296.1 137.515 296.259 137.549C335.889 146.136 345.695 151.211 361.833 171.497C368.49 179.871 374.576 194.386 379.921 214.659C383.885 229.698 385.934 242.471 385.954 242.595C386.06 243.249 385.629 243.869 385.006 243.972C384.94 243.986 384.88 243.986 384.814 243.986C384.257 243.986 383.766 243.573 383.673 242.981C383.594 242.478 375.472 192.403 360.049 173.019C344.223 153.125 335.219 148.45 296.133 139.966C296.074 139.14 295.961 138.334 295.789 137.542L295.795 137.549Z" fill="#EAFFAE"/>
+                    <path d="M180.348 330.807C184.346 303.476 188.358 275.781 185.467 248.299C184.306 237.288 182.052 226.429 181.044 215.404C180.043 204.38 180.348 192.983 184.167 182.641" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M354.062 347.705C349.6 328.204 347.796 308.042 348.738 288.017C349.388 274.149 351.311 259.964 347.777 246.57" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M336.253 231.691C326.394 233.372 316.276 233.413 306.404 231.802" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M269.917 174.066C270.607 186.971 270.679 199.91 270.129 212.821" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M299.077 143.586C306.536 149.288 311.264 158.666 311.522 168.286C311.781 177.899 307.564 187.539 300.423 193.668C299.177 194.735 297.738 195.74 296.12 195.734C294.197 195.734 292.579 194.315 291.194 192.931C286.062 187.787 281.58 181.948 277.906 175.599" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M239.802 143.586C232.343 149.288 227.616 158.666 227.357 168.286C227.098 177.899 231.315 187.539 238.456 193.668C239.703 194.735 241.141 195.74 242.759 195.734C244.682 195.734 246.3 194.315 247.685 192.931C252.817 187.787 257.299 181.948 260.973 175.599" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M206.153 53.7282C206.372 59.416 208.607 64.5048 212.101 68.3403C210.516 71.6387 209.681 75.3847 209.84 79.3372C210.324 91.8215 220.468 101.531 232.482 101.021C244.503 100.519 253.852 89.983 253.361 77.5055C253.142 71.8177 250.908 66.729 247.414 62.8935C248.117 61.4336 248.66 59.8774 249.045 58.2592C250.218 58.3625 251.405 58.4038 252.612 58.3556C256.888 58.1765 260.893 57.0128 264.454 55.0847C267.305 57.0886 270.534 58.5553 273.981 59.3609C273.981 59.6983 273.961 60.022 273.968 60.3594C274.459 73.0021 284.729 82.8422 296.909 82.3257C309.082 81.8162 318.557 71.1498 318.06 58.5002C317.954 55.732 317.35 53.1084 316.382 50.6846C319.087 46.312 320.573 41.058 320.354 35.4665C319.883 23.3334 311.549 13.4658 300.662 10.9317C295.271 4.95466 287.514 1.36017 279.014 1.71824C274.737 1.89728 270.733 3.06101 267.172 4.98909C262.378 1.62872 256.544 -0.237384 250.318 0.0242837C234.81 0.678454 222.749 14.2645 223.372 30.3709C223.372 30.4811 223.385 30.5981 223.392 30.7083C213.181 32.9325 205.702 42.5316 206.14 53.7282H206.153Z" fill="#171B5B"/>
+                    <path d="M222.556 39.7066C224.91 38.4465 226.289 25.0877 243.502 20.4052C262.517 15.2338 268.896 23.7105 277.316 19.8818C295.583 11.5773 309.5 20.1642 314.625 35.0448C317.701 43.9691 317.615 55.1657 313.405 66.3417C309.341 77.1458 308.724 90.9729 308.724 90.9729C304.149 75.9201 300.94 59.8757 300.94 59.8757C280.068 75.0043 267.517 60.9637 256.802 56.4534C248.421 52.9278 235.844 50.2697 239.63 77.917C241.871 94.2644 241.851 83.8803 235.996 108.574C234.504 114.86 235.731 116.506 235.731 116.506C216.815 96.4473 200.033 51.7916 222.563 39.7066H222.556Z" fill="#171B5B"/>
+                    <path d="M303.493 80.2002C303.493 80.2002 305.422 71.2622 312.775 72.6945C320.128 74.1268 320.334 100.672 303.791 103.502L303.493 80.1933V80.2002Z" fill="white"/>
+                    <path d="M312.046 84.2266L307.345 88.7576C308.698 84.7361 312.046 84.2266 312.046 84.2266Z" fill="white"/>
+                    <path d="M227.244 78.8158C226.024 39.7309 261.47 35.8128 273.252 37.1142C283.204 38.216 302.028 42.8296 304.799 63.7768C309.931 102.566 303.639 134.055 279.193 139.42C248.395 146.168 228.537 119.96 227.251 78.8158H227.244Z" fill="white" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M259.633 70.7231C257.79 66.8738 252.658 66.805 249.575 68.8914C248.349 69.7797 245.736 71.8111 247.513 73.3329C247.825 73.5532 248.183 73.5945 248.534 73.5532C250.212 73.388 251.916 72.9817 253.52 72.9059C254.846 72.8509 256.67 72.9335 257.969 72.7063L258.917 72.417C259.607 72.2174 259.952 71.3841 259.627 70.7162L259.633 70.7231Z" fill="#171B5B"/>
+                    <path d="M299.581 69.3882C297.738 65.7455 292.791 65.4632 289.768 67.5497C288.488 68.4448 286.028 70.6415 287.905 72.0531C288.163 72.2115 288.455 72.2666 288.734 72.2321C290.484 71.998 291.963 71.6262 293.58 71.6262C295.099 71.6055 296.405 71.7639 298.043 71.4884L298.666 71.3576C299.521 71.1992 299.992 70.1663 299.574 69.3813L299.581 69.3882Z" fill="#171B5B"/>
+                    <path d="M234.915 90.6355C230.911 95.6003 196.791 53.6026 243.747 34.1428C272.231 22.3402 298.898 25.2667 304.918 43.6179C310.932 61.9691 309.871 68.2973 309.871 68.2973C309.871 68.2973 308.379 81.4634 306.204 79.3012C306.204 79.3012 306.642 62.6164 299.349 53.8023C291.406 46.1382 283.138 62.3478 270.845 58.3677C260.057 54.8697 245.776 50.0357 238.635 58.712C230.075 69.1099 238.038 86.7656 234.922 90.6355H234.915Z" fill="#171B5B"/>
+                    <path d="M234.783 108.567C217.783 109.6 213.208 85.5681 219.619 81.4158C227.582 76.2651 234.166 90.5673 234.166 90.5673" fill="white"/>
+                    <path d="M258.049 89.7984C258.115 88.0424 257.823 86.2108 256.868 84.7647C255.907 83.3186 254.19 82.3339 252.519 82.6369C251.08 82.8986 249.887 84.0623 249.297 85.4533C248.706 86.8443 248.647 88.4212 248.839 89.9223" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M295.212 87.7945C295.278 86.0385 294.986 84.2069 294.031 82.7608C293.077 81.3147 291.353 80.33 289.682 80.633C288.243 80.8947 287.05 82.0584 286.46 83.4494C285.87 84.8404 285.81 86.4173 286.002 87.9184" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M270.202 116.513C266.098 117.292 261.629 115.315 259.322 111.707" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M274.611 78.6445C272.682 83.7884 272.722 89.6966 274.711 94.8129C275.341 96.4311 276.176 98.0286 276.256 99.7777C276.395 102.89 273.663 105.824 270.666 105.782" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M306.722 88.6732C307.749 86.4697 309.639 84.7207 311.867 83.9219" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M229.439 96.3625C228.955 94.8132 227.867 93.4773 226.475 92.7267C225.083 91.9762 223.405 91.8178 221.907 92.2929" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M245.053 130.301C244.563 134.763 244.072 139.225 243.588 143.694" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M294.423 131.723C295.875 137.011 296.631 142.499 296.677 147.994" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M312.119 98.0766C313.889 95.3015 315.6 92.4576 316.727 89.3382C317.847 86.2189 318.351 82.7896 317.635 79.5463C316.919 76.303 314.87 73.287 311.933 71.9648" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M232.767 108.726C228.577 108.395 224.499 106.687 221.264 103.898" stroke="#171B5B" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M283.708 115.531C282.415 115.703 281.182 116.282 280.492 117.308C279.67 118.534 279.75 120.276 280.492 121.557C281.235 122.837 282.561 123.677 283.96 124.049C285.293 124.407 286.765 124.352 287.971 123.657C289.689 122.658 290.252 120.565 289.496 118.713C288.999 117.494 288.044 116.482 286.877 115.938C285.989 115.524 284.822 115.38 283.708 115.531Z" fill="#171B5B"/>
+                    <path d="M289.43 120.747C293.713 121.869 298.938 120.313 302.326 117.373C302.326 117.373 309.937 114.198 312.112 98.0781" stroke="#171B5B" stroke-miterlimit="10"/>
+                    <path d="M305.336 106.586C305.336 106.586 316.144 103.597 318.676 90.1486C321.209 76.7003 314.433 70.2481 311.688 66.1303C311.688 66.1303 303.228 61.7852 305.336 106.592V106.586Z" fill="#171B5B"/>
+                    <path d="M304.998 105.114C310.726 102.187 314.506 95.9829 315.653 89.4619C316.806 82.9408 315.58 76.165 313.253 69.9883" stroke="white" stroke-miterlimit="10"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_2049_242">
+                        <rect width="522" height="331" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <div class="tw-font-sora">
+                <div class="tw-font-bricolage-grotesque tw-text-5xl tw-font-extrabold tw-mb-10">
+                    Contáctanos
+                </div>
+
+                <div class="tw-flex tw-gap-10 tw-uppercase tw-flex-wrap">
+                    <a href="tel:6014824569" target="_blank">
+                        <div>
+                            <div class="tw-mb-5 tw-text-xs">Bogotá:</div>
+
+                            <div class="tw-text-xl tw-font-medium">(601) 4824569</div>
+                        </div>
+                    </a>
+
+                    <a href="https://bit.ly/40oITgJ" target="_blank">
+                        <div>
+
+                            <div class="tw-mb-5 tw-text-xs">canal de whatsapp</div>
+
+                            <div class="tw-text-xl tw-font-medium">(+57) 310 550 8278</div>
+                        </div>
+                    </a>
+
+                    <a href="tel:018000411722">
+                        <div>
+                            <div class="tw-mb-5 tw-text-xs">resto del país</div>
+
+                            <div class="tw-text-xl tw-font-medium">018000411722</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tw-bg-kiire-text tw-text-white tw-py-8 tw-text-xs">
+        <div class="tw-container tw-mx-auto tw-tw-px-4 tw-flex tw-flex-col lg:tw-flex-row tw-justify-between tw-uppercase tw-font-medium tw-text-center tw-gap-10">
+            Copyright Kiire, Inc. 2024. Todos los derechos reservados
+
+            <div class="tw-flex tw-flex-col lg:tw-flex-row tw-gap-10 tw-underline">
+                <div class="tw-flex tw-items-center tw-justify-center">
+                    <div class="tw-bg-kiire-green-buttons tw-h-0 tw-min-h-4 tw-min-w-4 tw-rounded-full tw-mr-4 tw-no-underline"></div>
+
+                    <a href="https://docs.google.com/document/d/1qP94GyVuU7jwSrt0_2mpVm9elITHlUqBgDilffJ218s/edit?tab=t.0" target="_blank">
+                        Conoce nuestros términos y condiciones aquí
+                    </a>
+                </div>
+
+                <div class="tw-flex tw-items-center tw-justify-center">
+                    <div class="tw-bg-kiire-green-buttons tw-h-0 tw-min-h-4 tw-min-w-4 tw-rounded-full tw-mr-4 tw-no-underline"></div>
+
+                    <a href="https://docs.google.com/document/d/1ZIEMFnVS2TmCBZ4B7Yu-gSmL9G1lTi5hFeQN46e8iX0/edit?tab=t.0" target="_blank">
+                        Preguntas frecuentes
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <script src="https://cdn.jsdelivr.net/gh/runegame/Kiire-Scroll@master/index.js"></script>
+</footer>

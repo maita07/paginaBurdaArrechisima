@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oráculo de Negocios - Ripple Effect</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .ripple-layer {
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Animación para el cambio entre cuestionario y resultado */
+        .fade-enter-active, .fade-leave-active {
+            transition: all 0.5s ease;
+        }
+        .fade-enter-from { opacity: 0; transform: translateY(20px); }
+        .fade-leave-to { opacity: 0; transform: translateY(-20px); }
+
+        /* Animación específica para los pasos (preguntas) */
+        .step-fade-enter-active, .step-fade-leave-active {
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .step-fade-enter-from {
+            opacity: 0;
+            transform: scale(0.95) translateY(10px);
+        }
+        .step-fade-leave-to {
+            opacity: 0;
+            transform: scale(1.05) translateY(-10px);
+        }
+
+        .mystic-gradient {
+            background: linear-gradient(135deg, rgba(30, 27, 75, 0.7) 0%, rgba(67, 56, 202, 0.4) 100%);
+        }
+
+        .oracle-card {
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .oracle-card:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 0 20px rgba(165, 180, 252, 0.3);
+        }
+
+        /* CORRECCIÓN: Reservar espacio para los iconos y evitar saltos de layout */
+        i[data-lucide] {
+            display: inline-block;
+            width: 2rem; /* w-8 */
+            height: 2rem; /* h-8 */
+            flex-shrink: 0;
+        }
+
+        .result-icon i[data-lucide] {
+            width: 4rem; /* w-16 */
+            height: 4rem; /* h-16 */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900 overflow-hidden">
+<div id="app">
+    <!-- DASHBOARD DE FONDO -->
+    <div class="p-8 max-w-6xl mx-auto space-y-8 transition-all duration-1000" :class="{ 'scale-95 saturate-50': isExpanded }">
+        <header class="flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-slate-400">Kiire - Datáfonos</h1>
+            <div class="flex gap-4 items-center">
+                <div class="w-8 h-8 bg-slate-200 rounded-full animate-pulse"></div>
+                <div class="w-32 h-4 bg-slate-200 rounded animate-pulse"></div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div v-for="i in 4" :key="i" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div class="h-4 w-1/2 bg-slate-100 rounded mb-4"></div>
+                <div class="h-8 w-full bg-slate-50 rounded"></div>
+            </div>
+        </div>
+
+        <div class="h-96 bg-white rounded-[2rem] border border-slate-100 shadow-sm p-8 flex items-end">
+            <div class="space-y-4 w-full">
+                <div class="h-4 w-1/4 bg-slate-100 rounded"></div>
+                <div class="h-40 w-full bg-slate-50 rounded-xl"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAPA RIPPLE (Onda traslúcida) -->
+    <div
+            class="fixed bottom-12 right-12 z-40 pointer-events-none ripple-layer duration-1000 ease-in-out"
+            :style="{
+                transform: isExpanded ? 'scale(150)' : 'scale(0)',
+                transformOrigin: 'center'
+            }"
+    >
+        <div class="w-8 h-8 bg-indigo-900/60 backdrop-blur-md rounded-full ring-1 ring-white/20"></div>
+    </div>
+
+    <!-- INTERFAZ DEL ORÁCULO -->
+    <div
+            class="fixed inset-0 z-50 transition-all duration-700 flex flex-col items-center justify-center backdrop-blur-sm"
+            :class="isExpanded ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'"
+    >
+        <div class="w-full max-w-4xl px-6">
+            <!-- Botón Cerrar -->
+            <button
+                    @click="closeOracle"
+                    class="absolute top-8 right-8 text-white/50 hover:text-white transition-colors"
+            >
+                <i data-lucide="x-circle" class="w-10 h-10"></i>
+            </button>
+
+            <!-- Transición Principal -->
+            <transition name="fade" mode="out-in" @enter="refreshIcons">
+
+                <!-- BLOQUE DE PREGUNTAS -->
+                <div v-if="!showResult" key="questions" class="w-full">
+                    <!-- Transición Secundaria (Entre cada pregunta) -->
+                    <transition name="step-fade" mode="out-in" @enter="refreshIcons">
+                        <div :key="currentStep" class="space-y-12">
+                            <div class="text-center space-y-4">
+                                <span class="text-indigo-300 font-mono tracking-widest uppercase text-xs">Paso {{ currentStep + 1 }} de {{ steps.length }}</span>
+                                <h2 class="text-4xl md:text-5xl font-serif text-white italic tracking-tight">
+                                    {{ steps[currentStep].question }}
+                                </h2>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                                <div
+                                        v-for="(option, idx) in steps[currentStep].options"
+                                        :key="idx"
+                                        @click="selectOption(option)"
+                                        class="oracle-card mystic-gradient border border-white/10 p-8 rounded-3xl cursor-pointer flex flex-col items-center text-center space-y-4 group"
+                                >
+                                    <div class="p-4 bg-white/5 rounded-full group-hover:bg-indigo-500/20 transition-colors text-indigo-200">
+                                        <i :data-lucide="option.icon"></i>
+                                    </div>
+                                    <h3 class="text-white font-medium tracking-wide">{{ option.label }}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </transition>
+                </div>
+
+                <!-- BLOQUE DE RESULTADO FINAL -->
+                <div v-else key="result" class="max-w-2xl mx-auto text-center space-y-8">
+                    <div class="relative inline-block">
+                        <div class="absolute inset-0 bg-indigo-500 blur-3xl opacity-20 animate-pulse"></div>
+                        <div class="relative p-6 bg-white/5 rounded-full border border-white/20 result-icon">
+                            <i data-lucide="sparkles" class="text-amber-300"></i>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h2 class="text-white text-sm font-mono uppercase tracking-[0.3em]">Tu Destino Empresarial</h2>
+                        <p class="text-4xl md:text-5xl font-serif text-amber-200 italic leading-tight">
+                            "{{ finalHoroscope.title }}"
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] text-indigo-100 leading-relaxed text-lg italic shadow-2xl">
+                        {{ finalHoroscope.content }}
+                    </div>
+
+                    <button
+                            @click="resetOracle"
+                            class="mt-8 px-8 py-3 bg-white text-indigo-950 rounded-full font-bold hover:bg-indigo-100 transition-all hover:scale-105"
+                    >
+                        Consultar a los astros de nuevo
+                    </button>
+                </div>
+            </transition>
+        </div>
+    </div>
+
+    <!-- BOTÓN FLOTANTE (FAB) -->
+    <button
+            @click="openOracle"
+            class="fixed bottom-8 right-8 z-40 w-20 h-20 bg-indigo-900 rounded-full shadow-2xl flex items-center justify-center text-indigo-200 transition-all duration-500 hover:scale-110 active:scale-95 border border-white/20 hover:text-white"
+            :class="isExpanded ? 'opacity-0 scale-0 pointer-events-none' : 'opacity-100 scale-100'"
+    >
+        <i data-lucide="moon"></i>
+    </button>
+</div>
+
+<script>
+    const { createApp, ref, onMounted, nextTick } = Vue;
+
+    createApp({
+        setup() {
+            const isExpanded = ref(false);
+            const currentStep = ref(0);
+            const showResult = ref(false);
+            const userSelections = ref([]);
+            const finalHoroscope = ref({ title: '', content: '' });
+
+            const steps = [
+                {
+                    question: "¿Cuál es el elemento regente de tu negocio?",
+                    options: [
+                        { label: "Fuego (Ventas)", icon: "zap", value: "fuego" },
+                        { label: "Agua (Logística)", icon: "droplets", value: "agua" },
+                        { label: "Tierra (Activos)", icon: "mountain", value: "tierra" },
+                        { label: "Aire (Marketing)", icon: "wind", value: "aire" }
+                    ]
+                },
+                {
+                    question: "¿En qué fase lunar se encuentra tu capital?",
+                    options: [
+                        { label: "Nueva (Inversión)", icon: "moon", value: "nueva" },
+                        { label: "Creciente (Escalado)", icon: "trending-up", value: "creciente" },
+                        { label: "Llena (Madurez)", icon: "circle", value: "llena" },
+                        { label: "Menguante (Ahorro)", icon: "minus-circle", value: "menguante" }
+                    ]
+                },
+                {
+                    question: "¿Qué talismán guía tus decisiones?",
+                    options: [
+                        { label: "El Rayo (Intuición)", icon: "zap", value: "intuicion" },
+                        { label: "El Ojo (Datos)", icon: "eye", value: "datos" },
+                        { label: "La Llave (Alianzas)", icon: "key", value: "alianzas" },
+                        { label: "El Escudo (Legal)", icon: "shield", value: "proteccion" }
+                    ]
+                }
+            ];
+
+            const refreshIcons = () => {
+                // nextTick asegura que el elemento ya esté en el DOM aunque la transición no haya terminado
+                nextTick(() => {
+                    if (typeof lucide !== 'undefined') {
+                        lucide.createIcons();
+                    }
+                });
+            };
+
+            const generateHoroscope = () => {
+                const el = userSelections.value[0];
+                const fase = userSelections.value[1];
+                const tal = userSelections.value[2];
+
+                const titles = {
+                    fuego: "El Sol en el Cenit de tus Ventas",
+                    agua: "Corrientes de Fluidez Operativa",
+                    tierra: "La Fortaleza del Diamante",
+                    aire: "Vientos de Expansión Galáctica"
+                };
+
+                const contents = `Los astros indican que tu energía de ${el} entrará en conjunción con la fase ${fase}. La protección de ${tal} será vital en el próximo trimestre. Un socio inesperado aparecerá con el brillo de Venus; no ignores las señales en tus reportes semanales. Tu cash-flow florecerá como un loto en el desierto si mantienes la fe en tus algoritmos sagrados.`;
+
+                finalHoroscope.value = {
+                    title: titles[el] || "El Gran Ciclo del Éxito",
+                    content: contents
+                };
+            };
+
+            const openOracle = () => {
+                isExpanded.value = true;
+                refreshIcons();
+            };
+
+            const closeOracle = () => {
+                isExpanded.value = false;
+                setTimeout(resetOracle, 1000);
+            };
+
+            const selectOption = (opt) => {
+                userSelections.value.push(opt.value);
+                if (currentStep.value < steps.length - 1) {
+                    currentStep.value++;
+                } else {
+                    generateHoroscope();
+                    showResult.value = true;
+                }
+                // Disparar refresh inmediatamente para el siguiente paso
+                refreshIcons();
+            };
+
+            const resetOracle = () => {
+                showResult.value = false;
+                currentStep.value = 0;
+                userSelections.value = [];
+                refreshIcons();
+            };
+
+            onMounted(() => {
+                refreshIcons();
+                window.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') closeOracle();
+                });
+            });
+
+            return {
+                isExpanded,
+                steps,
+                currentStep,
+                showResult,
+                finalHoroscope,
+                openOracle,
+                closeOracle,
+                selectOption,
+                resetOracle,
+                refreshIcons
+            };
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

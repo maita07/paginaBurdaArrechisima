@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+
+@import url('https://cdn.jsdelivr.net/gh/runegame/kiire-contact-form@v1.0.5/dist/assets/style.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.beneficios-item {
+    @apply tw-bg-kiire-lime-100 tw-px-4 tw-pt-16 tw-pb-4 tw-rounded-2xl tw-w-full md:tw-max-w-[380px] tw-flex tw-flex-col tw-items-center
+}
+
+.bg-01 {
+    background-image: url('https://kiire.com/sites/default/files/2025-03/bg-01.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+}
+
+.bg-02 {
+    background-image: url('https://kiire.com/sites/default/files/2025-03/bg-02.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 34%;
+}
+
+.bg-03 {
+    background-image: url('https://kiire.com/sites/default/files/2025-03/bg-03.png');
+    background-repeat: no-repeat;
+    background-position: right 100px;
+    background-size: 20%;
+}
+
+.bg-04 {
+    background-image: url('https://kiire.com/sites/default/files/2025-03/bg-04.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 20%;
+}
+
+.line-gradient {
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(to right, #FF730A, #8312FF);
+    border-image-slice: 1;
+}

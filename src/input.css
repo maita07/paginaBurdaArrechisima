@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.formkit-form {
+    @apply tw-flex tw-flex-col tw-gap-4 tw-p-4;
+}
+
+.formkit-form .alert {
+    @apply tw-p-4 tw-text-sm tw-font-medium tw-leading-tight tw-text-white tw-rounded;
+}
+
+.formkit-form .alert.success {
+    @apply tw-bg-green-800;
+}
+
+.formkit-form .alert.error {
+    @apply tw-bg-red-800;
+}
+
+.formkit-message {
+    @apply tw-text-red-500;
+}
+
+.formkit-form > .formkit-messages {
+    @apply tw-hidden;
+}
+
+.tw-button,
+.formkit-input[type="submit"] {
+    @apply tw-flex tw-gap-2 tw-flex-row tw-font-medium tw-text-xs md:tw-text-base tw-font-bricolage-grotesque tw-whitespace-nowrap tw-items-center tw-text-kiire-text tw-border tw-rounded-lg tw-border-kiire-text tw-pl-2 tw-pr-4 tw-py-4 tw-uppercase tw-cursor-pointer tw-transition-all;
+}
+
+.formkit-input[type="submit"] {
+    @apply tw-mt-10 tw-w-full tw-flex tw-justify-center;
+}
+
+.formkit-help {
+    @apply tw-text-xs tw-mt-2;
+}
+
+.tw-button:hover, .formkit-input[type="submit"]:hover {
+    @apply tw-bg-kiire-green-buttons-hover;
+}
+
+.formkit-input[type="submit"]:disabled {
+    @apply tw-bg-gray-200 tw-border-gray-600 tw-cursor-not-allowed tw-text-gray-400;
+}
+
+.circle-button {
+    @apply tw-border tw-bg-kiire-circle tw-border-kiire-text tw-rounded-full tw-h-0 tw-min-h-2 tw-min-w-2 tw-ml-2;
+}
+
+.kiire-form-register {
+    @apply tw-flex tw-flex-col tw-gap-4;
+}
+
+.kiire-form-register input {
+    @apply tw-bg-transparent tw-outline-0 tw-py-2 tw-border-b tw-border-kiire-text tw-w-full;
+}
+
+.tw-item-business {
+    @apply tw-transition-all tw-font-sora tw-gap-4 tw-flex tw-flex-col md:tw-flex-row md:tw-justify-between tw-border-b tw-border-kiire-purple tw-py-4 hover:tw-bg-kiire-purple tw-px-4;
+}
+
+.tw-item-business .tw-name {
+    @apply tw-grow tw-whitespace-nowrap tw-ml-10;
+}
+
+.tw-bg-hero-section {
+    background-image: url(https://kiire.com/sites/default/files/2025-08/Vector.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 40%;
+}
+
+@keyframes numberBackground1 {
+    0% {
+        background-color: #bcb9f5;
+    }
+    25% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: transparent;
+    }
+    75% {
+        background-color: #bcb9f5;
+    }
+
+    100% {
+        background-color: #bcb9f5;
+    }
+}
+
+@keyframes numberBackground2 {
+    0% {
+        background-color: transparent;
+    }
+    25% {
+        background-color: #bcb9f5;
+    }
+    50% {
+        background-color: #bcb9f5;
+    }
+    75% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+.tw-number {
+    @apply tw-flex tw-border tw-border-kiire-text tw-rounded tw-min-h-8 tw-min-w-8 tw-items-center tw-justify-center tw-mr-10;
+}
+
+.tw-number-1 {
+    animation: numberBackground1 4s ease-in-out infinite;
+}
+
+.tw-number-2 {
+    animation: numberBackground2 4s ease-in-out infinite;
+}
+
+@keyframes moveImageY {
+    0% {
+        transform: translateY(0); /* Posición inicial */
+    }
+    25% {
+        transform: translateY(-50%); /* Mover 100px hacia abajo */
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    75% {
+        transform: translateY(0); /* Posición inicial */
+    }
+
+    100% {
+        transform: translateY(0); /* Posición inicial */
+    }
+}
+
+.tw-image-animation {
+    animation: moveImageY 4s ease-in-out infinite; /* Duración de 3 segundos, de forma infinita */
+}
+
+@keyframes textChangeColor1 {
+    0% {
+        color: #171B5B;
+    }
+    25% {
+        color: #DEFA90;
+    }
+    50% {
+        color: #DEFA90;
+    }
+    75% {
+        color: #171B5B;
+    }
+
+    100% {
+        color: #171B5B;
+    }
+}
+
+.tw-text-animation-1 {
+    animation: textChangeColor1 4s ease-in-out infinite; /* Duración de 3 segundos, de forma infinita */
+}
+
+@keyframes textChangeColor2 {
+    0% {
+        color: #DEFA90;
+    }
+    25% {
+        color: #171B5B;
+    }
+    50% {
+        color: #171B5B;
+    }
+    75% {
+        color: #DEFA90;
+    }
+
+    100% {
+        color: #DEFA90;
+    }
+}
+
+.tw-text-animation-2 {
+    animation: textChangeColor2 4s ease-in-out infinite; /* Duración de 3 segundos, de forma infinita */
+}
+
+/* Drupal */
+
+.layout-container main {
+    @apply !tw-max-w-full;
+}
+
+#block-simplenewssubscription {
+    padding: 4% 0;
+    margin: 0;
+}
+
+.dragging img.drag-image {
+    pointer-events: none !important;
+    user-select: none;
+}
