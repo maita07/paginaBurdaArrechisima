@@ -8,6 +8,7 @@
     "pco": "npx tailwindcss -i ./src/pco.css -o ./src/output-pco.css --watch",
     "puntos": "npx tailwindcss -i ./src/input-puntos.css -o ./src/output-puntos.css --watch",
     "plu": "npx tailwindcss -i ./src/input-plu.css -o ./src/output-plu.css --watch",
+    "plu2": "npx tailwindcss -i ./src/input-plu2.css -o ./src/output-plu2.css --watch",
     "visa": "npx tailwindcss -i ./src/input-visa.css -o ./src/output-visa.css --watch",
     "contacto": "npx tailwindcss -i ./src/input-contacto.css -o ./src/output-contacto.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"

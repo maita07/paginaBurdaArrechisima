@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.accordion-item {
+    @apply tw-bg-[#DEFA90] tw-transition-all;
+}
+
+.accordion-selected {
+    @apply tw-bg-kiire-item-selected;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-header {
+    @apply tw-cursor-pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.local {
+    @apply tw-flex tw-flex-col tw-gap-4 tw-mt-10
+}
+
+.tw-button {
+    @apply tw-text-xs md:tw-text-base tw-py-4 tw-transition-all tw-cursor-pointer tw-flex tw-items-center tw-whitespace-nowrap tw-rounded-lg tw-px-8 tw-uppercase tw-font-semibold tw-gap-4;
+}
+
+.tw-button-white {
+    @apply tw-bg-white hover:tw-bg-transparent tw-border tw-border-transparent hover:tw-border-kiire-text
+}
+
+.tw-button-transparent {
+    @apply tw-bg-transparent hover:tw-bg-white tw-border tw-border-kiire-text hover:tw-border-transparent;
+}
+
+.tw-circle-button {
+    @apply tw-hidden md:tw-block tw-h-2 tw-w-2 tw-bg-kiire-text tw-rounded-full;
+}
+
+
+@media (min-width: 768px) {
+    .tw-main-bg {
+        background-image: url('https://kiire.com/sites/default/files/2025-03/vector-mano-minidatafono.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 50%;
+    }
+}
