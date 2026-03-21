@@ -11,6 +11,7 @@
     "plu2": "npx tailwindcss -i ./src/input-plu2.css -o ./src/output-plu2.css --watch",
     "visa": "npx tailwindcss -i ./src/input-visa.css -o ./src/output-visa.css --watch",
     "contacto": "npx tailwindcss -i ./src/input-contacto.css -o ./src/output-contacto.css --watch",
+    "magia": "npx tailwindcss -i ./src/input-magiaJose.css -o ./src/output-magiaJose.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

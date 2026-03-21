@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url('assets/backgroundComplete.png');
+    background-repeat: repeat;
+    /* Esta es la clave: se repite en X y Y */
+    background-size: auto;
+    /* Mantiene el tamaño original del grano para que no se pixele */
+    background-attachment: fixed;
+    /* Opcional: el fondo se queda quieto al hacer scroll */
+    background-position: top left;
+    margin: 0;
+    padding: 0;
+}
+
+.kiire-gradient-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Ajustado para que coincida con tw-rounded-2xl */
+    border-radius: 1rem; 
+    padding: 1px;
+    background: linear-gradient(to right, #A3E635, #ffffff, #8B5CF6);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* Brillo sutil para el texto, del mismo color del texto */
+.kiire-text-glow {
+    text-shadow: 0 0 8px rgba(251, 254, 233, 0.6), 0 0 15px rgba(251, 254, 233, 0.4);
+}
+
+
+/* Ocultar scroll horizontal en móviles */
+.hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* LA MAGIA DEL SEMICÍRCULO (Solo para Desktop) */
+@media (min-width: 768px) {
+    .ruleta-card {
+        position: absolute;
+        left: 50%;
+        /* Punto más alto de la curva (donde estará la carta central) */
+        top: 20px;
+
+        /* EL TAMAÑO DEL CÍRCULO:
+           Usamos clamp() para que el círculo se adapte a la pantalla.
+           Crece dinámicamente hasta un máximo de 1200px de radio. */
+        --radius: clamp(500px, 50vw, 1200px);
+
+        /* POSICIONAMIENTO MATEMÁTICO SIN ROTAR LA IMAGEN:
+           Se traslada en X e Y simulando la curva del círculo perfecto. */
+        transform: translate(calc(-50% + (var(--radius) * var(--tx))),
+                calc(var(--radius) * var(--ty)));
+    }
+}
+
+@media (min-width: 1024px) {
+    .ruleta-card {
+        top: 60px;
+    }
+}
+
+/* Añadir al final de tu archivo CSS */
+
+.bg-magic-header {
+    background-image: url('assets/BackgroundMagic.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.bg-cartas-1 {
+    background-image: url('assets/background cartas1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-cartas-2 {
+    background-image: url('assets/background cartas2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
