@@ -5,19 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-image: url('assets/backgroundComplete.png');
-    background-repeat: repeat;
-    /* Esta es la clave: se repite en X y Y */
-    background-size: auto;
-    /* Mantiene el tamaño original del grano para que no se pixele */
-    background-attachment: fixed;
-    /* Opcional: el fondo se queda quieto al hacer scroll */
-    background-position: top left;
-    margin: 0;
-    padding: 0;
-}
-
 .kiire-gradient-border::before {
     content: "";
     position: absolute;
