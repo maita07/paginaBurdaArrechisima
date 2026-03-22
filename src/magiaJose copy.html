@@ -5,27 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kiire - magia</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="output-magiaJose.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <div id="kiire-magia-root" class="tw-min-h-screen tw-w-full tw-bg-repeat tw-bg-fixed tw-bg-left-top tw-m-0 tw-p-0"
-        style="background-image: url(assets/backgroundComplete.png); background-size: auto; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+    <div id="kiire-magia-root" class="tw-bg-fixed tw-bg-left-top"
+        style="background-image: url(/sites/default/files/assets/backgroundComplete.png); background-size: auto;">
 
-        <header class="tw-relative tw-w-full tw-min-h-auto">
+        <!-- HEADER -->
+        <header class="tw-relative tw-w-full">
 
-            <img src="assets/BackgroundMagic.png" alt="" aria-hidden="true"
+            <img src="/sites/default/files/assets/BackgroundMagic.png" alt="" aria-hidden="true"
                 class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-auto tw-z-0 tw-pointer-events-none">
 
             <div class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-w-full">
 
                 <div class="tw-mt-12">
-                    <img src="assets/Layer 1.png" alt="Logo Kiire" class="tw-w-40 md:tw-w-52 lg:tw-w-64 tw-h-auto">
+                    <img src="/sites/default/files/assets/Layer 1.png" alt="Logo Kiire" class="tw-w-40 md:tw-w-52 lg:tw-w-64 tw-h-auto">
                 </div>
 
                 <div class="tw-mt-4 lg:tw-mt-20 tw-text-center">
@@ -47,33 +46,27 @@
                     </span>
                 </div>
 
-                <div
-                    class="tw-pt-4 md:tw-pt-32 lg:tw-pt-52 xl:tw-px-28 tw-mt-12 lg:tw-mt-24 xl:tw-mt-36 tw-text-center">
+                <div class="tw-pt-4 md:tw-pt-32 lg:tw-pt-52 tw-mt-12 lg:tw-mt-24 xl:tw-mt-36 tw-text-center">
                     <p
                         class="tw-font-ibm tw-text-kiire-lime-200 tw-px-4 md:tw-px-8 lg:tw-px-20 xl:tw-px-64 tw-text-1xl tw-tracking-wide tw-uppercase">
                         Con el datáfono Kiire usted tiene puntos colombia gratis que puede regalarle a sus clientes para
-                        que
-                        regresen.
+                        que regresen.
                     </p>
                 </div>
 
-                <div
-                    class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-w-full tw-mt-16 tw-mb-10 tw-px-6 md:tw-px-12">
-
+                <div class="tw-flex tw-flex-col tw-items-center tw-w-full tw-mt-16 tw-mb-10">
                     <a href="#"
-                        class="tw-inline-block tw-px-6 tw-py-3 md:tw-px-10 md:tw-py-4 tw-text-sm md:tw-text-base tw-rounded-full tw-font-ibm tw-text-black tw-uppercase tw-tracking-wider md:tw-tracking-widest tw-transition-transform hover:tw-scale-105 tw-bg-gradient-to-r tw-from-[#D1FC67] tw-to-[#C7B1FC] tw-shadow-lg tw-text-center">
+                        class="tw-inline-block tw-px-6 tw-py-3 md:tw-px-10 md:tw-py-4 tw-text-sm md:tw-text-base tw-rounded-full tw-font-ibm tw-text-black tw-uppercase tw-tracking-wider md:tw-tracking-widest tw-transition-transform hover:tw-scale-105 tw-bg-gradient-to-r tw-from-[#D1FC67] tw-to-[#C7B1FC] tw-shadow-lg">
                         Vincularme a Kiire
                     </a>
-
                 </div>
 
             </div>
         </header>
 
         <!-- Botón flotante -->
-        <div onclick="abrirModal()"
-            class="tw-fixed tw-bottom-6 tw-right-6 tw-z-50 tw-flex tw-flex-col tw-items-center tw-gap-1 tw-cursor-pointer tw-group">
-            <img src="assets/boton-quiz.png" alt="Quiz"
+        <div onclick="abrirModal()" class="tw-fixed tw-bottom-6 tw-right-6 tw-z-50 tw-cursor-pointer tw-group">
+            <img src="/sites/default/files/assets/boton-quiz.png" alt="Quiz"
                 class="tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-object-contain tw-transition-transform group-hover:tw-scale-150 tw-scale-125">
         </div>
 
@@ -82,16 +75,14 @@
             class="tw-fixed tw-inset-0 tw-bg-black/70 tw-backdrop-blur-sm tw-z-[60] tw-hidden">
         </div>
 
-        <!-- Wrapper borde degradado -->
+        <!-- Modal -->
         <div id="modal-quiz"
             class="tw-fixed tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-z-[70] tw-hidden tw-w-[90vw] tw-max-w-md tw-rounded-2xl tw-p-[1.5px]"
             style="background: linear-gradient(to bottom, #1a0a2e, #1a0a2e, #768359);">
 
-            <!-- Modal con fondo degradado -->
             <div class="tw-w-full tw-h-full tw-rounded-2xl tw-overflow-hidden"
                 style="background: linear-gradient(to bottom, #171B5B, #232F0B);">
 
-                <!-- Botón cerrar -->
                 <button onclick="cerrarModal()"
                     class="tw-absolute tw-top-3 tw-right-4 tw-text-white/70 hover:tw-text-white tw-text-xl tw-z-10 tw-transition-colors">
                     ✕
@@ -100,15 +91,13 @@
                 <!-- PANTALLA 1: Formulario -->
                 <div id="modal-screen-form">
 
-                    <!-- Imagen superior con marco interno -->
                     <div class="tw-w-full tw-px-4 tw-pt-4">
                         <div class="tw-w-full tw-rounded-xl tw-overflow-hidden tw-h-48"
                             style="box-shadow: inset 0 0 0 4px rgba(255,255,255,0.15);">
-                            <img src="assets/modal-banner.png" alt="" class="tw-w-full tw-h-full tw-object-cover">
+                            <img src="/sites/default/files/assets/modal-banner.png" alt="" class="tw-w-full tw-h-full tw-object-cover">
                         </div>
                     </div>
 
-                    <!-- Contenido -->
                     <div class="tw-px-8 tw-pb-8 tw-pt-6 tw-flex tw-flex-col tw-items-center">
 
                         <p class="tw-font-ibm tw-text-kiire-lime-200 tw-text-xs tw-uppercase tw-tracking-widest">
@@ -120,7 +109,6 @@
                             Consulte el futuro de su negocio
                         </h2>
 
-                        <!-- Formulario -->
                         <div class="tw-mt-6 tw-w-full tw-flex tw-flex-col tw-gap-5">
 
                             <div class="tw-w-full tw-border-b tw-border-white/30">
@@ -145,8 +133,7 @@
                                 <span
                                     class="tw-font-ibm tw-text-white/60 tw-text-[10px] tw-leading-relaxed tw-uppercase tw-tracking-wide">
                                     *Acepto la política - Aviso de privacidad y doy el consentimiento para el
-                                    tratamiento de
-                                    mis datos personales.
+                                    tratamiento de mis datos personales.
                                 </span>
                             </label>
 
@@ -159,14 +146,13 @@
                     </div>
                 </div>
 
-                <!-- PANTALLA 2: Resultado de predicción -->
+                <!-- PANTALLA 2: Resultado -->
                 <div id="modal-screen-prediccion" class="tw-hidden">
 
-                    <!-- Imagen superior -->
                     <div class="tw-w-full tw-px-4 tw-pt-4">
                         <div class="tw-w-full tw-rounded-xl tw-overflow-hidden tw-h-48"
                             style="box-shadow: inset 0 0 0 4px rgba(255,255,255,0.15);">
-                            <img src="assets/modal-banner.png" alt="" class="tw-w-full tw-h-full tw-object-cover">
+                            <img src="/sites/default/files/assets/modal-banner.png" alt="" class="tw-w-full tw-h-full tw-object-cover">
                         </div>
                     </div>
 
@@ -187,7 +173,6 @@
                             trabajado. Las decisiones que tomes ahora atraerán nuevos clientes y más ventas.
                         </p>
 
-                        <!-- Cards qué hacer / qué no hacer -->
                         <div class="tw-mt-6 tw-w-full tw-grid tw-grid-cols-2 tw-gap-3">
 
                             <div class="tw-kiire-gradient-border tw-relative tw-rounded-2xl tw-p-4">
@@ -198,16 +183,13 @@
                                 <ul class="tw-flex tw-flex-col tw-gap-2 tw-text-center">
                                     <li
                                         class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
-                                        • Invierte sin miedo
-                                    </li>
+                                        • Invierte sin miedo</li>
                                     <li
                                         class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
-                                        • Responde esa llamada inesperada
-                                    </li>
+                                        • Responde esa llamada inesperada</li>
                                     <li
                                         class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
-                                        • Recibe todos los medios de pago con Kiire
-                                    </li>
+                                        • Recibe todos los medios de pago con Kiire</li>
                                 </ul>
                             </div>
 
@@ -219,16 +201,13 @@
                                 <ul class="tw-flex tw-flex-col tw-gap-2 tw-text-center">
                                     <li
                                         class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
-                                        • Abrir un viernes 13 a las 13:00
-                                    </li>
+                                        • Abrir un viernes 13 a las 13:00</li>
                                     <li
                                         class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
-                                        • Olvidarte de entregar facturas
-                                    </li>
+                                        • Olvidarte de entregar facturas</li>
                                     <li
                                         class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
-                                        • Trabajar en exceso
-                                    </li>
+                                        • Trabajar en exceso</li>
                                 </ul>
                             </div>
 
@@ -245,17 +224,17 @@
             </div>
         </div>
 
-        <!--seccion listado items-->
+        <!-- SECCIÓN: Listado de pasos -->
         <section class="tw-relative tw-w-full tw-py-12 tw-px-6 md:tw-px-12 lg:tw-px-24">
             <div class="tw-max-w-5xl tw-mx-auto">
 
                 <div class="tw-text-center">
                     <h2
-                        class="tw-mt-12 tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl xl:tw-text-5xl tw-tracking-wide tw-uppercase">
+                        class="tw-mt-12 tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
                         Así puedes fidelizar a tus clientes con puntos colombia y kiire
                     </h2>
                     <h3
-                        class="tw-mt-12 tw-mb-12 tw-font-bricolage-grotesque tw-text-white tw-text-1xl md:tw-text-2xl xl:tw-text-2xl tw-tracking-wide">
+                        class="tw-mt-12 tw-mb-12 tw-font-bricolage-grotesque tw-text-white md:tw-text-2xl tw-tracking-wide">
                         Con Kiire sus clientes Podrán usar sus Puntos Colombia para pagar en su negocio y acumular más
                         puntos con cada pago con tarjeta.
                     </h3>
@@ -263,91 +242,73 @@
 
                 <ol class="tw-flex tw-flex-col tw-gap-4 tw-list-none tw-p-0 tw-m-0">
 
-                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                         <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                             <span aria-hidden="true"
-                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                                01
-                            </span>
+                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">01</span>
                             <p class="tw-font-bricolage-grotesque tw-text-white tw-pl-6 tw-text-sm md:tw-text-lg">
                                 Primero, lo primero: tener una <strong class="tw-font-bold">cuenta Kiire</strong>
-                                asociada a
-                                <strong class="tw-font-bold">Bancolombia o Nequi</strong>
+                                asociada a <strong class="tw-font-bold">Bancolombia o Nequi</strong>
                             </p>
                         </div>
                     </li>
 
-                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                         <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                             <span aria-hidden="true"
-                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                                02
-                            </span>
+                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">02</span>
                             <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                                 Una vez lo haga, empiece a vender y a recibir pagos con Puntos <strong
                                     class="tw-font-bold">sin que le cueste más</strong>. Aquí, usted solo paga la
-                                comisión
-                                normal: <strong class="tw-font-bold">2.99% por transacción.</strong>
+                                comisión normal: <strong class="tw-font-bold">2.99% por transacción.</strong>
                             </p>
                         </div>
                     </li>
 
-                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                         <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                             <span aria-hidden="true"
-                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                                03
-                            </span>
+                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">03</span>
                             <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                                 Ojito a este paso, <strong class="tw-font-bold">fidelice a sus clientes con más opciones
-                                    de
-                                    pago</strong>, como permitirles pagar con Puntos Colombia: el total, la mitad o una
-                                parte, y completar el resto con otro medio de pago.
+                                    de pago</strong>, como permitirles pagar con Puntos Colombia: el total, la mitad o
+                                una parte, y completar el resto con otro medio de pago.
                             </p>
                         </div>
                     </li>
 
-                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                         <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                             <span aria-hidden="true"
-                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                                04
-                            </span>
+                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">04</span>
                             <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                                 En este punto, cabe aclarar que para que sus clientes le compren con Puntos Colombia,
-                                debe
-                                ser a partir de <strong class="tw-font-bold">200 puntos</strong>, es lo mínimo para
+                                debe ser a partir de <strong class="tw-font-bold">200 puntos</strong>, es lo mínimo para
                                 pagar.
                             </p>
                         </div>
                     </li>
 
-                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                         <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                             <span aria-hidden="true"
-                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                                05
-                            </span>
+                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">05</span>
                             <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                                 Quinto paso, tenga en cuenta que al negocio <strong class="tw-font-bold">se le reconoce
-                                    el
-                                    valor completo</strong> de la compra y cada punto es equivalente a seis pesos ($6
+                                    el valor completo</strong> de la compra y cada punto es equivalente a seis pesos ($6
                                 COP).
                             </p>
                         </div>
                     </li>
 
-                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                    <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                         <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                             <span aria-hidden="true"
-                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                                06
-                            </span>
+                                class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">06</span>
                             <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                                 Por último, impulse la recompra dejando que sus clientes acumulen Puntos Colombia:
                                 <strong class="tw-font-bold">ganan 1 punto por cada $4.000 en compras</strong> con
-                                tarjeta, PSE
-                                o QR. <strong class="tw-italic">*No aplica compras en efectivo.</strong>
+                                tarjeta, PSE o QR. <strong class="tw-italic">*No aplica compras en efectivo.</strong>
                             </p>
                         </div>
                     </li>
@@ -356,22 +317,21 @@
             </div>
         </section>
 
-        <!--sección grande cartas tarjetas-->
+        <!-- SECCIÓN: Cartas -->
         <section class="tw-relative tw-w-full tw-min-h-[500px]">
 
-            <img src="assets/background cartas.png" alt="" aria-hidden="true"
+            <img src="/sites/default/files/assets/background cartas.png" alt="" aria-hidden="true"
                 class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-auto tw-z-0 tw-pointer-events-none">
 
             <div class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-w-full">
 
-                <!--cabeza de seccion cartas-->
-                <div class="tw-mt-20 tw-text-center tw-flex tw-flex-col">
+                <div class="tw-mt-20 tw-text-center">
                     <h2
-                        class="tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl xl:tw-text-5xl tw-tracking-wide tw-uppercase">
+                        class="tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
                         conozca todo lo bueno
                     </h2>
                     <h2
-                        class="tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl xl:tw-text-5xl tw-tracking-wide tw-uppercase">
+                        class="tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
                         Que vendrá para su negocio
                     </h2>
                 </div>
@@ -392,7 +352,7 @@
                     </svg>
                 </div>
 
-                <!--cartas-->
+                <!-- Cartas: scroll horizontal en mobile, semicírculo en desktop -->
                 <div class="tw-relative tw-w-full tw-overflow-hidden tw-pb-8 md:tw-pb-32 2xl:tw-pb-80 2xl:tw-mb-40">
                     <div
                         class="tw-relative tw-w-full tw-max-w-[1800px] tw-mx-auto tw-h-auto md:tw-h-[700px] lg:tw-h-[850px] tw-overflow-x-auto tw-overflow-y-hidden hide-scroll tw-px-6 md:tw-px-0 md:tw-overflow-visible">
@@ -404,9 +364,9 @@
                                 style="--tx: -0.71; --ty: 0.29;">
                                 <a href="#" aria-label="Seleccionar carta 1"
                                     class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
-                                    <img src="assets/carta1.png" alt="Reverso Carta 1"
+                                    <img src="/sites/default/files/assets/carta1.png" alt="Reverso Carta 1"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0">
-                                    <img src="assets/carta1c.png" alt="Frente Carta 1"
+                                    <img src="/sites/default/files/assets/carta1c.png" alt="Frente Carta 1"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                                 </a>
                             </article>
@@ -416,9 +376,9 @@
                                 style="--tx: -0.38; --ty: 0.08;">
                                 <a href="#" aria-label="Seleccionar carta 2"
                                     class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
-                                    <img src="assets/carta2.png" alt="Reverso Carta 2"
+                                    <img src="/sites/default/files/assets/carta2.png" alt="Reverso Carta 2"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0">
-                                    <img src="assets/carta2c.png" alt="Frente Carta 2"
+                                    <img src="/sites/default/files/assets/carta2c.png" alt="Frente Carta 2"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                                 </a>
                             </article>
@@ -428,9 +388,9 @@
                                 style="--tx: 0; --ty: 0.10;">
                                 <a href="#" aria-label="Seleccionar carta 3"
                                     class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
-                                    <img src="assets/carta3.png" alt="Reverso Carta 3"
+                                    <img src="/sites/default/files/assets/carta3.png" alt="Reverso Carta 3"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0 tw-scale-125 md:tw-scale-110">
-                                    <img src="assets/carta3c.png" alt="Frente Carta 3"
+                                    <img src="/sites/default/files/assets/carta3c.png" alt="Frente Carta 3"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                                 </a>
                             </article>
@@ -440,9 +400,9 @@
                                 style="--tx: 0.38; --ty: 0.08;">
                                 <a href="#" aria-label="Seleccionar carta 4"
                                     class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
-                                    <img src="assets/carta4.png" alt="Reverso Carta 4"
+                                    <img src="/sites/default/files/assets/carta4.png" alt="Reverso Carta 4"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0">
-                                    <img src="assets/carta4c.png" alt="Frente Carta 4"
+                                    <img src="/sites/default/files/assets/carta4c.png" alt="Frente Carta 4"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                                 </a>
                             </article>
@@ -452,9 +412,9 @@
                                 style="--tx: 0.71; --ty: 0.29;">
                                 <a href="#" aria-label="Seleccionar carta 5"
                                     class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
-                                    <img src="assets/carta5.png" alt="Reverso Carta 5"
+                                    <img src="/sites/default/files/assets/carta5.png" alt="Reverso Carta 5"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0">
-                                    <img src="assets/carta5c.png" alt="Frente Carta 5"
+                                    <img src="/sites/default/files/assets/carta5c.png" alt="Frente Carta 5"
                                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                                 </a>
                             </article>
@@ -463,63 +423,60 @@
                     </div>
                 </div>
 
-                <!--cabeza de seccion tarjetas-->
-                <div
-                    class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-justify-center tw-px-8 md:tw-px-16">
+                <!-- Cabeza de tarjetas -->
+                <div class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-px-8 md:tw-px-16">
                     <h2
-                        class="tw-font-libre tw-text-kiire-lime-200 tw-text-1xl md:tw-text-3xl lg:tw-text-3xl tw-tracking-wide tw-uppercase tw-text-center tw-leading-tight tw-max-w-4xl tw-mx-auto">
+                        class="tw-font-libre tw-text-kiire-lime-200 tw-text-1xl md:tw-text-3xl tw-tracking-wide tw-uppercase tw-text-center tw-leading-tight tw-max-w-4xl tw-mx-auto">
                         <strong>ESTO ES UN EJEMPLO PARA QUE CONOZCA</strong><br class="tw-hidden md:tw-block">
                         <strong>CÓMO FUNCIONA LA REDENCIÓN DE PUNTOS</strong><br class="tw-hidden md:tw-block">
                         <strong>COLOMBIA + DINERO EN SU NEGOCIO</strong>
                     </h2>
                 </div>
 
-                <!--tarjetas-->
+                <!-- Tarjetas -->
                 <div
-                    class="tw-relative tw-w-full tw-py-16 tw-px-10 md:tw-px-20 tw-max-w-[1600px] tw-mx-auto tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-4">
+                    class="tw-w-full tw-py-16 tw-px-10 md:tw-px-20 tw-max-w-[1600px] tw-mx-auto tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-4">
                     <div
                         class="tw-kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
-                        <img src="assets/01.png" alt=""
+                        <img src="/sites/default/files/assets/01.png" alt=""
                             class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
                     </div>
                     <div
                         class="tw-kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
-                        <img src="assets/02.png" alt=""
+                        <img src="/sites/default/files/assets/02.png" alt=""
                             class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
                     </div>
                     <div
                         class="tw-kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
-                        <img src="assets/03.png" alt=""
+                        <img src="/sites/default/files/assets/03.png" alt=""
                             class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
                     </div>
                     <div
                         class="tw-kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
-                        <img src="assets/04.png" alt=""
+                        <img src="/sites/default/files/assets/04.png" alt=""
                             class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
                     </div>
                 </div>
 
-                <!--boton-->
                 <a href="#"
-                    class="tw-inline-block tw-px-8 tw-py-3 md:tw-px-12 md:tw-py-4 tw-text-sm md:tw-text-base tw-rounded-full tw-font-ibm tw-text-black tw-uppercase tw-tracking-widest tw-transition-transform hover:tw-scale-105 tw-bg-gradient-to-r tw-from-[#D1FC67] tw-to-[#C7B1FC] tw-shadow-lg tw-text-center">
+                    class="tw-inline-block tw-px-8 tw-py-3 md:tw-px-12 md:tw-py-4 tw-text-sm md:tw-text-base tw-rounded-full tw-font-ibm tw-text-black tw-uppercase tw-tracking-widest tw-transition-transform hover:tw-scale-105 tw-bg-gradient-to-r tw-from-[#D1FC67] tw-to-[#C7B1FC] tw-shadow-lg">
                     MIRA LOS TUTORIALES
                 </a>
 
             </div>
-
         </section>
 
-        <!--cabeza de carrusel-->
+        <!-- SECCIÓN: Cabeza del carrusel -->
         <section class="tw-relative tw-w-full tw-py-12 tw-px-6 md:tw-px-12 lg:tw-px-24">
             <div class="tw-max-w-5xl tw-mx-auto tw-flex tw-flex-col tw-items-center tw-text-center">
 
                 <h2
-                    class="tw-mt-12 tw-max-w-2xl tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl xl:tw-text-5xl tw-tracking-wide tw-uppercase">
+                    class="tw-mt-12 tw-max-w-2xl tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
                     La prosperidad está
                 </h2>
 
                 <h3
-                    class="tw-max-w-2xl tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl xl:tw-text-5xl tw-tracking-wide tw-uppercase">
+                    class="tw-max-w-2xl tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
                     por llegar a tu negocio
                 </h3>
 
@@ -529,11 +486,9 @@
                         <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z"
                             fill="currentColor" />
                     </svg>
-
                     <p class="tw-font-ibm tw-font-light tw-text-kiire-lime-200 tw-text-sm md:tw-text-2xl tw-uppercase">
                         mira todas las predicciones
                     </p>
-
                     <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="tw-text-kiire-green-light tw-w-4 tw-h-4 md:tw-w-6 md:tw-h-6">
                         <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z"
@@ -542,7 +497,7 @@
                 </div>
 
                 <h3
-                    class="tw-mt-4 tw-mb-12 tw-max-w-3xl tw-font-bricolage-grotesque tw-text-white tw-text-1xl md:tw-text-2xl xl:tw-text-2xl tw-tracking-wide">
+                    class="tw-mt-4 tw-mb-12 tw-max-w-3xl tw-font-bricolage-grotesque tw-text-white md:tw-text-2xl tw-tracking-wide">
                     <strong>Con Kiire y Puntos Colombia</strong> cambias el futuro de tu negocio y hechizas a todos tus
                     clientes en cada pago
                 </h3>
@@ -550,8 +505,7 @@
             </div>
         </section>
 
-
-        <!--seccion carrusel-->
+        <!-- SECCIÓN: Carrusel de tutoriales -->
         <section class="tw-relative tw-w-full tw-py-8 tw-px-6 md:tw-px-16 lg:tw-px-24">
             <div class="tw-max-w-6xl tw-mx-auto">
 
@@ -571,7 +525,7 @@
                                 class="tw-flex tw-justify-center tw-p-3 md:tw-p-6 md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
                                 <a href="#cap1-link" target="_blank" rel="noopener noreferrer"
                                     class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
-                                    <img src="assets/cap1.png" alt="CAP 1: EL HECHIZO"
+                                    <img src="/sites/default/files/assets/cap1.png" alt="CAP 1: EL HECHIZO"
                                         class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
                                     <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
                                         <div
@@ -609,7 +563,7 @@
                                 class="tw-flex tw-justify-center tw-p-3 md:tw-p-6 md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
                                 <a href="#cap2-link" target="_blank" rel="noopener noreferrer"
                                     class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
-                                    <img src="assets/cap2.png" alt="CAP 2: EL AMARRE"
+                                    <img src="/sites/default/files/assets/cap2.png" alt="CAP 2: EL AMARRE"
                                         class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
                                     <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
                                         <div
@@ -646,7 +600,7 @@
                                 class="tw-flex tw-justify-center tw-p-3 md:tw-p-6 md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
                                 <a href="#cap3-link" target="_blank" rel="noopener noreferrer"
                                     class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
-                                    <img src="assets/cap3.png" alt="CAP 3: LA BOLA DE CRISTAL"
+                                    <img src="/sites/default/files/assets/cap3.png" alt="CAP 3: LA BOLA DE CRISTAL"
                                         class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
                                     <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
                                         <div
@@ -683,7 +637,7 @@
                                 class="tw-flex tw-justify-center tw-p-3 md:tw-p-6 md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
                                 <a href="#cap4-link" target="_blank" rel="noopener noreferrer"
                                     class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
-                                    <img src="assets/cap4.png" alt="CAP 4: LAS MANOS"
+                                    <img src="/sites/default/files/assets/cap4.png" alt="CAP 4: LAS MANOS"
                                         class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
                                     <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
                                         <div
@@ -729,51 +683,45 @@
             </div>
         </section>
 
-        <!--seccion de guía-->
+        <!-- SECCIÓN: Carta de guía -->
         <section class="tw-relative tw-w-full tw-py-12 tw-px-6 md:tw-px-12 lg:tw-px-24">
             <div class="tw-max-w-6xl tw-mx-auto tw-flex tw-items-center tw-justify-center tw-gap-6">
 
-                <!-- Imagen izquierda — oculta en tablet y móvil -->
-                <img src="assets/semistart1.png" alt=""
+                <img src="/sites/default/files/assets/semistart1.png" alt=""
                     class="tw-hidden lg:tw-block tw-w-1/4 tw-h-48 tw-object-contain">
 
-                <!-- Imagen central -->
                 <a href="#" class="tw-block tw-w-full lg:tw-w-1/2 tw-shrink-0 tw-h-72">
-                    <!-- Mobile -->
-                    <img src="assets/cartaConsulta2.png" alt="Ver más"
+                    <img src="/sites/default/files/assets/cartaConsulta2.png" alt="Ver más"
                         class="tw-block md:tw-hidden tw-w-full tw-h-full tw-object-contain tw-transition-opacity hover:tw-opacity-80">
-                    <!-- Desktop -->
-                    <img src="assets/cartaConsulta.png" alt="Ver más"
+                    <img src="/sites/default/files/assets/cartaConsulta.png" alt="Ver más"
                         class="tw-hidden md:tw-block tw-w-full tw-h-full tw-object-contain tw-transition-opacity hover:tw-opacity-80">
                 </a>
 
-                <!-- Imagen derecha — oculta en tablet y móvil -->
-                <img src="assets/semistart2.png" alt=""
+                <img src="/sites/default/files/assets/semistart2.png" alt=""
                     class="tw-hidden lg:tw-block tw-w-1/4 tw-h-48 tw-object-contain">
 
             </div>
         </section>
 
-        <!--footer-->
+        <!-- FOOTER -->
         <footer class="tw-relative tw-w-full tw-bg-kiire-lime-200 tw-py-12 tw-px-6 md:tw-px-12 lg:tw-px-24">
             <div
                 class="tw-max-w-6xl tw-mx-auto tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-between tw-gap-4">
-
                 <a href="#"
                     class="tw-font-bricolage-grotesque tw-font-bold tw-text-kiire-text tw-text-xs tw-uppercase hover:tw-underline hover:tw-underline-offset-4 hover:tw-opacity-70 tw-transition-opacity">
                     Conoce nuestros términos y condiciones aquí
                 </a>
-
                 <p class="tw-font-bricolage-grotesque tw-font-bold tw-text-kiire-text tw-text-xs tw-uppercase">
                     Copyright Kiire, Inc. 2024. Todos los derechos reservados
                 </p>
-
             </div>
         </footer>
 
     </div>
 
-    <script src="js/script.js">
+    <script>
+
+
         function abrirModal() {
             document.getElementById('modal-quiz').classList.remove('tw-hidden');
             document.getElementById('modal-overlay').classList.remove('tw-hidden');
@@ -808,7 +756,9 @@
             document.getElementById('modal-screen-prediccion').classList.add('tw-hidden');
             document.getElementById('modal-screen-form').classList.remove('tw-hidden');
         }
+
     </script>
+
 </body>
 
 </html>

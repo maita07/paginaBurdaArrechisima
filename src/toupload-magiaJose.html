@@ -3,6 +3,8 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
 
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
     *,
     ::before,
     ::after {
@@ -624,16 +626,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         left: 0px;
     }
 
-    .tw-left-1 {
-        left: 0.25rem;
-    }
-
     .tw-left-1\/2 {
         left: 50%;
-    }
-
-    .tw-left-10 {
-        left: 2.5rem;
     }
 
     .tw-left-4 {
@@ -660,16 +654,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         top: 0px;
     }
 
-    .tw-top-1 {
-        top: 0.25rem;
-    }
-
     .tw-top-1\/2 {
         top: 50%;
-    }
-
-    .tw-top-10 {
-        top: 2.5rem;
     }
 
     .tw-top-3 {
@@ -686,10 +672,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .tw-z-10 {
         z-index: 10;
-    }
-
-    .tw-z-20 {
-        z-index: 20;
     }
 
     .tw-z-40 {
@@ -732,10 +714,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         margin: 0px;
     }
 
-    .tw-m-3 {
-        margin: 0.75rem;
-    }
-
     .tw-mx-auto {
         margin-left: auto;
         margin-right: auto;
@@ -754,6 +732,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     .tw-my-4 {
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+
+    .-tw-ml-4 {
+        margin-left: -1rem;
+    }
+
+    .-tw-mr-4 {
+        margin-right: -1rem;
     }
 
     .tw-mb-0 {
@@ -776,8 +762,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         margin-bottom: 5rem;
     }
 
-    .tw-mb-24 {
-        margin-bottom: 6rem;
+    .tw-mb-3 {
+        margin-bottom: 0.75rem;
     }
 
     .tw-mb-4 {
@@ -848,10 +834,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         margin-top: 8rem;
     }
 
-    .tw-mt-36 {
-        margin-top: 9rem;
-    }
-
     .tw-mt-4 {
         margin-top: 1rem;
     }
@@ -920,16 +902,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         height: 2.5rem;
     }
 
-    .tw-h-14 {
-        height: 3.5rem;
-    }
-
     .tw-h-16 {
         height: 4rem;
-    }
-
-    .tw-h-20 {
-        height: 5rem;
     }
 
     .tw-h-3 {
@@ -952,20 +926,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         height: 1.5rem;
     }
 
-    .tw-h-64 {
-        height: 16rem;
-    }
-
     .tw-h-72 {
         height: 18rem;
     }
 
     .tw-h-8 {
         height: 2rem;
-    }
-
-    .tw-h-\[280px\] {
-        height: 280px;
     }
 
     .tw-h-\[450px\] {
@@ -1032,10 +998,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         width: 2.5rem;
     }
 
-    .tw-w-14 {
-        width: 3.5rem;
-    }
-
     .tw-w-16 {
         width: 4rem;
     }
@@ -1052,12 +1014,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         width: 5rem;
     }
 
-    .tw-w-28 {
-        width: 7rem;
-    }
-
     .tw-w-3 {
         width: 0.75rem;
+    }
+
+    .tw-w-36 {
+        width: 9rem;
     }
 
     .tw-w-4 {
@@ -1066,10 +1028,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .tw-w-40 {
         width: 10rem;
-    }
-
-    .tw-w-48 {
-        width: 12rem;
     }
 
     .tw-w-5 {
@@ -1088,16 +1046,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         width: 1.5rem;
     }
 
-    .tw-w-64 {
-        width: 16rem;
-    }
-
     .tw-w-8 {
         width: 2rem;
-    }
-
-    .tw-w-80 {
-        width: 20rem;
     }
 
     .tw-w-\[30\%\] {
@@ -1108,8 +1058,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         width: 70%;
     }
 
-    .tw-w-\[75vw\] {
-        width: 75vw;
+    .tw-w-\[70vw\] {
+        width: 70vw;
     }
 
     .tw-w-\[90vw\] {
@@ -1185,16 +1135,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         max-width: 1200px;
     }
 
-    .tw-max-w-\[1400px\] {
-        max-width: 1400px;
-    }
-
     .tw-max-w-\[155px\] {
         max-width: 155px;
     }
 
     .tw-max-w-\[1600px\] {
         max-width: 1600px;
+    }
+
+    .tw-max-w-\[1800px\] {
+        max-width: 1800px;
     }
 
     .tw-max-w-\[18px\] {
@@ -1305,23 +1255,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         flex-grow: 1;
     }
 
-    .-tw-translate-x-1 {
-        --tw-translate-x: -0.25rem;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
-
     .-tw-translate-x-1\/2 {
         --tw-translate-x: -50%;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
-
-    .-tw-translate-x-4 {
-        --tw-translate-x: -1rem;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
-
-    .-tw-translate-y-1 {
-        --tw-translate-y: -0.25rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
 
@@ -1330,18 +1265,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
 
-    .tw--translate-y-1 {
-        --tw-translate-y: -0.25rem;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
-
     .tw--translate-y-1\/2 {
         --tw-translate-y: -50%;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
-
-    .tw-translate-x-4 {
-        --tw-translate-x: 1rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
 
@@ -1350,9 +1275,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
 
-    .tw-scale-110 {
-        --tw-scale-x: 1.1;
-        --tw-scale-y: 1.1;
+    .tw-scale-125 {
+        --tw-scale-x: 1.25;
+        --tw-scale-y: 1.25;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
 
@@ -1416,10 +1341,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .tw-grid-cols-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
     .tw-grid-cols-4 {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -1480,10 +1401,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         justify-content: space-around;
     }
 
-    .tw-gap-1 {
-        gap: 0.25rem;
-    }
-
     .tw-gap-10 {
         gap: 2.5rem;
     }
@@ -1492,16 +1409,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         gap: 4rem;
     }
 
+    .tw-gap-2 {
+        gap: 0.5rem;
+    }
+
     .tw-gap-20 {
         gap: 5rem;
     }
 
     .tw-gap-3 {
         gap: 0.75rem;
-    }
-
-    .tw-gap-32 {
-        gap: 8rem;
     }
 
     .tw-gap-4 {
@@ -1526,10 +1443,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .tw-overflow-hidden {
         overflow: hidden;
-    }
-
-    .tw-overflow-visible {
-        overflow: visible;
     }
 
     .tw-overflow-x-auto {
@@ -1716,11 +1629,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         background-color: rgb(228 252 164 / var(--tw-bg-opacity, 1));
     }
 
-    .tw-bg-black {
-        --tw-bg-opacity: 1;
-        background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-    }
-
     .tw-bg-black\/40 {
         background-color: rgb(0 0 0 / 0.4);
     }
@@ -1839,9 +1747,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     }
 
-    .tw-from-\[\#A3E635\] {
-        --tw-gradient-from: #A3E635 var(--tw-gradient-from-position);
-        --tw-gradient-to: rgb(163 230 53 / 0) var(--tw-gradient-to-position);
+    .tw-from-\[\#D1FC67\] {
+        --tw-gradient-from: #D1FC67 var(--tw-gradient-from-position);
+        --tw-gradient-to: rgb(209 252 103 / 0) var(--tw-gradient-to-position);
         --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     }
 
@@ -1873,12 +1781,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to);
     }
 
-    .tw-to-\[\#8B5CF6\] {
-        --tw-gradient-to: #8B5CF6 var(--tw-gradient-to-position);
-    }
-
     .tw-to-\[\#8BC462\] {
         --tw-gradient-to: #8BC462 var(--tw-gradient-to-position);
+    }
+
+    .tw-to-\[\#C7B1FC\] {
+        --tw-gradient-to: #C7B1FC var(--tw-gradient-to-position);
     }
 
     .tw-to-\[\#b7b3eb\] {
@@ -1964,21 +1872,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         padding: 1.5rem;
     }
 
-    .tw-p-7 {
-        padding: 1.75rem;
-    }
-
     .tw-p-8 {
         padding: 2rem;
     }
 
     .tw-p-\[1\.5px\] {
         padding: 1.5px;
-    }
-
-    .tw-px-0 {
-        padding-left: 0px;
-        padding-right: 0px;
     }
 
     .tw-px-10 {
@@ -1996,21 +1895,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         padding-right: 4rem;
     }
 
-    .tw-px-20 {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-
-    .tw-px-24 {
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
-
-    .tw-px-28 {
-        padding-left: 7rem;
-        padding-right: 7rem;
-    }
-
     .tw-px-4 {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -2024,16 +1908,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     .tw-px-6 {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-    }
-
-    .tw-px-64 {
-        padding-left: 16rem;
-        padding-right: 16rem;
-    }
-
-    .tw-px-7 {
-        padding-left: 1.75rem;
-        padding-right: 1.75rem;
     }
 
     .tw-px-8 {
@@ -2081,11 +1955,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         padding-bottom: 0.75rem;
     }
 
-    .tw-py-32 {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-    }
-
     .tw-py-4 {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -2119,16 +1988,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         padding-bottom: 2.5rem;
     }
 
-    .tw-pb-2 {
-        padding-bottom: 0.5rem;
-    }
-
     .tw-pb-24 {
         padding-bottom: 6rem;
-    }
-
-    .tw-pb-32 {
-        padding-bottom: 8rem;
     }
 
     .tw-pb-4 {
@@ -2143,32 +2004,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         padding-bottom: 2rem;
     }
 
-    .tw-pl-2 {
-        padding-left: 0.5rem;
-    }
-
-    .tw-pl-20 {
-        padding-left: 5rem;
-    }
-
     .tw-pl-6 {
         padding-left: 1.5rem;
     }
 
-    .tw-pr-48 {
-        padding-right: 12rem;
-    }
-
-    .tw-pr-6 {
-        padding-right: 1.5rem;
-    }
-
     .tw-pr-8 {
         padding-right: 2rem;
-    }
-
-    .tw-pt-1 {
-        padding-top: 0.25rem;
     }
 
     .tw-pt-10 {
@@ -2179,16 +2020,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         padding-top: 0.5rem;
     }
 
-    .tw-pt-32 {
-        padding-top: 8rem;
-    }
-
     .tw-pt-4 {
         padding-top: 1rem;
-    }
-
-    .tw-pt-52 {
-        padding-top: 13rem;
     }
 
     .tw-pt-56 {
@@ -2201,10 +2034,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .tw-pt-9 {
         padding-top: 2.25rem;
-    }
-
-    .tw-text-left {
-        text-align: left;
     }
 
     .tw-text-center {
@@ -2221,6 +2050,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .tw-font-bricolage-grotesque {
         font-family: Bricolage Grotesque, serif;
+    }
+
+    .tw-font-ibm {
+        font-family: "IBM Plex Mono", sans-serif;
     }
 
     .tw-font-libre {
@@ -2262,11 +2095,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .tw-text-7xl {
         font-size: 4.5rem;
-        line-height: 1;
-    }
-
-    .tw-text-9xl {
-        font-size: 8rem;
         line-height: 1;
     }
 
@@ -2358,10 +2186,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .tw-leading-tight {
         line-height: 1.25;
-    }
-
-    .tw-tracking-\[0\.2em\] {
-        letter-spacing: 0.2em;
     }
 
     .tw-tracking-wide {
@@ -2480,22 +2304,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         text-decoration-color: rgb(35 47 11 / 0.2);
     }
 
-    .tw-underline-offset-4 {
-        text-underline-offset: 4px;
-    }
-
     .tw-underline-offset-8 {
         text-underline-offset: 8px;
-    }
-
-    .tw-placeholder-white::-moz-placeholder {
-        --tw-placeholder-opacity: 1;
-        color: rgb(255 255 255 / var(--tw-placeholder-opacity, 1));
-    }
-
-    .tw-placeholder-white::placeholder {
-        --tw-placeholder-opacity: 1;
-        color: rgb(255 255 255 / var(--tw-placeholder-opacity, 1));
     }
 
     .tw-placeholder-white\/40::-moz-placeholder {
@@ -2514,20 +2324,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         opacity: 0;
     }
 
-    .tw-opacity-100 {
-        opacity: 1;
-    }
-
-    .tw-opacity-60 {
-        opacity: 0.6;
-    }
-
     .tw-opacity-70 {
         opacity: 0.7;
-    }
-
-    .tw-opacity-80 {
-        opacity: 0.8;
     }
 
     .tw-shadow-\[10px_10px_0px_0px_rgba\(25\,48\,0\,1\)\] {
@@ -2605,14 +2403,74 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         transition-duration: 500ms;
     }
 
-    .kiire-gradient-border::before {
+    /* Reset quirúrgico para el contexto Drupal */
+
+    #kiire-magia-root {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        position: relative !important;
+        left: 50% !important;
+        right: 50% !important;
+        margin-left: -50vw !important;
+        margin-right: -50vw !important;
+        overflow-x: hidden !important;
+    }
+
+    #kiire-magia-root *,
+    #kiire-magia-root ::before,
+    #kiire-magia-root ::after {
+        box-sizing: border-box;
+    }
+
+    #kiire-magia-root h1,
+    #kiire-magia-root h2,
+    #kiire-magia-root h3,
+    #kiire-magia-root h4,
+    #kiire-magia-root h5,
+    #kiire-magia-root h6,
+    #kiire-magia-root p,
+    #kiire-magia-root ul,
+    #kiire-magia-root ol,
+    #kiire-magia-root li {
+        margin: 0;
+        padding: 0;
+    }
+
+    #kiire-magia-root a {
+        color: inherit;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    #kiire-magia-root button,
+    #kiire-magia-root input,
+    #kiire-magia-root textarea,
+    #kiire-magia-root select {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        color: inherit;
+        background: none;
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        -moz-appearance: none;
+        appearance: none;
+        -webkit-appearance: none;
+    }
+
+    #kiire-magia-root img {
+        border: none;
+        max-width: 100%;
+    }
+
+    /* Borde degradado reutilizable */
+
+    .tw-kiire-gradient-border::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        /* Ajustado para que coincida con tw-rounded-2xl */
+        inset: 0;
         border-radius: 1rem;
         padding: 1px;
         background: linear-gradient(to right, #A3E635, #ffffff, #8B5CF6);
@@ -2624,13 +2482,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         pointer-events: none;
     }
 
-    /* Brillo sutil para el texto, del mismo color del texto */
-
-    .kiire-text-glow {
-        text-shadow: 0 0 8px rgba(251, 254, 233, 0.6), 0 0 15px rgba(251, 254, 233, 0.4);
-    }
-
-    /* Ocultar scroll horizontal en móviles */
+    /* Scroll invisible */
 
     .hide-scroll {
         -ms-overflow-style: none;
@@ -2641,52 +2493,23 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         display: none;
     }
 
-    /* LA MAGIA DEL SEMICÍRCULO (Solo para Desktop) */
+    /* Semicírculo de cartas — solo desktop */
 
     @media (min-width: 768px) {
-        .ruleta-card {
-            position: absolute;
-            left: 50%;
-            /* Punto más alto de la curva (donde estará la carta central) */
-            top: 20px;
-            /* EL TAMAÑO DEL CÍRCULO:
-           Usamos clamp() para que el círculo se adapte a la pantalla.
-           Crece dinámicamente hasta un máximo de 1200px de radio. */
+        #kiire-magia-root .ruleta-card {
+            position: absolute !important;
+            left: 50% !important;
+            top: 20px !important;
             --radius: clamp(500px, 50vw, 1200px);
-            /* POSICIONAMIENTO MATEMÁTICO SIN ROTAR LA IMAGEN:
-           Se traslada en X e Y simulando la curva del círculo perfecto. */
             transform: translate(calc(-50% + (var(--radius) * var(--tx))),
-                    calc(var(--radius) * var(--ty)));
+                    calc(var(--radius) * var(--ty))) !important;
         }
     }
 
     @media (min-width: 1024px) {
-        .ruleta-card {
-            top: 60px;
+        #kiire-magia-root .ruleta-card {
+            top: 60px !important;
         }
-    }
-
-    /* Añadir al final de tu archivo CSS */
-
-    .bg-magic-header {
-        background-image: url('assets/BackgroundMagic.png');
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;
-    }
-
-    .bg-cartas-1 {
-        background-image: url('assets/background cartas1.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .bg-cartas-2 {
-        background-image: url('assets/background cartas2.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 
     .open\:tw-border-\[\#e4fca4\]\/30[open] {
@@ -2705,11 +2528,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     .hover\:tw-z-50:hover {
         z-index: 50;
-    }
-
-    .hover\:-tw-translate-y-8:hover {
-        --tw-translate-y: -2rem;
-        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
 
     .hover\:tw-scale-105:hover {
@@ -2740,6 +2558,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     .hover\:tw-text-white:hover {
         --tw-text-opacity: 1;
         color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+    }
+
+    .hover\:tw-underline:hover {
+        text-decoration-line: underline;
+    }
+
+    .hover\:tw-underline-offset-4:hover {
+        text-underline-offset: 4px;
     }
 
     .hover\:tw-opacity-70:hover {
@@ -2788,9 +2614,15 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
 
-    .tw-group:hover .group-hover\:tw-scale-110 {
-        --tw-scale-x: 1.1;
-        --tw-scale-y: 1.1;
+    .tw-group:hover .group-hover\:tw-scale-125 {
+        --tw-scale-x: 1.25;
+        --tw-scale-y: 1.25;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    }
+
+    .tw-group:hover .group-hover\:tw-scale-150 {
+        --tw-scale-x: 1.5;
+        --tw-scale-y: 1.5;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     }
 
@@ -2807,16 +2639,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     }
 
     @media (min-width: 640px) {
-        .sm\:tw-h-\[320px\] {
-            height: 320px;
-        }
-
         .sm\:tw-w-48 {
             width: 12rem;
         }
 
-        .sm\:tw-w-56 {
-            width: 14rem;
+        .sm\:tw-w-60 {
+            width: 15rem;
+        }
+
+        .sm\:tw-w-64 {
+            width: 16rem;
         }
 
         .sm\:tw-grid-cols-2 {
@@ -2834,8 +2666,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             margin-bottom: 5rem;
         }
 
+        .md\:tw-ml-0 {
+            margin-left: 0px;
+        }
+
         .md\:tw-ml-20 {
             margin-left: 5rem;
+        }
+
+        .md\:tw-mr-0 {
+            margin-right: 0px;
         }
 
         .md\:tw-mt-0 {
@@ -2874,8 +2714,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             height: 1.5rem;
         }
 
-        .md\:tw-h-\[550px\] {
-            height: 550px;
+        .md\:tw-h-\[700px\] {
+            height: 700px;
         }
 
         .md\:tw-h-\[70vh\] {
@@ -2918,10 +2758,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             width: 60%;
         }
 
-        .md\:tw-w-48 {
-            width: 12rem;
-        }
-
         .md\:tw-w-52 {
             width: 13rem;
         }
@@ -2930,12 +2766,16 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             width: 1.5rem;
         }
 
-        .md\:tw-w-64 {
-            width: 16rem;
+        .md\:tw-w-\[320px\] {
+            width: 320px;
         }
 
-        .md\:tw-w-\[calc\(50\%-8px\)\] {
-            width: calc(50% - 8px);
+        .md\:tw-w-\[350px\] {
+            width: 350px;
+        }
+
+        .md\:tw-w-\[calc\(60\%-12px\)\] {
+            width: calc(60% - 12px);
         }
 
         .md\:tw-w-full {
@@ -2970,6 +2810,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             flex-shrink: 0;
         }
 
+        .md\:tw-scale-110 {
+            --tw-scale-x: 1.1;
+            --tw-scale-y: 1.1;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+
         .md\:tw-grid-cols-2 {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
@@ -3002,6 +2848,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             gap: 5rem;
         }
 
+        .md\:tw-gap-8 {
+            gap: 2rem;
+        }
+
         .md\:tw-overflow-hidden {
             overflow: hidden;
         }
@@ -3018,12 +2868,12 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             border-right-width: 2px;
         }
 
-        .md\:tw-p-7 {
-            padding: 1.75rem;
+        .md\:tw-p-6 {
+            padding: 1.5rem;
         }
 
-        .md\:tw-p-\[8px\] {
-            padding: 8px;
+        .md\:tw-p-7 {
+            padding: 1.75rem;
         }
 
         .md\:tw-px-0 {
@@ -3066,17 +2916,21 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             padding-bottom: 1rem;
         }
 
-        .md\:tw-py-6 {
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+        .md\:tw-py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
 
-        .md\:tw-pl-2 {
-            padding-left: 0.5rem;
+        .md\:tw-pb-32 {
+            padding-bottom: 8rem;
         }
 
-        .md\:tw-pr-6 {
-            padding-right: 1.5rem;
+        .md\:tw-pl-4 {
+            padding-left: 1rem;
+        }
+
+        .md\:tw-pr-8 {
+            padding-right: 2rem;
         }
 
         .md\:tw-pt-32 {
@@ -3095,6 +2949,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         .md\:tw-text-3xl {
             font-size: 1.875rem;
             line-height: 2.25rem;
+        }
+
+        .md\:tw-text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
         }
 
         .md\:tw-text-5xl {
@@ -3132,17 +2991,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             line-height: 1.75rem;
         }
 
-        .md\:tw-tracking-\[0\.3em\] {
-            letter-spacing: 0.3em;
-        }
-
         .md\:tw-tracking-widest {
             letter-spacing: 0.1em;
-        }
-
-        .md\:hover\:-tw-translate-y-12:hover {
-            --tw-translate-y: -3rem;
-            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         }
     }
 
@@ -3195,8 +3045,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             height: 1200px;
         }
 
-        .lg\:tw-h-\[700px\] {
-            height: 700px;
+        .lg\:tw-h-\[850px\] {
+            height: 850px;
         }
 
         .lg\:tw-w-1\/2 {
@@ -3211,16 +3061,28 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             width: 16rem;
         }
 
-        .lg\:tw-w-80 {
-            width: 20rem;
+        .lg\:tw-w-\[285px\] {
+            width: 285px;
+        }
+
+        .lg\:tw-w-\[384px\] {
+            width: 384px;
         }
 
         .lg\:tw-w-\[40\%\] {
             width: 40%;
         }
 
+        .lg\:tw-w-\[422px\] {
+            width: 422px;
+        }
+
         .lg\:tw-w-\[60\%\] {
             width: 60%;
+        }
+
+        .lg\:tw-w-\[calc\(50\%-12px\)\] {
+            width: calc(50% - 12px);
         }
 
         .lg\:tw-w-auto {
@@ -3418,24 +3280,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             max-width: 72rem;
         }
 
-        .xl\:tw-px-28 {
-            padding-left: 7rem;
-            padding-right: 7rem;
-        }
-
         .xl\:tw-px-64 {
             padding-left: 16rem;
             padding-right: 16rem;
-        }
-
-        .xl\:tw-text-2xl {
-            font-size: 1.5rem;
-            line-height: 2rem;
-        }
-
-        .xl\:tw-text-5xl {
-            font-size: 3rem;
-            line-height: 1;
         }
 
         .xl\:tw-text-6xl {
@@ -3443,20 +3290,32 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             line-height: 1;
         }
     }
+
+    @media (min-width: 1536px) {
+        .\32xl\:tw-mb-40 {
+            margin-bottom: 10rem;
+        }
+
+        .\32xl\:tw-pb-80 {
+            padding-bottom: 20rem;
+        }
+    }
 </style>
 
-<div class="tw-min-h-screen tw-w-full tw-bg-repeat tw-bg-fixed tw-bg-left-top tw-m-0 tw-p-0"
-    style="background-image: url('URL_DE_TU_IMAGEN_SUBIDA_A_DRUPAL'); background-size: auto; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+<div id="kiire-magia-root" class="tw-bg-fixed tw-bg-left-top"
+    style="background-image: url(/sites/default/files/assets/backgroundComplete.png); background-size: auto;">
 
-    <header class="tw-relative tw-w-full tw-min-h-auto">
+    <!-- HEADER -->
+    <header class="tw-relative tw-w-full">
 
-        <img src="assets/BackgroundMagic.png" alt="" aria-hidden="true"
+        <img src="/sites/default/files/assets/BackgroundMagic.png" alt="" aria-hidden="true"
             class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-auto tw-z-0 tw-pointer-events-none">
 
         <div class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-w-full">
 
             <div class="tw-mt-12">
-                <img src="assets/Layer 1.png" alt="Logo Kiire" class="tw-w-40 md:tw-w-52 lg:tw-w-64 tw-h-auto">
+                <img src="/sites/default/files/assets/Layer 1.png" alt="Logo Kiire"
+                    class="tw-w-40 md:tw-w-52 lg:tw-w-64 tw-h-auto">
             </div>
 
             <div class="tw-mt-4 lg:tw-mt-20 tw-text-center">
@@ -3478,33 +3337,28 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 </span>
             </div>
 
-            <div class="tw-pt-4 md:tw-pt-32 lg:tw-pt-52 xl:tw-px-28 tw-mt-12 lg:tw-mt-24 xl:tw-mt-36 tw-text-center">
+            <div class="tw-pt-4 md:tw-pt-32 lg:tw-pt-52 tw-mt-12 lg:tw-mt-24 xl:tw-mt-36 tw-text-center">
                 <p
-                    class="tw-font-Sora tw-text-kiire-lime-200 tw-px-4 md:tw-px-8 lg:tw-px-20 xl:tw-px-64 tw-text-1xl md:tw-text-2xl xl:tw-text-2xl tw-tracking-wide tw-uppercase">
+                    class="tw-font-ibm tw-text-kiire-lime-200 tw-px-4 md:tw-px-8 lg:tw-px-20 xl:tw-px-64 tw-text-1xl tw-tracking-wide tw-uppercase">
                     Con el datáfono Kiire usted tiene puntos colombia gratis que puede regalarle a sus clientes para
-                    que
-                    regresen.
+                    que regresen.
                 </p>
             </div>
 
-            <div
-                class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-w-full tw-mt-16 tw-mb-10 tw-px-6 md:tw-px-12">
-
+            <div class="tw-flex tw-flex-col tw-items-center tw-w-full tw-mt-16 tw-mb-10">
                 <a href="#"
-                    class="tw-inline-block tw-px-6 tw-py-3 md:tw-px-10 md:tw-py-4 tw-text-sm md:tw-text-base tw-rounded-full tw-font-bricolage-grotesque tw-text-black tw-uppercase tw-tracking-wider md:tw-tracking-widest tw-transition-transform hover:tw-scale-105 tw-bg-gradient-to-r tw-from-[#A3E635] tw-via-white tw-to-[#8B5CF6] tw-shadow-lg tw-text-center">
+                    class="tw-inline-block tw-px-6 tw-py-3 md:tw-px-10 md:tw-py-4 tw-text-sm md:tw-text-base tw-rounded-full tw-font-ibm tw-text-black tw-uppercase tw-tracking-wider md:tw-tracking-widest tw-transition-transform hover:tw-scale-105 tw-bg-gradient-to-r tw-from-[#D1FC67] tw-to-[#C7B1FC] tw-shadow-lg">
                     Vincularme a Kiire
                 </a>
-
             </div>
 
         </div>
     </header>
 
     <!-- Botón flotante -->
-    <div onclick="abrirModal()"
-        class="tw-fixed tw-bottom-6 tw-right-6 tw-z-50 tw-flex tw-flex-col tw-items-center tw-gap-1 tw-cursor-pointer tw-group">
-        <img src="assets/boton-quiz.png" alt="Quiz"
-            class="tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-object-contain tw-transition-transform group-hover:tw-scale-110">
+    <div onclick="abrirModal()" class="tw-fixed tw-bottom-6 tw-right-6 tw-z-50 tw-cursor-pointer tw-group">
+        <img src="/sites/default/files/assets/boton-quiz.png" alt="Quiz"
+            class="tw-w-16 tw-h-16 md:tw-w-20 md:tw-h-20 tw-object-contain tw-transition-transform group-hover:tw-scale-150 tw-scale-125">
     </div>
 
     <!-- Overlay -->
@@ -3512,92 +3366,167 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         class="tw-fixed tw-inset-0 tw-bg-black/70 tw-backdrop-blur-sm tw-z-[60] tw-hidden">
     </div>
 
-    <!-- Wrapper borde degradado -->
+    <!-- Modal -->
     <div id="modal-quiz"
         class="tw-fixed tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-z-[70] tw-hidden tw-w-[90vw] tw-max-w-md tw-rounded-2xl tw-p-[1.5px]"
         style="background: linear-gradient(to bottom, #1a0a2e, #1a0a2e, #768359);">
 
-        <!-- Modal con fondo degradado -->
         <div class="tw-w-full tw-h-full tw-rounded-2xl tw-overflow-hidden"
             style="background: linear-gradient(to bottom, #171B5B, #232F0B);">
 
-            <!-- Botón cerrar -->
             <button onclick="cerrarModal()"
                 class="tw-absolute tw-top-3 tw-right-4 tw-text-white/70 hover:tw-text-white tw-text-xl tw-z-10 tw-transition-colors">
                 ✕
             </button>
 
-            <!-- Imagen superior con marco interno -->
-            <div class="tw-w-full tw-px-4 tw-pt-4">
-                <div class="tw-w-full tw-rounded-xl tw-overflow-hidden tw-h-48"
-                    style="box-shadow: inset 0 0 0 4px rgba(255,255,255,0.15);">
-                    <img src="assets/modal-banner.png" alt="" class="tw-w-full tw-h-full tw-object-cover">
+            <!-- PANTALLA 1: Formulario -->
+            <div id="modal-screen-form">
+
+                <div class="tw-w-full tw-px-4 tw-pt-4">
+                    <div class="tw-w-full tw-rounded-xl tw-overflow-hidden tw-h-48"
+                        style="box-shadow: inset 0 0 0 4px rgba(255,255,255,0.15);">
+                        <img src="/sites/default/files/assets/modal-banner.png" alt=""
+                            class="tw-w-full tw-h-full tw-object-cover">
+                    </div>
+                </div>
+
+                <div class="tw-px-8 tw-pb-8 tw-pt-6 tw-flex tw-flex-col tw-items-center">
+
+                    <p class="tw-font-ibm tw-text-kiire-lime-200 tw-text-xs tw-uppercase tw-tracking-widest">
+                        Oráculo de las ventas
+                    </p>
+
+                    <h2
+                        class="tw-mt-3 tw-font-libre tw-text-kiire-lime-200 tw-text-3xl tw-uppercase tw-text-center tw-leading-tight">
+                        Consulte el futuro de su negocio
+                    </h2>
+
+                    <div class="tw-mt-6 tw-w-full tw-flex tw-flex-col tw-gap-5">
+
+                        <div class="tw-w-full tw-border-b tw-border-white/30">
+                            <input type="text" id="input-negocio" placeholder="NOMBRE DE SU NEGOCIO"
+                                class="tw-w-full tw-bg-transparent tw-font-ibm tw-text-white tw-text-xs tw-tracking-widest tw-placeholder-white/40 tw-outline-none tw-py-2">
+                        </div>
+
+                        <div class="tw-w-full tw-flex tw-gap-4">
+                            <div class="tw-flex-1 tw-border-b tw-border-white/30">
+                                <input type="text" placeholder="AÑO EN QUE SE CREÓ"
+                                    class="tw-w-full tw-bg-transparent tw-font-ibm tw-text-white tw-text-xs tw-tracking-widest tw-placeholder-white/40 tw-outline-none tw-py-2">
+                            </div>
+                            <div class="tw-flex-1 tw-border-b tw-border-white/30">
+                                <input type="email" placeholder="CORREO"
+                                    class="tw-w-full tw-bg-transparent tw-font-ibm tw-text-white tw-text-xs tw-tracking-widest tw-placeholder-white/40 tw-outline-none tw-py-2">
+                            </div>
+                        </div>
+
+                        <label class="tw-flex tw-items-start tw-gap-3 tw-cursor-pointer">
+                            <input type="checkbox" id="check-privacidad"
+                                class="tw-mt-1 tw-shrink-0 tw-accent-kiire-lime-200">
+                            <span
+                                class="tw-font-ibm tw-text-white/60 tw-text-[10px] tw-leading-relaxed tw-uppercase tw-tracking-wide">
+                                *Acepto la política - Aviso de privacidad y doy el consentimiento para el
+                                tratamiento de mis datos personales.
+                            </span>
+                        </label>
+
+                        <button onclick="verPrediccion()"
+                            class="tw-w-full tw-mt-2 tw-py-4 tw-rounded-xl tw-font-ibm tw-text-black tw-text-sm tw-uppercase tw-tracking-widest tw-transition-opacity hover:tw-opacity-90 tw-bg-gradient-to-r tw-from-[#D1FC67] tw-to-[#C7B1FC]">
+                            Ver mi predicción
+                        </button>
+
+                    </div>
                 </div>
             </div>
 
-            <!-- Contenido -->
-            <div class="tw-px-8 tw-pb-8 tw-pt-6 tw-flex tw-flex-col tw-items-center">
+            <!-- PANTALLA 2: Resultado -->
+            <div id="modal-screen-prediccion" class="tw-hidden">
 
-                <p class="tw-font-Sora tw-text-kiire-lime-200 tw-text-xs tw-uppercase tw-tracking-widest">
-                    Oráculo de las ventas
-                </p>
+                <div class="tw-w-full tw-px-4 tw-pt-4">
+                    <div class="tw-w-full tw-rounded-xl tw-overflow-hidden tw-h-48"
+                        style="box-shadow: inset 0 0 0 4px rgba(255,255,255,0.15);">
+                        <img src="/sites/default/files/assets/modal-banner.png" alt=""
+                            class="tw-w-full tw-h-full tw-object-cover">
+                    </div>
+                </div>
 
-                <h2
-                    class="tw-mt-3 tw-font-libre tw-text-kiire-lime-200 tw-text-3xl tw-uppercase tw-text-center tw-leading-tight">
-                    Consulte el futuro de su negocio
-                </h2>
+                <div class="tw-px-8 tw-pb-8 tw-pt-6 tw-flex tw-flex-col tw-items-center">
 
-                <!-- Formulario -->
-                <div class="tw-mt-6 tw-w-full tw-flex tw-flex-col tw-gap-5">
+                    <p class="tw-font-ibm tw-text-kiire-lime-200 tw-text-xs tw-uppercase tw-tracking-widest">
+                        Predicción
+                    </p>
 
-                    <div class="tw-w-full tw-border-b tw-border-white/30">
-                        <input type="text" placeholder="NOMBRE DE SU NEGOCIO"
-                            class="tw-w-full tw-bg-transparent tw-font-Sora tw-text-white tw-text-xs tw-tracking-widest tw-placeholder-white/40 tw-outline-none tw-py-2">
+                    <h2
+                        class="tw-mt-2 tw-font-libre tw-text-kiire-lime-200 tw-text-4xl tw-uppercase tw-text-center tw-leading-tight">
+                        El Soñador
+                    </h2>
+
+                    <p
+                        class="tw-mt-4 tw-font-ibm tw-text-kiire-lime-200 tw-text-xs tw-text-center tw-leading-relaxed tw-uppercase tw-tracking-wide">
+                        Se activa un ciclo largo de crecimiento. Vas a empezar a ver los frutos de todo lo que has
+                        trabajado. Las decisiones que tomes ahora atraerán nuevos clientes y más ventas.
+                    </p>
+
+                    <div class="tw-mt-6 tw-w-full tw-grid tw-grid-cols-2 tw-gap-3">
+
+                        <div class="tw-kiire-gradient-border tw-relative tw-rounded-2xl tw-p-4">
+                            <p
+                                class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-tracking-widest tw-mb-3 tw-text-center">
+                                ¿Qué hacer?
+                            </p>
+                            <ul class="tw-flex tw-flex-col tw-gap-2 tw-text-center">
+                                <li
+                                    class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
+                                    • Invierte sin miedo</li>
+                                <li
+                                    class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
+                                    • Responde esa llamada inesperada</li>
+                                <li
+                                    class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
+                                    • Recibe todos los medios de pago con Kiire</li>
+                            </ul>
+                        </div>
+
+                        <div class="tw-kiire-gradient-border tw-relative tw-rounded-2xl tw-p-4">
+                            <p
+                                class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-tracking-widest tw-mb-3 tw-text-center">
+                                ¿Qué no hacer?
+                            </p>
+                            <ul class="tw-flex tw-flex-col tw-gap-2 tw-text-center">
+                                <li
+                                    class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
+                                    • Abrir un viernes 13 a las 13:00</li>
+                                <li
+                                    class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
+                                    • Olvidarte de entregar facturas</li>
+                                <li
+                                    class="tw-font-ibm tw-text-kiire-lime-200 tw-text-[10px] tw-uppercase tw-leading-relaxed tw-tracking-wide">
+                                    • Trabajar en exceso</li>
+                            </ul>
+                        </div>
+
                     </div>
 
-                    <div class="tw-w-full tw-flex tw-gap-4">
-                        <div class="tw-flex-1 tw-border-b tw-border-white/30">
-                            <input type="text" placeholder="AÑO EN QUE SE CREÓ"
-                                class="tw-w-full tw-bg-transparent tw-font-Sora tw-text-white tw-text-xs tw-tracking-widest tw-placeholder-white/40 tw-outline-none tw-py-2">
-                        </div>
-                        <div class="tw-flex-1 tw-border-b tw-border-white/30">
-                            <input type="email" placeholder="CORREO"
-                                class="tw-w-full tw-bg-transparent tw-font-Sora tw-text-white tw-text-xs tw-tracking-widest tw-placeholder-white/40 tw-outline-none tw-py-2">
-                        </div>
-                    </div>
-
-                    <label class="tw-flex tw-items-start tw-gap-3 tw-cursor-pointer">
-                        <input type="checkbox" class="tw-mt-1 tw-shrink-0 tw-accent-kiire-lime-200">
-                        <span
-                            class="tw-font-Sora tw-text-white/60 tw-text-[10px] tw-leading-relaxed tw-uppercase tw-tracking-wide">
-                            *Acepto la política - Aviso de privacidad y doy el consentimiento para el tratamiento de
-                            mis
-                            datos personales.
-                        </span>
-                    </label>
-
-                    <button
-                        class="tw-w-full tw-mt-2 tw-py-4 tw-rounded-xl tw-font-Sora tw-text-black tw-text-sm tw-uppercase tw-tracking-widest tw-transition-opacity hover:tw-opacity-90"
-                        style="background: linear-gradient(to right, #A3E635, #8B5CF6);">
-                        Ver mi predicción
+                    <button onclick="volverFormulario()"
+                        class="tw-w-full tw-mt-6 tw-py-4 tw-rounded-xl tw-font-ibm tw-text-black tw-text-sm tw-uppercase tw-tracking-widest tw-transition-opacity hover:tw-opacity-90 tw-bg-gradient-to-r tw-from-[#D1FC67] tw-to-[#C7B1FC]">
+                        Volver
                     </button>
 
                 </div>
             </div>
+
         </div>
     </div>
 
-    <!--seccion listado items-->
+    <!-- SECCIÓN: Listado de pasos -->
     <section class="tw-relative tw-w-full tw-py-12 tw-px-6 md:tw-px-12 lg:tw-px-24">
         <div class="tw-max-w-5xl tw-mx-auto">
 
             <div class="tw-text-center">
                 <h2
-                    class="tw-mt-12 tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl xl:tw-text-6xl tw-tracking-wide tw-uppercase">
+                    class="tw-mt-12 tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
                     Así puedes fidelizar a tus clientes con puntos colombia y kiire
                 </h2>
-                <h3
-                    class="tw-mt-12 tw-mb-12 tw-font-bricolage-grotesque tw-text-white tw-text-1xl md:tw-text-2xl xl:tw-text-2xl tw-tracking-wide">
+                <h3 class="tw-mt-12 tw-mb-12 tw-font-bricolage-grotesque tw-text-white md:tw-text-2xl tw-tracking-wide">
                     Con Kiire sus clientes Podrán usar sus Puntos Colombia para pagar en su negocio y acumular más
                     puntos con cada pago con tarjeta.
                 </h3>
@@ -3605,91 +3534,73 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
             <ol class="tw-flex tw-flex-col tw-gap-4 tw-list-none tw-p-0 tw-m-0">
 
-                <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                     <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                         <span aria-hidden="true"
-                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                            01
-                        </span>
-                        <p class="tw-text-white tw-font-Sora tw-pl-6 tw-text-sm md:tw-text-lg">
+                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">01</span>
+                        <p class="tw-font-bricolage-grotesque tw-text-white tw-pl-6 tw-text-sm md:tw-text-lg">
                             Primero, lo primero: tener una <strong class="tw-font-bold">cuenta Kiire</strong>
-                            asociada a
-                            <strong class="tw-font-bold">Bancolombia o Nequi</strong>
+                            asociada a <strong class="tw-font-bold">Bancolombia o Nequi</strong>
                         </p>
                     </div>
                 </li>
 
-                <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                     <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                         <span aria-hidden="true"
-                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                            02
-                        </span>
-                        <p class="tw-text-white tw-font-Sora tw-pl-6 tw-text-sm md:tw-text-lg">
+                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">02</span>
+                        <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                             Una vez lo haga, empiece a vender y a recibir pagos con Puntos <strong
                                 class="tw-font-bold">sin que le cueste más</strong>. Aquí, usted solo paga la
-                            comisión
-                            normal: <strong class="tw-font-bold">2.99% por transacción.</strong>
+                            comisión normal: <strong class="tw-font-bold">2.99% por transacción.</strong>
                         </p>
                     </div>
                 </li>
 
-                <li class="kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                     <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                         <span aria-hidden="true"
-                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                            03
-                        </span>
-                        <p class="tw-text-white tw-font-Sora tw-pl-6 tw-text-sm md:tw-text-lg">
+                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">03</span>
+                        <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                             Ojito a este paso, <strong class="tw-font-bold">fidelice a sus clientes con más opciones
-                                de
-                                pago</strong>, como permitirles pagar con Puntos Colombia: el total, la mitad o una
-                            parte, y completar el resto con otro medio de pago.
+                                de pago</strong>, como permitirles pagar con Puntos Colombia: el total, la mitad o
+                            una parte, y completar el resto con otro medio de pago.
                         </p>
                     </div>
                 </li>
 
-                <li class="kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                     <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                         <span aria-hidden="true"
-                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                            04
-                        </span>
-                        <p class="tw-text-white tw-font-Sora tw-pl-6 tw-text-sm md:tw-text-lg">
+                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">04</span>
+                        <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                             En este punto, cabe aclarar que para que sus clientes le compren con Puntos Colombia,
-                            debe
-                            ser a partir de <strong class="tw-font-bold">200 puntos</strong>, es lo mínimo para
+                            debe ser a partir de <strong class="tw-font-bold">200 puntos</strong>, es lo mínimo para
                             pagar.
                         </p>
                     </div>
                 </li>
 
-                <li class="kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                     <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                         <span aria-hidden="true"
-                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                            05
-                        </span>
-                        <p class="tw-text-white tw-font-Sora tw-pl-6 tw-text-sm md:tw-text-lg">
+                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">05</span>
+                        <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                             Quinto paso, tenga en cuenta que al negocio <strong class="tw-font-bold">se le reconoce
-                                el
-                                valor completo</strong> de la compra y cada punto es equivalente a seis pesos ($6
+                                el valor completo</strong> de la compra y cada punto es equivalente a seis pesos ($6
                             COP).
                         </p>
                     </div>
                 </li>
 
-                <li class="kiire-gradient-border tw-relative tw-rounded-[2rem] tw-bg-transparent">
+                <li class="tw-kiire-gradient-border tw-relative tw-rounded-[2rem]">
                     <div class="tw-flex tw-items-center tw-p-5 md:tw-p-7">
                         <span aria-hidden="true"
-                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">
-                            06
-                        </span>
-                        <p class="tw-text-white tw-font-Sora tw-pl-6 tw-text-sm md:tw-text-lg">
+                            class="tw-text-kiire-green-light tw-text-4xl md:tw-text-5xl tw-font-bricolage-grotesque tw-min-w-[70px] tw-text-center">06</span>
+                        <p class="tw-text-white tw-font-bricolage-grotesque tw-pl-6 tw-text-sm md:tw-text-lg">
                             Por último, impulse la recompra dejando que sus clientes acumulen Puntos Colombia:
                             <strong class="tw-font-bold">ganan 1 punto por cada $4.000 en compras</strong> con
-                            tarjeta, PSE
-                            o QR. <strong class="tw-italic">*No aplica compras en efectivo.</strong>
+                            tarjeta, PSE o QR. <strong class="tw-italic">*No aplica compras en efectivo.</strong>
                         </p>
                     </div>
                 </li>
@@ -3698,22 +3609,21 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
     </section>
 
-    <!--sección grande cartas tarjetas-->
+    <!-- SECCIÓN: Cartas -->
     <section class="tw-relative tw-w-full tw-min-h-[500px]">
 
-        <img src="assets/background cartas.png" alt="" aria-hidden="true"
+        <img src="/sites/default/files/assets/background cartas.png" alt="" aria-hidden="true"
             class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-auto tw-z-0 tw-pointer-events-none">
 
         <div class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-w-full">
 
-            <!--cabeza de seccion cartas-->
-            <div class="tw-mt-4 tw-text-center tw-flex tw-flex-col">
+            <div class="tw-mt-20 tw-text-center">
                 <h2
-                    class="tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl xl:tw-text-5xl tw-tracking-wide tw-uppercase">
+                    class="tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
                     conozca todo lo bueno
                 </h2>
                 <h2
-                    class="tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl xl:tw-text-5xl tw-tracking-wide tw-uppercase">
+                    class="tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
                     Que vendrá para su negocio
                 </h2>
             </div>
@@ -3724,12 +3634,9 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z"
                         fill="currentColor" />
                 </svg>
-
-                <p
-                    class="tw-font-Sora tw-font-light tw-text-kiire-lime-200 tw-text-sm md:tw-text-2xl tw-tracking-[0.2em] md:tw-tracking-[0.3em] tw-uppercase">
+                <p class="tw-font-ibm tw-text-kiire-lime-200 tw-text-sm md:tw-text-2xl tw-uppercase">
                     SELECCIONE UNA CARTA
                 </p>
-
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="tw-text-kiire-green-light tw-w-4 tw-h-4 md:tw-w-6 md:tw-h-6">
                     <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z"
@@ -3737,71 +3644,70 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 </svg>
             </div>
 
-            <!--cartas-->
-            <div class="tw-relative tw-w-full tw-overflow-hidden tw-pb-32">
+            <!-- Cartas: scroll horizontal en mobile, semicírculo en desktop -->
+            <div class="tw-relative tw-w-full tw-overflow-hidden tw-pb-8 md:tw-pb-32 2xl:tw-pb-80 2xl:tw-mb-40">
                 <div
-                    class="tw-relative tw-w-full tw-max-w-[1400px] tw-mx-auto tw-h-[280px] sm:tw-h-[320px] md:tw-h-[550px] lg:tw-h-[700px] tw-overflow-x-auto tw-overflow-y-hidden hide-scroll tw-px-6 md:tw-overflow-visible md:tw-px-0">
-
+                    class="tw-relative tw-w-full tw-max-w-[1800px] tw-mx-auto tw-h-auto md:tw-h-[700px] lg:tw-h-[850px] tw-overflow-x-auto tw-overflow-y-hidden hide-scroll tw-px-6 md:tw-px-0 md:tw-overflow-visible">
                     <div
-                        class="tw-flex tw-flex-row tw-flex-nowrap tw-snap-x tw-snap-mandatory tw-gap-4 tw-w-max md:tw-w-full md:tw-block md:tw-h-full">
+                        class="tw-flex tw-flex-row tw-flex-nowrap tw-snap-x tw-snap-mandatory tw-gap-2 md:tw-gap-8 tw-w-max md:tw-w-full md:tw-block md:tw-h-full">
 
                         <article
-                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-48 sm:tw-w-56 md:tw-w-64 lg:tw-w-80 ruleta-card tw-z-[1]"
+                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-56 sm:tw-w-64 md:tw-w-[350px] lg:tw-w-[422px] -tw-mr-4 md:tw-mr-0 ruleta-card tw-z-[1]"
                             style="--tx: -0.71; --ty: 0.29;">
                             <a href="#" aria-label="Seleccionar carta 1"
-                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] tw-transition-transform tw-duration-500 hover:-tw-translate-y-8 md:hover:-tw-translate-y-12 hover:tw-z-50 tw-group">
-                                <img src="assets/carta1.png" alt="Reverso Carta 1"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-opacity tw-duration-300 group-hover:tw-opacity-0">
-                                <img src="assets/carta1c.png" alt="Frente Carta 1"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300 group-hover:tw-opacity-100">
+                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
+                                <img src="/sites/default/files/assets/carta1.png" alt="Reverso Carta 1"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0">
+                                <img src="/sites/default/files/assets/carta1c.png" alt="Frente Carta 1"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                             </a>
                         </article>
 
                         <article
-                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-48 sm:tw-w-56 md:tw-w-64 lg:tw-w-80 ruleta-card tw-z-[2]"
+                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-52 sm:tw-w-60 md:tw-w-[320px] lg:tw-w-[384px] ruleta-card tw-z-[2]"
                             style="--tx: -0.38; --ty: 0.08;">
                             <a href="#" aria-label="Seleccionar carta 2"
-                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] tw-transition-transform tw-duration-500 hover:-tw-translate-y-8 md:hover:-tw-translate-y-12 hover:tw-z-50 tw-group">
-                                <img src="assets/carta2.png" alt="Reverso Carta 2"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-opacity tw-duration-300 group-hover:tw-opacity-0">
-                                <img src="assets/carta2c.png" alt="Frente Carta 2"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300 group-hover:tw-opacity-100">
+                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
+                                <img src="/sites/default/files/assets/carta2.png" alt="Reverso Carta 2"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0">
+                                <img src="/sites/default/files/assets/carta2c.png" alt="Frente Carta 2"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                             </a>
                         </article>
 
                         <article
-                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-40 sm:tw-w-48 md:tw-w-48 lg:tw-w-64 ruleta-card tw-z-[3]"
-                            style="--tx: 0; --ty: 0;">
+                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-36 sm:tw-w-48 md:tw-w-[320px] lg:tw-w-[285px] ruleta-card tw-z-[3]"
+                            style="--tx: 0; --ty: 0.10;">
                             <a href="#" aria-label="Seleccionar carta 3"
-                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] tw-transition-transform tw-duration-500 hover:-tw-translate-y-8 md:hover:-tw-translate-y-12 hover:tw-z-50 tw-group">
-                                <img src="assets/carta3.png" alt="Reverso Carta 3"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-opacity tw-duration-300 group-hover:tw-opacity-0">
-                                <img src="assets/carta3c.png" alt="Frente Carta 3"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300 group-hover:tw-opacity-100">
+                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
+                                <img src="/sites/default/files/assets/carta3.png" alt="Reverso Carta 3"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0 tw-scale-125 md:tw-scale-110">
+                                <img src="/sites/default/files/assets/carta3c.png" alt="Frente Carta 3"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                             </a>
                         </article>
 
                         <article
-                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-48 sm:tw-w-56 md:tw-w-64 lg:tw-w-80 ruleta-card tw-z-[4]"
+                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-52 sm:tw-w-60 md:tw-w-[320px] lg:tw-w-[384px] ruleta-card tw-z-[4]"
                             style="--tx: 0.38; --ty: 0.08;">
                             <a href="#" aria-label="Seleccionar carta 4"
-                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] tw-transition-transform tw-duration-500 hover:-tw-translate-y-8 md:hover:-tw-translate-y-12 hover:tw-z-50 tw-group">
-                                <img src="assets/carta4.png" alt="Reverso Carta 4"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-opacity tw-duration-300 group-hover:tw-opacity-0">
-                                <img src="assets/carta4c.png" alt="Frente Carta 4"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300 group-hover:tw-opacity-100">
+                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
+                                <img src="/sites/default/files/assets/carta4.png" alt="Reverso Carta 4"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0">
+                                <img src="/sites/default/files/assets/carta4c.png" alt="Frente Carta 4"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                             </a>
                         </article>
 
                         <article
-                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-48 sm:tw-w-56 md:tw-w-64 lg:tw-w-80 ruleta-card tw-z-[5]"
+                            class="tw-relative tw-shrink-0 tw-snap-center tw-w-56 sm:tw-w-64 md:tw-w-[350px] lg:tw-w-[422px] -tw-ml-4 md:tw-ml-0 ruleta-card tw-z-[5]"
                             style="--tx: 0.71; --ty: 0.29;">
                             <a href="#" aria-label="Seleccionar carta 5"
-                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] tw-transition-transform tw-duration-500 hover:-tw-translate-y-8 md:hover:-tw-translate-y-12 hover:tw-z-50 tw-group">
-                                <img src="assets/carta5.png" alt="Reverso Carta 5"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-opacity tw-duration-300 group-hover:tw-opacity-0">
-                                <img src="assets/carta5c.png" alt="Frente Carta 5"
-                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-opacity tw-duration-300 group-hover:tw-opacity-100">
+                                class="tw-block tw-relative tw-w-full tw-aspect-[2/3] hover:tw-z-50 tw-group tw-overflow-hidden">
+                                <img src="/sites/default/files/assets/carta5.png" alt="Reverso Carta 5"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-transition-all tw-duration-300 group-hover:tw-opacity-0">
+                                <img src="/sites/default/files/assets/carta5c.png" alt="Frente Carta 5"
+                                    class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-contain tw-opacity-0 tw-transition-all tw-duration-300 group-hover:tw-opacity-100 group-hover:tw-scale-125">
                             </a>
                         </article>
 
@@ -3809,80 +3715,72 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 </div>
             </div>
 
-            <!--cabeza de seccion tarjetas-->
-            <div class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-justify-center 
-            tw-px-8 md:tw-px-16">
-
-                <h2 class="tw-font-libre tw-text-kiire-lime-200 tw-text-1xl md:tw-text-3xl lg:tw-text-3xl 
-               tw-tracking-wide tw-uppercase tw-text-center tw-leading-tight 
-               tw-max-w-4xl tw-mx-auto">
+            <!-- Cabeza de tarjetas -->
+            <div class="tw-relative tw-z-10 tw-flex tw-flex-col tw-items-center tw-px-8 md:tw-px-16">
+                <h2
+                    class="tw-font-libre tw-text-kiire-lime-200 tw-text-1xl md:tw-text-3xl tw-tracking-wide tw-uppercase tw-text-center tw-leading-tight tw-max-w-4xl tw-mx-auto">
                     <strong>ESTO ES UN EJEMPLO PARA QUE CONOZCA</strong><br class="tw-hidden md:tw-block">
                     <strong>CÓMO FUNCIONA LA REDENCIÓN DE PUNTOS</strong><br class="tw-hidden md:tw-block">
                     <strong>COLOMBIA + DINERO EN SU NEGOCIO</strong>
                 </h2>
             </div>
 
-            <!--tarjetas-->
+            <!-- Tarjetas -->
             <div
-                class="tw-relative tw-w-full tw-py-16 tw-px-10 md:tw-px-20 tw-max-w-[1600px] tw-mx-auto tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-4">
-
+                class="tw-w-full tw-py-16 tw-px-10 md:tw-px-20 tw-max-w-[1600px] tw-mx-auto tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-4">
                 <div
-                    class="kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
-                    <img src="assets/01 (copia 1).png" alt=""
+                    class="tw-kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
+                    <img src="/sites/default/files/assets/01.png" alt=""
                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
                 </div>
-
                 <div
-                    class="kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
-                    <img src="assets/3.png" alt=""
+                    class="tw-kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
+                    <img src="/sites/default/files/assets/02.png" alt=""
                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
                 </div>
-
                 <div
-                    class="kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
-                    <img src="assets/4.png" alt=""
+                    class="tw-kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
+                    <img src="/sites/default/files/assets/03.png" alt=""
                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
                 </div>
-
                 <div
-                    class="kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
-                    <img src="assets/5.png" alt=""
+                    class="tw-kiire-gradient-border tw-relative tw-w-full tw-max-w-[200px] tw-mx-auto tw-aspect-square tw-rounded-2xl">
+                    <img src="/sites/default/files/assets/04.png" alt=""
                         class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-rounded-2xl">
                 </div>
-
             </div>
 
-            <!--boton-->
             <a href="#"
-                class="tw-inline-block tw-px-8 tw-py-3 md:tw-px-12 md:tw-py-4 tw-text-sm md:tw-text-base tw-rounded-full tw-font-Sora tw-font-bold tw-text-black tw-uppercase tw-tracking-widest tw-transition-transform hover:tw-scale-105 tw-bg-gradient-to-r tw-from-[#A3E635] tw-via-white tw-to-[#8B5CF6] tw-shadow-lg tw-text-center">
+                class="tw-inline-block tw-px-8 tw-py-3 md:tw-px-12 md:tw-py-4 tw-text-sm md:tw-text-base tw-rounded-full tw-font-ibm tw-text-black tw-uppercase tw-tracking-widest tw-transition-transform hover:tw-scale-105 tw-bg-gradient-to-r tw-from-[#D1FC67] tw-to-[#C7B1FC] tw-shadow-lg">
                 MIRA LOS TUTORIALES
             </a>
 
         </div>
-
     </section>
 
-    <!--cabeza de carrusel-->
+    <!-- SECCIÓN: Cabeza del carrusel -->
     <section class="tw-relative tw-w-full tw-py-12 tw-px-6 md:tw-px-12 lg:tw-px-24">
         <div class="tw-max-w-5xl tw-mx-auto tw-flex tw-flex-col tw-items-center tw-text-center">
 
             <h2
-                class="tw-mt-12 tw-max-w-2xl tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl xl:tw-text-6xl tw-tracking-wide tw-uppercase">
-                La prosperidad está por llegar a tu negocio
+                class="tw-mt-12 tw-max-w-2xl tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
+                La prosperidad está
             </h2>
 
-            <div class="tw-mt-4 md:tw-mt-12 tw-flex tw-items-center tw-gap-3 md:tw-gap-10">
+            <h3
+                class="tw-max-w-2xl tw-font-libre tw-text-kiire-lime-200 tw-text-2xl md:tw-text-5xl tw-tracking-wide tw-uppercase">
+                por llegar a tu negocio
+            </h3>
+
+            <div class="tw-mt-4 tw-flex tw-items-center tw-gap-3 md:tw-gap-10">
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="tw-text-kiire-green-light tw-w-4 tw-h-4 md:tw-w-6 md:tw-h-6">
                     <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z"
                         fill="currentColor" />
                 </svg>
-
-                <p
-                    class="tw-font-Sora tw-font-light tw-text-kiire-lime-200 tw-text-sm md:tw-text-2xl tw-tracking-[0.2em] md:tw-tracking-[0.3em] tw-uppercase">
+                <p class="tw-font-ibm tw-font-light tw-text-kiire-lime-200 tw-text-sm md:tw-text-2xl tw-uppercase">
                     mira todas las predicciones
                 </p>
-
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="tw-text-kiire-green-light tw-w-4 tw-h-4 md:tw-w-6 md:tw-h-6">
                     <path d="M12 0L13.5 10.5L24 12L13.5 13.5L12 24L10.5 13.5L0 12L10.5 10.5L12 0Z"
@@ -3891,7 +3789,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             </div>
 
             <h3
-                class="tw-mt-12 tw-mb-12 tw-max-w-3xl tw-font-bricolage-grotesque tw-text-white tw-text-1xl md:tw-text-2xl xl:tw-text-2xl tw-tracking-wide">
+                class="tw-mt-4 tw-mb-12 tw-max-w-3xl tw-font-bricolage-grotesque tw-text-white md:tw-text-2xl tw-tracking-wide">
                 <strong>Con Kiire y Puntos Colombia</strong> cambias el futuro de tu negocio y hechizas a todos tus
                 clientes en cada pago
             </h3>
@@ -3899,36 +3797,32 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
     </section>
 
-
-    <!--seccion carrusel-->
+    <!-- SECCIÓN: Carrusel de tutoriales -->
     <section class="tw-relative tw-w-full tw-py-8 tw-px-6 md:tw-px-16 lg:tw-px-24">
-        <div class="tw-max-w-4xl tw-mx-auto">
+        <div class="tw-max-w-6xl tw-mx-auto">
 
             <div class="tw-relative tw-flex tw-items-center tw-gap-4">
 
-                <!-- Botón anterior -->
                 <button onclick="moverCarrusel(-1)"
-                    class="tw-shrink-0 tw-text-white/50 hover:tw-text-white tw-transition-colors tw-text-3xl tw-font-light tw-leading-none tw-pb-1">
+                    class="tw-shrink-0 tw-text-white/50 hover:tw-text-white tw-transition-colors tw-text-4xl tw-font-light tw-leading-none tw-pb-1">
                     &#8249;
                 </button>
 
-                <!-- Carrusel -->
                 <div id="carrusel-tutoriales"
-                    class="tw-flex tw-flex-row tw-gap-4 tw-overflow-x-auto tw-snap-x tw-snap-mandatory hide-scroll tw-pb-2">
+                    class="tw-flex tw-flex-row tw-gap-6 tw-overflow-x-auto tw-snap-x tw-snap-mandatory hide-scroll tw-pb-4">
 
-                    <!-- Caja 1 -->
                     <div
-                        class="kiire-gradient-border tw-relative tw-rounded-2xl tw-flex tw-flex-col md:tw-flex-row tw-overflow-hidden tw-shrink-0 tw-w-[75vw] md:tw-w-[calc(50%-8px)] tw-snap-start">
+                        class="tw-kiire-gradient-border tw-relative tw-rounded-2xl tw-flex tw-flex-col md:tw-flex-row tw-overflow-hidden tw-shrink-0 tw-w-[70vw] md:tw-w-[calc(60%-12px)] lg:tw-w-[calc(50%-12px)] tw-snap-start">
                         <div
-                            class="tw-flex tw-justify-center tw-p-3 md:tw-p-[8px] md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
+                            class="tw-flex tw-justify-center tw-p-3 md:tw-p-6 md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
                             <a href="#cap1-link" target="_blank" rel="noopener noreferrer"
                                 class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
-                                <img src="assets/cap1.png" alt="CAP 1: El Hechizo"
+                                <img src="/sites/default/files/assets/cap1.png" alt="CAP 1: EL HECHIZO"
                                     class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
                                 <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
                                     <div
-                                        class="tw-w-8 tw-h-8 tw-rounded-full tw-bg-black/40 tw-flex tw-items-center tw-justify-center tw-backdrop-blur-sm tw-transition-transform group-hover/thumb:tw-scale-110">
-                                        <svg class="tw-w-4 tw-h-4 tw-text-white tw-translate-x-[1px]"
+                                        class="tw-w-10 tw-h-10 tw-rounded-full tw-bg-black/40 tw-flex tw-items-center tw-justify-center tw-backdrop-blur-sm tw-transition-transform group-hover/thumb:tw-scale-110">
+                                        <svg class="tw-w-5 tw-h-5 tw-text-white tw-translate-x-[1px]"
                                             viewBox="0 0 24 24" fill="currentColor">
                                             <path d="M8 5v14l11-7z" />
                                         </svg>
@@ -3937,130 +3831,134 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                             </a>
                         </div>
                         <div
-                            class="tw-w-full md:tw-w-3/5 tw-flex tw-flex-col tw-justify-center tw-px-4 tw-pb-4 tw-pt-1 md:tw-py-6 md:tw-pr-6 md:tw-pl-2">
+                            class="tw-w-full md:tw-w-3/5 tw-flex tw-flex-col tw-justify-center tw-px-6 tw-pb-6 tw-pt-2 md:tw-py-8 md:tw-pr-8 md:tw-pl-4">
                             <h3
-                                class="tw-font-libre tw-text-kiire-lime-200 tw-text-lg md:tw-text-xl tw-uppercase tw-tracking-wide tw-leading-tight">
-                                CAP 1: El Hechizo</h3>
-                            <p class="tw-mt-2 tw-font-Sora tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
+                                class="tw-font-libre tw-text-kiire-lime-200 tw-text-3xl md:tw-text-4xl tw-uppercase tw-tracking-wide tw-leading-tight tw-mb-3">
+                                CAP 1: EL HECHIZO
+                            </h3>
+                            <p
+                                class="tw-font-bricolage-grotesque tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
                                 Con el datáfono Kiire, el futuro de su negocio cambiará en un abrir y cerrar de ojos
-                                y
-                                enamorará a todos sus clientes con Puntos Colombia. 🔮✨
-                            </p>
-                            <p class="tw-mt-1 tw-font-Sora tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
-                                Ahora ellos podrán acumular Puntos Colombia con cada compra en su negocio y también
-                                usar
-                                los Puntos que tienen para pagar, sin que a usted le cueste más.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Caja 2 -->
-                    <div
-                        class="kiire-gradient-border tw-relative tw-rounded-2xl tw-flex tw-flex-col md:tw-flex-row tw-overflow-hidden tw-shrink-0 tw-w-[75vw] md:tw-w-[calc(50%-8px)] tw-snap-start">
-                        <div
-                            class="tw-flex tw-justify-center tw-p-3 md:tw-p-[8px] md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
-                            <a href="#cap2-link" target="_blank" rel="noopener noreferrer"
-                                class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
-                                <img src="assets/cap2.png" alt="CAP 2: El Amarre"
-                                    class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
-                                <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
-                                    <div
-                                        class="tw-w-8 tw-h-8 tw-rounded-full tw-bg-black/40 tw-flex tw-items-center tw-justify-center tw-backdrop-blur-sm tw-transition-transform group-hover/thumb:tw-scale-110">
-                                        <svg class="tw-w-4 tw-h-4 tw-text-white tw-translate-x-[1px]"
-                                            viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M8 5v14l11-7z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div
-                            class="tw-w-full md:tw-w-3/5 tw-flex tw-flex-col tw-justify-center tw-px-4 tw-pb-4 tw-pt-1 md:tw-py-6 md:tw-pr-6 md:tw-pl-2">
-                            <h3
-                                class="tw-font-libre tw-text-kiire-lime-200 tw-text-lg md:tw-text-xl tw-uppercase tw-tracking-wide tw-leading-tight">
-                                CAP 2: El Amarre</h3>
-                            <p class="tw-mt-2 tw-font-Sora tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
-                                Un pequeño ritual para grandes ventas. 🧿
-                            </p>
-                            <p class="tw-mt-1 tw-font-Sora tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
-                                Con Kiire, sus clientes pagan con Puntos Colombia o acumulan en cada compra. Más
-                                razones
-                                para volver, más magia en su caja. 🪄
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Caja 3 -->
-                    <div
-                        class="kiire-gradient-border tw-relative tw-rounded-2xl tw-flex tw-flex-col md:tw-flex-row tw-overflow-hidden tw-shrink-0 tw-w-[75vw] md:tw-w-[calc(50%-8px)] tw-snap-start">
-                        <div
-                            class="tw-flex tw-justify-center tw-p-3 md:tw-p-[8px] md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
-                            <a href="#cap3-link" target="_blank" rel="noopener noreferrer"
-                                class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
-                                <img src="assets/cap3.png" alt="CAP 3: La Bola de Cristal"
-                                    class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
-                                <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
-                                    <div
-                                        class="tw-w-8 tw-h-8 tw-rounded-full tw-bg-black/40 tw-flex tw-items-center tw-justify-center tw-backdrop-blur-sm tw-transition-transform group-hover/thumb:tw-scale-110">
-                                        <svg class="tw-w-4 tw-h-4 tw-text-white tw-translate-x-[1px]"
-                                            viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M8 5v14l11-7z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div
-                            class="tw-w-full md:tw-w-3/5 tw-flex tw-flex-col tw-justify-center tw-px-4 tw-pb-4 tw-pt-1 md:tw-py-6 md:tw-pr-6 md:tw-pl-2">
-                            <h3
-                                class="tw-font-libre tw-text-kiire-lime-200 tw-text-lg md:tw-text-xl tw-uppercase tw-tracking-wide tw-leading-tight">
-                                CAP 3: La Bola de Cristal</h3>
-                            <p class="tw-mt-2 tw-font-Sora tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
-                                Haga que su negocio sea el elegido. 🔮🏅
-                            </p>
-                            <p class="tw-mt-1 tw-font-Sora tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
-                                Con Kiire, sus clientes acumulan Puntos Colombia o los usan para pagar, sin que a
-                                usted
-                                le cueste más.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Caja 4 -->
-                    <div
-                        class="kiire-gradient-border tw-relative tw-rounded-2xl tw-flex tw-flex-col md:tw-flex-row tw-overflow-hidden tw-shrink-0 tw-w-[75vw] md:tw-w-[calc(50%-8px)] tw-snap-start">
-                        <div
-                            class="tw-flex tw-justify-center tw-p-3 md:tw-p-[8px] md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
-                            <a href="#cap4-link" target="_blank" rel="noopener noreferrer"
-                                class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
-                                <img src="assets/cap4.png" alt="CAP 4: Las Manos"
-                                    class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
-                                <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
-                                    <div
-                                        class="tw-w-8 tw-h-8 tw-rounded-full tw-bg-black/40 tw-flex tw-items-center tw-justify-center tw-backdrop-blur-sm tw-transition-transform group-hover/thumb:tw-scale-110">
-                                        <svg class="tw-w-4 tw-h-4 tw-text-white tw-translate-x-[1px]"
-                                            viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M8 5v14l11-7z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div
-                            class="tw-w-full md:tw-w-3/5 tw-flex tw-flex-col tw-justify-center tw-px-4 tw-pb-4 tw-pt-1 md:tw-py-6 md:tw-pr-6 md:tw-pl-2">
-                            <h3
-                                class="tw-font-libre tw-text-kiire-lime-200 tw-text-lg md:tw-text-xl tw-uppercase tw-tracking-wide tw-leading-tight">
-                                CAP 4: Las Manos</h3>
-                            <p class="tw-mt-2 tw-font-Sora tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
-                                Haga magia en cada venta. 🪄👐
-                            </p>
-                            <p class="tw-mt-1 tw-font-Sora tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
-                                Sus clientes van a enamorarse de su negocio, porque con Kiire les podrá dar la
-                                opción de
-                                comprar con Puntos Colombia o acumular Puntos con cada compra.
+                                y enamorará a todos sus clientes con Puntos Colombia. 🔮🛒
                             </p>
                             <p
-                                class="tw-mt-1 tw-font-Sora tw-text-kiire-lime-200 tw-text-xs md:tw-text-sm tw-font-bold">
+                                class="tw-mt-2 tw-font-bricolage-grotesque tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
+                                Ahora ellos podrán acumular Puntos Colombia con cada compra en su negocio y también
+                                usar los Puntos que tienen para pagar, sin que a usted le cueste más.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="tw-kiire-gradient-border tw-relative tw-rounded-2xl tw-flex tw-flex-col md:tw-flex-row tw-overflow-hidden tw-shrink-0 tw-w-[70vw] md:tw-w-[calc(60%-12px)] lg:tw-w-[calc(50%-12px)] tw-snap-start">
+                        <div
+                            class="tw-flex tw-justify-center tw-p-3 md:tw-p-6 md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
+                            <a href="#cap2-link" target="_blank" rel="noopener noreferrer"
+                                class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
+                                <img src="/sites/default/files/assets/cap2.png" alt="CAP 2: EL AMARRE"
+                                    class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
+                                <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
+                                    <div
+                                        class="tw-w-10 tw-h-10 tw-rounded-full tw-bg-black/40 tw-flex tw-items-center tw-justify-center tw-backdrop-blur-sm tw-transition-transform group-hover/thumb:tw-scale-110">
+                                        <svg class="tw-w-5 tw-h-5 tw-text-white tw-translate-x-[1px]"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div
+                            class="tw-w-full md:tw-w-3/5 tw-flex tw-flex-col tw-justify-center tw-px-6 tw-pb-6 tw-pt-2 md:tw-py-8 md:tw-pr-8 md:tw-pl-4">
+                            <h3
+                                class="tw-font-libre tw-text-kiire-lime-200 tw-text-3xl md:tw-text-4xl tw-uppercase tw-tracking-wide tw-leading-tight tw-mb-3">
+                                CAP 2: EL AMARRE
+                            </h3>
+                            <p
+                                class="tw-font-bricolage-grotesque tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
+                                Un pequeño ritual para grandes ventas 🔮🕯️
+                            </p>
+                            <p
+                                class="tw-mt-2 tw-font-bricolage-grotesque tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
+                                Con Kiire, sus clientes pagan con Puntos Colombia o acumulan en cada compra. Más
+                                razones para volver, más magia en su caja 💫
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="tw-kiire-gradient-border tw-relative tw-rounded-2xl tw-flex tw-flex-col md:tw-flex-row tw-overflow-hidden tw-shrink-0 tw-w-[70vw] md:tw-w-[calc(60%-12px)] lg:tw-w-[calc(50%-12px)] tw-snap-start">
+                        <div
+                            class="tw-flex tw-justify-center tw-p-3 md:tw-p-6 md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
+                            <a href="#cap3-link" target="_blank" rel="noopener noreferrer"
+                                class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
+                                <img src="/sites/default/files/assets/cap3.png" alt="CAP 3: LA BOLA DE CRISTAL"
+                                    class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
+                                <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
+                                    <div
+                                        class="tw-w-10 tw-h-10 tw-rounded-full tw-bg-black/40 tw-flex tw-items-center tw-justify-center tw-backdrop-blur-sm tw-transition-transform group-hover/thumb:tw-scale-110">
+                                        <svg class="tw-w-5 tw-h-5 tw-text-white tw-translate-x-[1px]"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div
+                            class="tw-w-full md:tw-w-3/5 tw-flex tw-flex-col tw-justify-center tw-px-6 tw-pb-6 tw-pt-2 md:tw-py-8 md:tw-pr-8 md:tw-pl-4">
+                            <h3
+                                class="tw-font-libre tw-text-kiire-lime-200 tw-text-3xl md:tw-text-4xl tw-uppercase tw-tracking-wide tw-leading-tight tw-mb-3">
+                                CAP 3: LA BOLA DE CRISTAL
+                            </h3>
+                            <p
+                                class="tw-font-bricolage-grotesque tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
+                                Haga que su negocio sea el elegido. 🔮🛒
+                            </p>
+                            <p
+                                class="tw-mt-2 tw-font-bricolage-grotesque tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
+                                Con Kiire, sus clientes acumulan Puntos Colombia o los usan para pagar, sin que a
+                                usted le cueste más.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="tw-kiire-gradient-border tw-relative tw-rounded-2xl tw-flex tw-flex-col md:tw-flex-row tw-overflow-hidden tw-shrink-0 tw-w-[70vw] md:tw-w-[calc(60%-12px)] lg:tw-w-[calc(50%-12px)] tw-snap-start">
+                        <div
+                            class="tw-flex tw-justify-center tw-p-3 md:tw-p-6 md:tw-w-2/5 md:tw-shrink-0 md:tw-overflow-hidden">
+                            <a href="#cap4-link" target="_blank" rel="noopener noreferrer"
+                                class="tw-relative tw-w-20 md:tw-w-full tw-aspect-[9/16] tw-rounded-2xl tw-overflow-hidden tw-block tw-shrink-0 tw-group/thumb">
+                                <img src="/sites/default/files/assets/cap4.png" alt="CAP 4: LAS MANOS"
+                                    class="tw-w-full tw-h-full tw-object-cover tw-transition-opacity group-hover/thumb:tw-opacity-80">
+                                <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center">
+                                    <div
+                                        class="tw-w-10 tw-h-10 tw-rounded-full tw-bg-black/40 tw-flex tw-items-center tw-justify-center tw-backdrop-blur-sm tw-transition-transform group-hover/thumb:tw-scale-110">
+                                        <svg class="tw-w-5 tw-h-5 tw-text-white tw-translate-x-[1px]"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div
+                            class="tw-w-full md:tw-w-3/5 tw-flex tw-flex-col tw-justify-center tw-px-6 tw-pb-6 tw-pt-2 md:tw-py-8 md:tw-pr-8 md:tw-pl-4">
+                            <h3
+                                class="tw-font-libre tw-text-kiire-lime-200 tw-text-3xl md:tw-text-4xl tw-uppercase tw-tracking-wide tw-leading-tight tw-mb-3">
+                                CAP 4: LAS MANOS
+                            </h3>
+                            <p
+                                class="tw-font-bricolage-grotesque tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
+                                Haga magia en cada venta! 🔮🕯️
+                            </p>
+                            <p
+                                class="tw-mt-1 tw-font-bricolage-grotesque tw-text-white tw-text-xs md:tw-text-sm tw-leading-relaxed">
+                                Sus clientes van a enamorarse de su negocio, porque con Kiire les podrá dar la
+                                opción de comprar con Puntos Colombia o acumular Puntos con cada compra.
+                            </p>
+                            <p
+                                class="tw-mt-2 tw-font-bricolage-grotesque tw-text-white tw-text-xs md:tw-text-sm tw-font-bold tw-leading-relaxed">
                                 ¡Y sin ningún costo adicional!
                             </p>
                         </div>
@@ -4068,9 +3966,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
                 </div>
 
-                <!-- Botón siguiente -->
                 <button onclick="moverCarrusel(1)"
-                    class="tw-shrink-0 tw-text-white/50 hover:tw-text-white tw-transition-colors tw-text-3xl tw-font-light tw-leading-none tw-pb-1">
+                    class="tw-shrink-0 tw-text-white/50 hover:tw-text-white tw-transition-colors tw-text-4xl tw-font-light tw-leading-none tw-pb-1">
                     &#8250;
                 </button>
 
@@ -4078,40 +3975,78 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
     </section>
 
-    <!--seccion de guía-->
+    <!-- SECCIÓN: Carta de guía -->
     <section class="tw-relative tw-w-full tw-py-12 tw-px-6 md:tw-px-12 lg:tw-px-24">
         <div class="tw-max-w-6xl tw-mx-auto tw-flex tw-items-center tw-justify-center tw-gap-6">
 
-            <!-- Imagen izquierda — oculta en tablet y móvil -->
-            <img src="assets/semistart.svg" alt="" class="tw-hidden lg:tw-block tw-w-1/4 tw-h-48 tw-object-contain">
+            <img src="/sites/default/files/assets/semistart1.png" alt=""
+                class="tw-hidden lg:tw-block tw-w-1/4 tw-h-48 tw-object-contain">
 
-            <!-- Imagen central — siempre visible, es un link -->
             <a href="#" class="tw-block tw-w-full lg:tw-w-1/2 tw-shrink-0 tw-h-72">
-                <img src="assets/cartaConsulta.png" alt="Ver más"
-                    class="tw-w-full tw-h-full tw-object-contain tw-transition-opacity hover:tw-opacity-80">
+                <img src="/sites/default/files/assets/cartaConsulta2.png" alt="Ver más"
+                    class="tw-block md:tw-hidden tw-w-full tw-h-full tw-object-contain tw-transition-opacity hover:tw-opacity-80">
+                <img src="/sites/default/files/assets/cartaConsulta.png" alt="Ver más"
+                    class="tw-hidden md:tw-block tw-w-full tw-h-full tw-object-contain tw-transition-opacity hover:tw-opacity-80">
             </a>
 
-            <!-- Imagen derecha — oculta en tablet y móvil -->
-            <img src="assets/semistart2.svg" alt="" class="tw-hidden lg:tw-block tw-w-1/4 tw-h-48 tw-object-contain">
+            <img src="/sites/default/files/assets/semistart2.png" alt=""
+                class="tw-hidden lg:tw-block tw-w-1/4 tw-h-48 tw-object-contain">
 
         </div>
     </section>
 
-    <!--footer-->
+    <!-- FOOTER -->
     <footer class="tw-relative tw-w-full tw-bg-kiire-lime-200 tw-py-12 tw-px-6 md:tw-px-12 lg:tw-px-24">
         <div
             class="tw-max-w-6xl tw-mx-auto tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-between tw-gap-4">
-
             <a href="#"
-                class="tw-font-Sora tw-font-bold tw-text-kiire-text tw-text-xs tw-uppercase tw-tracking-widest tw-underline tw-underline-offset-4 hover:tw-opacity-70 tw-transition-opacity">
+                class="tw-font-bricolage-grotesque tw-font-bold tw-text-kiire-text tw-text-xs tw-uppercase hover:tw-underline hover:tw-underline-offset-4 hover:tw-opacity-70 tw-transition-opacity">
                 Conoce nuestros términos y condiciones aquí
             </a>
-
-            <p class="tw-font-Sora tw-font-bold tw-text-kiire-text tw-text-xs tw-uppercase tw-tracking-widest">
+            <p class="tw-font-bricolage-grotesque tw-font-bold tw-text-kiire-text tw-text-xs tw-uppercase">
                 Copyright Kiire, Inc. 2024. Todos los derechos reservados
             </p>
-
         </div>
     </footer>
 
 </div>
+
+<script>
+
+
+    function abrirModal() {
+        document.getElementById('modal-quiz').classList.remove('tw-hidden');
+        document.getElementById('modal-overlay').classList.remove('tw-hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function cerrarModal() {
+        document.getElementById('modal-quiz').classList.add('tw-hidden');
+        document.getElementById('modal-overlay').classList.add('tw-hidden');
+        document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') cerrarModal();
+    });
+
+
+
+    function moverCarrusel(direccion) {
+        const carrusel = document.getElementById('carrusel-tutoriales');
+        const caja = carrusel.querySelector('div');
+        const anchoCaja = caja.getBoundingClientRect().width + 16;
+        carrusel.scrollBy({ left: anchoCaja * direccion, behavior: 'smooth' });
+    }
+
+    function verPrediccion() {
+        document.getElementById('modal-screen-form').classList.add('tw-hidden');
+        document.getElementById('modal-screen-prediccion').classList.remove('tw-hidden');
+    }
+
+    function volverFormulario() {
+        document.getElementById('modal-screen-prediccion').classList.add('tw-hidden');
+        document.getElementById('modal-screen-form').classList.remove('tw-hidden');
+    }
+
+</script>

@@ -46,16 +46,11 @@
     .ruleta-card {
         position: absolute;
         left: 50%;
-        /* Punto más alto de la curva (donde estará la carta central) */
+        
         top: 20px;
 
-        /* EL TAMAÑO DEL CÍRCULO:
-           Usamos clamp() para que el círculo se adapte a la pantalla.
-           Crece dinámicamente hasta un máximo de 1200px de radio. */
         --radius: clamp(500px, 50vw, 1200px);
 
-        /* POSICIONAMIENTO MATEMÁTICO SIN ROTAR LA IMAGEN:
-           Se traslada en X e Y simulando la curva del círculo perfecto. */
         transform: translate(calc(-50% + (var(--radius) * var(--tx))),
                 calc(var(--radius) * var(--ty)));
     }
