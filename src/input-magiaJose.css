@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.kiire-gradient-border::before {
+.tw-kiire-gradient-border::before {
     content: "";
     position: absolute;
     top: 0;
@@ -66,25 +67,3 @@
     }
 }
 
-/* Añadir al final de tu archivo CSS */
-
-.bg-magic-header {
-    background-image: url('assets/BackgroundMagic.png');
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-}
-
-.bg-cartas-1 {
-    background-image: url('assets/background cartas1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bg-cartas-2 {
-    background-image: url('assets/background cartas2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}

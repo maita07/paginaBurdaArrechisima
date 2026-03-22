@@ -24,3 +24,13 @@ function moverCarrusel(direccion) {
     const anchoCaja = caja.getBoundingClientRect().width + 16;
     carrusel.scrollBy({ left: anchoCaja * direccion, behavior: 'smooth' });
 }
+
+function verPrediccion() {
+    document.getElementById('modal-screen-form').classList.add('tw-hidden');
+    document.getElementById('modal-screen-prediccion').classList.remove('tw-hidden');
+}
+
+function volverFormulario() {
+    document.getElementById('modal-screen-prediccion').classList.add('tw-hidden');
+    document.getElementById('modal-screen-form').classList.remove('tw-hidden');
+}

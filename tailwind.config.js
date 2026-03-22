@@ -30,7 +30,8 @@ module.exports = {
       fontFamily: {
         'sora': ['Sora', 'sans-serif'],
         'bricolage-grotesque': ['Bricolage Grotesque', 'serif'],
-        'libre': ['"Libre Caslon Display"', 'sans-serif']
+        'libre': ['"Libre Caslon Display"', 'sans-serif'],
+        'ibm': ['"IBM Plex Mono"', 'sans-serif']
       }
     },
   },
