@@ -6,14 +6,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .tw-bg-magic-main {
+        background-image: url(assets/backgroundComplete.png);
+        background-size: auto;
+    }
+
+    .tw-bg-modal-border {
+        background: linear-gradient(to bottom, #1a0a2e, #1a0a2e, #768359);
+    }
+
+    .tw-bg-modal-inner {
+        background: linear-gradient(to bottom, #171B5B, #232F0B);
+    }
+
+    .tw-shadow-inner-white {
+        box-shadow: inset 0 0 0 4px rgba(255,255,255,0.15);
+    }
+
+    /* Ocultar scroll horizontal en móviles */
+    .tw-hide-scroll {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .tw-hide-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Brillo sutil para el texto */
+    .tw-kiire-text-glow {
+        text-shadow: 0 0 8px rgba(251, 254, 233, 0.6), 0 0 15px rgba(251, 254, 233, 0.4);
+    }
+}
+
+/* Modifica esto en tu input-magiaJose.css */
 .tw-kiire-gradient-border::before {
     content: "";
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    /* Ajustado para que coincida con tw-rounded-2xl */
     border-radius: 1rem; 
     padding: 1px;
     background: linear-gradient(to right, #A3E635, #ffffff, #8B5CF6);
@@ -25,40 +60,27 @@
     pointer-events: none;
 }
 
-/* Brillo sutil para el texto, del mismo color del texto */
-.kiire-text-glow {
-    text-shadow: 0 0 8px rgba(251, 254, 233, 0.6), 0 0 15px rgba(251, 254, 233, 0.4);
-}
-
-
-/* Ocultar scroll horizontal en móviles */
-.hide-scroll {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.hide-scroll::-webkit-scrollbar {
-    display: none;
-}
-
 /* LA MAGIA DEL SEMICÍRCULO (Solo para Desktop) */
 @media (min-width: 768px) {
-    .ruleta-card {
+    .tw-ruleta-card {
         position: absolute;
         left: 50%;
-        
         top: 20px;
-
         --radius: clamp(500px, 50vw, 1200px);
-
         transform: translate(calc(-50% + (var(--radius) * var(--tx))),
                 calc(var(--radius) * var(--ty)));
     }
+
+    /* Asignación de variables de transformación pasadas de inline a clases */
+    .tw-card-1 { --tx: -0.71; --ty: 0.29; }
+    .tw-card-2 { --tx: -0.38; --ty: 0.08; }
+    .tw-card-3 { --tx: 0; --ty: 0.10; }
+    .tw-card-4 { --tx: 0.38; --ty: 0.08; }
+    .tw-card-5 { --tx: 0.71; --ty: 0.29; }
 }
 
 @media (min-width: 1024px) {
-    .ruleta-card {
+    .tw-ruleta-card {
         top: 60px;
     }
 }
-
